@@ -1,0 +1,37 @@
+{
+  "catalogue": {
+    "name": "Necrons(5th ed)",
+    "id": "7cf2-904a-8461-8895",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-e128-3141-0857-8aeb",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "selectionEntries": [
+      {
+        "name": "Necron Warriors",
+        "id": "421d-b3a6-e3bc-b145",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Troops", "id": "b8dd-1b1d-2853-0715", "hidden": false, "primary": false, "targetId": "0fbe-67ae-ed41-2f5b"}],
+        "selectionEntries": [
+          {
+            "name": "Necron Warrior",
+            "id": "d7f4-4156-78e2-d3ec",
+            "defaultAmount": "5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "8c35-e649-7c35-5998", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "51f4-2747-8708-8686", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
+            ],
+            "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}]
+          }
+        ]
+      }
+    ]
+  }
+}
