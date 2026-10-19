@@ -27,6 +27,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": true, "targetId": "e338-111e-d0c6-b687"}],
+        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 65}],
         "entryLinks": [
           {
             "name": "Necron Warrior",
