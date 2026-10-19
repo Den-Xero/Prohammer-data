@@ -8,16 +8,7 @@
     "library": false,
     "revision": 2,
     "type": "catalogue",
-    "selectionEntries": [
-      {
-        "name": "Necron Warriors",
-        "id": "421d-b3a6-e3bc-b145",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "entryLinks": [{"name": "Necron Warriors unit", "id": "1534-2e1f-2eac-3b0b", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}]
-      }
-    ],
+    "entryLinks": [{"name": "Necron Warriors unit", "id": "e821-2c6a-575b-9dea", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}],
     "sharedSelectionEntries": [
       {
         "name": "Necron Warriors unit",
@@ -25,18 +16,19 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": true, "targetId": "e338-111e-d0c6-b687"}],
+        "categoryLinks": [{"name": "Troop", "id": "fbb9-f6fd-2d82-07f1", "hidden": false, "primary": true, "targetId": "e338-111e-d0c6-b687"}],
         "entryLinks": [
           {
             "name": "Necron Warrior",
             "id": "5077-2463-ee5b-d253",
+            "defaultAmount": "5",
             "hidden": false,
             "import": true,
             "targetId": "3ae2-3d4f-27d4-6dcd",
             "type": "selectionEntry",
             "constraints": [
-              {"id": "7ab2-d01f-1389-56ff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
-              {"id": "ab91-bb46-ab69-0842", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 20}
+              {"id": "544b-25a6-09fa-cc83", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "095f-d50d-6db4-fd57", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 20}
             ]
           }
         ],
