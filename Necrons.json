@@ -559,29 +559,18 @@
                       {"id": "292b-dc36-efa7-2228", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "ab0b-34c7-8bca-115", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ],
-                    "entryLinks": [
+                    "profiles": [
                       {
-                        "name": "Weapon Modifications",
-                        "id": "3360-b7a2-1a3b-31c8",
-                        "flatten": false,
+                        "name": "Gauss flayer",
+                        "id": "bf45-757f-20f0-07f4",
                         "hidden": false,
-                        "import": true,
-                        "targetId": "f9da-852a-d7f0-92e9",
-                        "type": "selectionEntryGroup",
-                        "profiles": [
-                          {
-                            "name": "Gauss flayer",
-                            "id": "363b-0fcb-ed0d-7e7b",
-                            "hidden": false,
-                            "typeId": "2477-11ab-6b59-a41a",
-                            "typeName": "Weapon",
-                            "characteristics": [
-                              {"name": "Range", "$text": "24", "typeId": "599d-3549-7fad-1d4c"},
-                              {"name": "S", "$text": "4", "typeId": "071d-7001-ded5-810b"},
-                              {"name": "AP", "$text": "4", "typeId": "01f8-f727-ab2d-926f"},
-                              {"name": "Type", "$text": "rapid", "typeId": "8b89-0778-57e1-aef7"}
-                            ]
-                          }
+                        "typeId": "2477-11ab-6b59-a41a",
+                        "typeName": "Weapon",
+                        "characteristics": [
+                          {"name": "Range", "$text": "24", "typeId": "599d-3549-7fad-1d4c"},
+                          {"name": "S", "$text": "2", "typeId": "071d-7001-ded5-810b"},
+                          {"name": "AP", "$text": "3", "typeId": "01f8-f727-ab2d-926f"},
+                          {"name": "Type", "$text": "4", "typeId": "8b89-0778-57e1-aef7"}
                         ]
                       }
                     ]
@@ -595,27 +584,6 @@
                 "import": true,
                 "type": "model",
                 "constraints": [{"id": "7ea5-a13f-31a6-b292", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 20}],
-                "entryLinks": [
-                  {
-                    "name": "Close combat weapon",
-                    "id": "7334-92b6-6296-e17f",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "69d2-ffd6-3daf-b437",
-                    "type": "selectionEntry",
-                    "entryLinks": [
-                      {
-                        "name": "Weapon Modifications",
-                        "id": "8d39-b69e-2d63-0b83",
-                        "flatten": false,
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "f9da-852a-d7f0-92e9",
-                        "type": "selectionEntryGroup"
-                      }
-                    ]
-                  }
-                ],
                 "selectionEntries": [
                   {
                     "name": "Gauss reaper",
@@ -628,17 +596,6 @@
                       {"id": "292b-dc36-efa7-2228", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "ab0b-34c7-8bca-115", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                     ],
-                    "entryLinks": [
-                      {
-                        "name": "Weapon Modifications",
-                        "id": "3d1b-ca62-3618-9f56",
-                        "flatten": false,
-                        "hidden": false,
-                        "import": true,
-                        "targetId": "f9da-852a-d7f0-92e9",
-                        "type": "selectionEntryGroup"
-                      }
-                    ],
                     "infoLinks": [{"name": "Lethal Hits", "id": "12fe-dfbc-e2d4-57da", "hidden": false, "targetId": "d1d1-611e-5191-1095", "type": "rule"}],
                     "profiles": [
                       {
@@ -646,7 +603,6 @@
                         "id": "6d5d-6878-1274-18cc",
                         "hidden": false,
                         "typeId": "f77d-b953-8fa4-b762",
-                        "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
                           {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
@@ -6229,7 +6185,6 @@
                     "id": "0779-a606-b773-2911",
                     "hidden": false,
                     "typeId": "f77d-b953-8fa4-b762",
-                    "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
                       {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
