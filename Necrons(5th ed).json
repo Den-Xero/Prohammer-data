@@ -1,0 +1,103 @@
+{
+  "catalogue": {
+    "name": "Necrons(5th ed)",
+    "id": "7cf2-904a-8461-8895",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-e128-3141-0857-8aeb",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 2,
+    "type": "catalogue",
+    "selectionEntries": [
+      {
+        "name": "Necron Warriors",
+        "id": "421d-b3a6-e3bc-b145",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Troops", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
+        "entryLinks": [{"name": "Necron Warriors unit", "id": "1534-2e1f-2eac-3b0b", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Necron Warriors unit",
+        "id": "b22b-eb1c-398d-324d",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
+        "entryLinks": [
+          {
+            "name": "Necron Warrior",
+            "id": "5077-2463-ee5b-d253",
+            "hidden": false,
+            "import": true,
+            "targetId": "3ae2-3d4f-27d4-6dcd",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "7ab2-d01f-1389-56ff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "ab91-bb46-ab69-0842", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 20}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Necron Warrior",
+        "id": "3ae2-3d4f-27d4-6dcd",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
+        "entryLinks": [{"name": "Gauss flayer", "id": "1b02-78f0-3cdf-2cab", "hidden": false, "import": true, "targetId": "5de0-d953-4321-235a", "type": "selectionEntry"}],
+        "profiles": [
+          {
+            "name": "Necron Warrior",
+            "id": "9e93-9677-58ef-447c",
+            "hidden": false,
+            "typeId": "bd1f-84e6-7281-205b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "WS", "$text": "4", "typeId": "bc7e-b79b-3571-bfab"},
+              {"name": "BS", "$text": "4", "typeId": "0d8e-4b36-91f8-2319"},
+              {"name": "S", "$text": "4", "typeId": "ed17-aea8-f10f-b01e"},
+              {"name": "T", "$text": "4", "typeId": "eef7-674d-12d2-fcf2"},
+              {"name": "W", "$text": "1", "typeId": "e297-94e6-6c36-5d06"},
+              {"name": "I", "$text": "2", "typeId": "4039-96e2-6011-2c06"},
+              {"name": "A", "$text": "1", "typeId": "0840-8996-a600-b768"},
+              {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
+              {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gauss flayer",
+        "id": "5de0-d953-4321-235a",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9145-fe41-aa9c-82c2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c848-a095-e330-8add", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Gauss flayer",
+            "id": "880c-3015-1f7d-5215",
+            "hidden": false,
+            "typeId": "2fa0-e132-3671-7499",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
+              {"name": "Strength", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
+              {"name": "Type", "$text": "Rapid fire, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
