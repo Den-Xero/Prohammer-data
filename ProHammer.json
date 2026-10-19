@@ -92,6 +92,185 @@
         ]
       }
     ],
-    "publications": [{"name": "Github", "id": "8cd0-f45f-6187-d47b", "hidden": false, "publisherUrl": "https://github.com/Den-Xero/Prohammer-data"}]
+    "publications": [{"name": "Github", "id": "8cd0-f45f-6187-d47b", "hidden": false, "publisherUrl": "https://github.com/Den-Xero/Prohammer-data"}],
+    "sharedSelectionEntries": [
+      {
+        "name": "Battle Size",
+        "id": "564e-fbc6-5266-3ea4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Override points limit?",
+            "id": "c6ea-562c-984f-6c25",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "constraints": [{"id": "a069-35b2-b2ed-e0a3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "selectionEntries": [
+              {
+                "name": "Points limit",
+                "id": "83ac-f5e5-d3da-5441",
+                "hidden": false,
+                "import": true,
+                "step": "250",
+                "type": "upgrade",
+                "constraints": [{"id": "28a8-2582-4ec2-a2fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 500}],
+                "modifiers": [
+                  {
+                    "field": "defaultAmount",
+                    "type": "set",
+                    "value": "1000",
+                    "conditions": [
+                      {
+                        "childId": "d62d-db22-4893-4bc0",
+                        "childName": "1. Incursion (1000 Point limit)",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "564e-fbc6-5266-3ea4",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "defaultAmount",
+                    "type": "set",
+                    "value": "2000",
+                    "conditions": [
+                      {
+                        "childId": "baf8-997f-e323-a090",
+                        "childName": "2. Strike Force (2000 Point limit)",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "564e-fbc6-5266-3ea4",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "defaultAmount",
+                    "type": "set",
+                    "value": "3000",
+                    "conditions": [
+                      {
+                        "childId": "4204-82d0-908c-a62a",
+                        "childName": "3. Onslaught (3000 Point limit)",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "564e-fbc6-5266-3ea4",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "defaultAmount",
+                    "type": "set",
+                    "value": "500",
+                    "conditions": [
+                      {
+                        "childId": "ecbc-82df-3292-2224",
+                        "childName": "1. Patrol (500 point limit)",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "564e-fbc6-5266-3ea4",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Battle Size",
+            "id": "b960-4789-a3a6-59cb",
+            "collective": false,
+            "defaultSelectionEntryId": "none",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "constraints": [
+              {
+                "id": "132a-318-b78a-7afb",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "dea4-90c8-6d86-3a01",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "2. Incursion (1000 Point limit)",
+                "id": "d62d-db22-4893-4bc0",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "588c-0d49-77b3-77ab", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
+              },
+              {
+                "name": "3. Strike Force (2000 Point limit)",
+                "id": "baf8-997f-e323-a090",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "1eba-8598-9e8b-7a6e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
+              },
+              {
+                "name": "4. Onslaught (3000 Point limit)",
+                "id": "4204-82d0-908c-a62a",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "7fe2-ed7d-73f5-6eca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
+              },
+              {
+                "name": "1. Patrol (500 point limit)",
+                "id": "ecbc-82df-3292-2224",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 0,
+                "type": "upgrade",
+                "constraints": [{"id": "02b3-be6a-acee-1146", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
