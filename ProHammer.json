@@ -7,11 +7,10 @@
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "HQ", "id": "60a8-5e4a-22f4-16b3", "hidden": false},
-      {"name": "Troops", "id": "e338-111e-d0c6-b687", "hidden": false},
+      {"name": "Battleline", "id": "e338-111e-d0c6-b687", "hidden": false},
       {"name": "Elites", "id": "3655-63a8-98da-ecae", "hidden": false},
       {"name": "Fast Attack", "id": "1a8d-e0e5-e3aa-5e8b", "hidden": false},
-      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false},
-      {"name": "Battleline", "id": "ad99-1b6e-5b91-751c", "hidden": false}
+      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false}
     ],
     "costTypes": [{"name": "Pts", "id": "4d85-53ef-f7e1-10d4", "defaultCostLimit": -1}],
     "forceEntries": [
