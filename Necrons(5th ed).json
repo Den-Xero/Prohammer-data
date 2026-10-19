@@ -15,10 +15,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [
-          {"name": "Troops", "id": "b8dd-1b1d-2853-0715", "hidden": false, "primary": false, "targetId": "0fbe-67ae-ed41-2f5b"},
-          {"name": "Battleline", "id": "36ff-92c6-39b6-8a07", "hidden": false, "primary": false, "targetId": "ad99-1b6e-5b91-751c"}
-        ],
+        "categoryLinks": [{"name": "Troops", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
         "selectionEntries": [
           {
             "name": "Necron Warrior",

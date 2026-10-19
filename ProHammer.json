@@ -7,7 +7,7 @@
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "HQ", "id": "60a8-5e4a-22f4-16b3", "hidden": false},
-      {"name": "Troops", "id": "0fbe-67ae-ed41-2f5b", "hidden": false},
+      {"name": "Troops", "id": "e338-111e-d0c6-b687", "hidden": false},
       {"name": "Elites", "id": "3655-63a8-98da-ecae", "hidden": false},
       {"name": "Fast Attack", "id": "1a8d-e0e5-e3aa-5e8b", "hidden": false},
       {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false},
@@ -34,7 +34,7 @@
             "name": "Troops",
             "id": "8990-992c-71d5-b843",
             "hidden": false,
-            "targetId": "0fbe-67ae-ed41-2f5b",
+            "targetId": "e338-111e-d0c6-b687",
             "constraints": [
               {"id": "5c53-e266-c8e4-cbb9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "9e02-593f-931e-2c14", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
