@@ -15,7 +15,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Troops", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
+        "categoryLinks": [{"name": "Battleline", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
         "entryLinks": [{"name": "Necron Warriors unit", "id": "1534-2e1f-2eac-3b0b", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}]
       }
     ],
@@ -26,7 +26,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
+        "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": true, "targetId": "e338-111e-d0c6-b687"}],
         "entryLinks": [
           {
             "name": "Necron Warrior",
