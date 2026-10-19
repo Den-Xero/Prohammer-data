@@ -6,7 +6,7 @@
     "gameSystemId": "sys-e128-3141-0857-8aeb",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "selectionEntries": [
       {
@@ -15,7 +15,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Troops", "id": "b8dd-1b1d-2853-0715", "hidden": false, "primary": false, "targetId": "0fbe-67ae-ed41-2f5b"}],
+        "categoryLinks": [
+          {"name": "Troops", "id": "b8dd-1b1d-2853-0715", "hidden": false, "primary": false, "targetId": "0fbe-67ae-ed41-2f5b"},
+          {"name": "Battleline", "id": "36ff-92c6-39b6-8a07", "hidden": false, "primary": false, "targetId": "ad99-1b6e-5b91-751c"}
+        ],
         "selectionEntries": [
           {
             "name": "Necron Warrior",

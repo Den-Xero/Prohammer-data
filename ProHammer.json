@@ -10,7 +10,8 @@
       {"name": "Troops", "id": "0fbe-67ae-ed41-2f5b", "hidden": false},
       {"name": "Elites", "id": "3655-63a8-98da-ecae", "hidden": false},
       {"name": "Fast Attack", "id": "1a8d-e0e5-e3aa-5e8b", "hidden": false},
-      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false}
+      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false},
+      {"name": "Battleline", "id": "ad99-1b6e-5b91-751c", "hidden": false}
     ],
     "costTypes": [{"name": "Pts", "id": "4d85-53ef-f7e1-10d4", "defaultCostLimit": -1}],
     "forceEntries": [
@@ -91,6 +92,7 @@
           {"name": "Type", "id": "dbd5-a62e-abc4-431f"}
         ]
       }
-    ]
+    ],
+    "publications": [{"name": "Github", "id": "8cd0-f45f-6187-d47b", "hidden": false, "publisherUrl": "https://github.com/Den-Xero/Prohammer-data"}]
   }
 }
