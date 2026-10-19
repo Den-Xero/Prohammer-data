@@ -15,7 +15,6 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Battleline", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
         "entryLinks": [{"name": "Necron Warriors unit", "id": "1534-2e1f-2eac-3b0b", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}]
       }
     ],
@@ -27,7 +26,6 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [{"name": "Battleline", "id": "95c9-9e61-8e2b-a9d4", "hidden": false, "primary": true, "targetId": "e338-111e-d0c6-b687"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 65}],
         "entryLinks": [
           {
             "name": "Necron Warrior",
@@ -41,7 +39,8 @@
               {"id": "ab91-bb46-ab69-0842", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 20}
             ]
           }
-        ]
+        ],
+        "rules": [{"name": "Test rules", "id": "72b3-07fa-2241-c6ee", "description": "Testing 1 2 3", "hidden": false}]
       },
       {
         "name": "Necron Warrior",

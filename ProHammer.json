@@ -124,7 +124,7 @@
                   {
                     "field": "defaultAmount",
                     "type": "set",
-                    "value": "1000",
+                    "value": "500",
                     "conditions": [
                       {
                         "childId": "d62d-db22-4893-4bc0",
