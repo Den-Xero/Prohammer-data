@@ -16,17 +16,27 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [{"name": "Troops", "id": "0b30-4796-a64c-eeb3", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
+        "entryLinks": [{"name": "Necron Warriors unit", "id": "1534-2e1f-2eac-3b0b", "hidden": false, "import": true, "targetId": "b22b-eb1c-398d-324d", "type": "selectionEntry"}]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Necron Warriors unit",
+        "id": "b22b-eb1c-398d-324d",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
         "selectionEntries": [
           {
             "name": "Necron Warrior",
-            "id": "d7f4-4156-78e2-d3ec",
-            "defaultAmount": "5",
+            "id": "3825-78b6-a645-179f",
             "hidden": false,
             "import": true,
             "type": "model",
+            "categoryLinks": [{"name": "Troops", "id": "a4d7-c5b7-ef6f-6b65", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"}],
             "constraints": [
-              {"id": "8c35-e649-7c35-5998", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 5},
-              {"id": "51f4-2747-8708-8686", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 20}
+              {"id": "d894-8eed-9a99-b623", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "0b87-d3eb-9198-aedf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 20}
             ],
             "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}]
           }
