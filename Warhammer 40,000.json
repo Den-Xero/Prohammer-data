@@ -12,7 +12,7 @@
       {"name": "Epic Hero", "id": "4f3a-f0f7-6647-348d", "hidden": false},
       {"name": "Infantry", "id": "cf47-a0d7-7207-29dc", "hidden": false},
       {"name": "Monster", "id": "9693-cf84-fe69-37a9", "hidden": false},
-      {"name": "Battleline", "id": "e338-111e-d0c6-b687", "hidden": false},
+      {"name": "Troops", "id": "e338-111e-d0c6-b687", "hidden": false},
       {"name": "Dedicated Transport", "id": "ba07-411c-2832-1f79", "hidden": false},
       {"name": "Mounted", "id": "14a0-40c9-2748-ae6e", "hidden": false},
       {"name": "Captain", "id": "2d7f-1892-2fd0-e29c", "hidden": false},
@@ -1446,7 +1446,7 @@
               }
             ]
           },
-          {"name": "Battleline", "id": "b3ba-1e1a-a92d-60d2", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"},
+          {"name": "Troops", "id": "b3ba-1e1a-a92d-60d2", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"},
           {"name": "Infantry", "id": "6d77-b79d-3ccb-6bf6", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Swarm", "id": "f5d5-b603-69b3-411c", "hidden": false, "primary": false, "targetId": "b00b-5bae-444f-964e"},
           {"name": "Mounted", "id": "6503-057c-cb62-badb", "hidden": false, "primary": false, "targetId": "14a0-40c9-2748-ae6e"},

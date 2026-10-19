@@ -534,7 +534,6 @@
             "id": "ea2d-fc31-6e16-fd70",
             "defaultSelectionEntryId": "2498-87b1-fec5-2973",
             "hidden": false,
-            "sortIndex": 3,
             "constraints": [
               {"id": "b93e-819a-da9e-9da8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 10},
               {"id": "7ea5-a13f-31a6-b292", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 20}
