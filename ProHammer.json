@@ -10,62 +10,201 @@
       {"name": "Troop", "id": "e338-111e-d0c6-b687", "hidden": false},
       {"name": "Elites", "id": "3655-63a8-98da-ecae", "hidden": false},
       {"name": "Fast Attack", "id": "1a8d-e0e5-e3aa-5e8b", "hidden": false},
-      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false}
+      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false},
+      {"name": "Infantry", "id": "20b5-524c-a96c-2fd6", "hidden": false},
+      {"name": "Jump Infantry", "id": "35a6-f8d9-8cb6-552d", "hidden": false},
+      {"name": "Bike", "id": "edd0-fc21-7f37-734c", "hidden": false},
+      {"name": "JetBike", "id": "cf30-5b62-9ce0-3996", "hidden": false},
+      {"name": "Cavalry", "id": "b356-0cf7-5899-54e1", "hidden": false},
+      {"name": "Beast", "id": "8a34-e6ae-d5ec-81ac", "hidden": false},
+      {"name": "Monstrous Creature", "id": "8098-49a8-0559-48a1", "hidden": false},
+      {"name": "Flying Monster", "id": "e357-064e-dc34-d3ce", "hidden": false},
+      {"name": "Tank/Chariot", "id": "084f-994b-df5d-0353", "hidden": false},
+      {"name": "Skimmer", "id": "64b5-e28c-0071-b486", "hidden": false},
+      {"name": "Fast Vehicle", "id": "5103-7fed-c250-ac07", "hidden": false},
+      {"name": "Fast Skimmer & Hovering Flyer", "id": "4a75-da51-fe91-86b6", "hidden": false},
+      {"name": "Walker", "id": "05c3-9c36-1aa1-993c", "hidden": false},
+      {"name": "Zooming Flyer", "id": "17f5-cc4b-dcf0-8a35", "hidden": false},
+      {"name": "Character", "id": "0e03-b6b2-342b-e0d6", "hidden": false},
+      {"name": "Dedicated Transport", "id": "49eb-132c-ab61-6135", "hidden": false},
+      {"name": "HQ cost exclusion", "id": "9c3c-9128-c927-7d00", "hidden": false},
+      {"name": "OPEN-TOPPED", "id": "fc75-8d5a-96f3-af94", "hidden": false},
+      {"name": "Vehicle", "id": "37c1-ab57-c339-16d9", "hidden": false},
+      {"name": "Unique", "id": "7dd6-9194-5df9-80ae", "hidden": false},
+      {
+        "name": "Warlord",
+        "id": "8fbc-03bd-b3d1-e212",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "32cf-ec31-25ec-b7da-min",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "32cf-ec31-25ec-b7da-max",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      }
     ],
     "costTypes": [{"name": "Pts", "id": "4d85-53ef-f7e1-10d4", "defaultCostLimit": -1}],
     "forceEntries": [
       {
         "name": "Standard Mission",
-        "id": "bb9d-299a-ed60-2d8a",
+        "id": "94b3-fa8a-1e11-a604",
         "hidden": false,
         "categoryLinks": [
           {
             "name": "HQ",
-            "id": "8b5e-da81-1b88-7092",
+            "id": "c030-7885-6ba8-3a74",
             "hidden": false,
             "targetId": "60a8-5e4a-22f4-16b3",
             "constraints": [
-              {"id": "aeb3-3453-d690-c048", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "45c1-f4b5-8ee9-372b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+              {"id": "3ac0-c607-ee11-ad7d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cb5e-9373-0a70-c945", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+            ],
+            "modifiers": [
+              {
+                "field": "cb5e-9373-0a70-c945",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "9c3c-9128-c927-7d00",
+                    "childName": "HQ cost exclusion",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "force",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
             "name": "Troop",
-            "id": "b3ba-1e1a-a92d-60d2",
+            "id": "2f8c-2039-a805-e267",
             "hidden": false,
             "targetId": "e338-111e-d0c6-b687",
             "constraints": [
-              {"id": "5c53-e266-c8e4-cbb9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-              {"id": "9e02-593f-931e-2c14", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
+              {"id": "9208-61f3-ceba-49a1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "9696-9170-d4f0-57a2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
             ]
           },
           {
             "name": "Elites",
-            "id": "41c5-9355-b1dd-43fd",
+            "id": "ccb7-1af1-08f8-1d82",
             "hidden": false,
             "targetId": "3655-63a8-98da-ecae",
-            "constraints": [{"id": "1aa1-4237-e7d3-ffa3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+            "constraints": [{"id": "402c-affb-3b39-93a9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
           {
             "name": "Fast Attack",
-            "id": "4718-e570-beb0-8377",
+            "id": "724f-6781-48f8-f2a3",
             "hidden": false,
             "targetId": "1a8d-e0e5-e3aa-5e8b",
-            "constraints": [{"id": "329e-22b8-c2fc-1730", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+            "constraints": [{"id": "4f98-96ca-fc04-1b3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
           {
             "name": "Heavy Support",
-            "id": "f229-3abe-037a-2742",
+            "id": "bd71-aa49-31da-c81f",
             "hidden": false,
             "targetId": "c0a8-9bc5-00b7-0bae",
-            "constraints": [{"id": "5ff7-645a-212c-5b6a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+            "constraints": [{"id": "ebca-9306-13f4-d1eb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+          },
+          {"name": "Dedicated Transport", "id": "7e32-bf11-3322-e556", "hidden": false, "targetId": "49eb-132c-ab61-6135"}
+        ],
+        "forceEntries": [
+          {
+            "name": "Standard Mission",
+            "id": "02d0-9312-c13d-ea79",
+            "hidden": false,
+            "categoryLinks": [
+              {
+                "name": "HQ",
+                "id": "ad8d-7fca-f042-83a4",
+                "hidden": false,
+                "targetId": "60a8-5e4a-22f4-16b3",
+                "constraints": [
+                  {"id": "5fd5-3641-7ea9-375e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f529-7aec-a994-b50e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "modifiers": [
+                  {
+                    "field": "f529-7aec-a994-b50e",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "9c3c-9128-c927-7d00",
+                        "childName": "HQ cost exclusion",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Troop",
+                "id": "3dc1-7fd6-84da-4b0d",
+                "hidden": false,
+                "targetId": "e338-111e-d0c6-b687",
+                "constraints": [
+                  {"id": "1c06-68a8-f750-ad3b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "9dc7-4810-35ff-8f3d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
+                ]
+              },
+              {
+                "name": "Elites",
+                "id": "b0b9-dcb5-5b29-c2bc",
+                "hidden": false,
+                "targetId": "3655-63a8-98da-ecae",
+                "constraints": [{"id": "8dca-fe65-ab73-e56d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+              },
+              {
+                "name": "Fast Attack",
+                "id": "a9ac-c2f4-bb32-ac45",
+                "hidden": false,
+                "targetId": "1a8d-e0e5-e3aa-5e8b",
+                "constraints": [{"id": "9db7-1f17-735b-6a90", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+              },
+              {
+                "name": "Heavy Support",
+                "id": "7abd-4440-95e8-335f",
+                "hidden": false,
+                "targetId": "c0a8-9bc5-00b7-0bae",
+                "constraints": [{"id": "3035-c2b1-0b13-7a8a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+              },
+              {"name": "Dedicated Transport", "id": "08d0-4681-1def-9bd5", "hidden": false, "targetId": "49eb-132c-ab61-6135"}
+            ]
           }
         ]
       }
     ],
     "profileTypes": [
       {
-        "name": "Unit",
+        "name": "Model",
         "id": "bd1f-84e6-7281-205b",
         "hidden": false,
         "characteristicTypes": [
@@ -77,7 +216,9 @@
           {"name": "I", "id": "4039-96e2-6011-2c06"},
           {"name": "A", "id": "0840-8996-a600-b768"},
           {"name": "Ld", "id": "a6f4-c826-e65f-2dde"},
-          {"name": "Sv", "id": "07fb-93bc-7877-d7d1"}
+          {"name": "Sv", "id": "07fb-93bc-7877-d7d1"},
+          {"name": "InSv", "id": "1e8a-c284-7f6c-3c55"},
+          {"name": "FNP", "id": "9822-ba7b-9cf7-378c"}
         ]
       },
       {
@@ -86,13 +227,577 @@
         "hidden": false,
         "characteristicTypes": [
           {"name": "Range", "id": "cbb0-2b5d-d6fd-88d1"},
-          {"name": "Strength", "id": "a2c5-ec2c-1fcc-5485"},
+          {"name": "Str", "id": "a2c5-ec2c-1fcc-5485"},
           {"name": "AP", "id": "496d-5030-c6b3-ea53"},
           {"name": "Type", "id": "dbd5-a62e-abc4-431f"}
+        ]
+      },
+      {
+        "name": "Walker",
+        "id": "ad5d-043c-62cd-fa22",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "WS", "id": "f808-b601-b5db-ac1d"},
+          {"name": "BS", "id": "76ab-b826-b828-141e"},
+          {"name": "Str", "id": "cb41-9516-751c-8cea"},
+          {"name": "F", "id": "ce51-f86d-5b79-8168"},
+          {"name": "S", "id": "df04-4fb8-2ea3-9470"},
+          {"name": "R", "id": "2f5b-ed87-a864-c6b1"},
+          {"name": "I", "id": "7e9d-8f7e-2561-a8cd"},
+          {"name": "A", "id": "e84e-7d21-b608-67a3"},
+          {"name": "Struc", "id": "a8dc-eec0-9a40-d0d6"},
+          {"name": "InSv", "id": "ed5a-9d95-f8be-ea63"},
+          {"name": "FNP", "id": "3163-3182-c12b-4863"}
+        ]
+      },
+      {
+        "name": "Vehicle",
+        "id": "7634-83d3-d786-79ab",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "BS", "id": "b437-fe4f-0b82-1f76"},
+          {"name": "F", "id": "613b-3647-7f76-6f57"},
+          {"name": "S", "id": "30df-2958-4a37-dc0a"},
+          {"name": "R", "id": "717f-55da-4ced-63b9"},
+          {"name": "Struc", "id": "bb9b-dcf2-5ccb-f632"},
+          {"name": "InSv", "id": "972f-0bfa-8722-6eb2"},
+          {"name": "FNP", "id": "a6a0-88ae-7de2-2a58"}
         ]
       }
     ],
     "publications": [{"name": "Github", "id": "8cd0-f45f-6187-d47b", "hidden": false, "publisherUrl": "https://github.com/Den-Xero/Prohammer-data"}],
+    "sharedRules": [
+      {"name": "Acute Senses", "id": "9232-792d-f3a3-7832", "description": "Unit can re-roll which random table edge it arrives on from reserves.", "hidden": false},
+      {
+        "name": "Assault Vehicle",
+        "id": "16e5-baa0-941b-2502",
+        "description": "Passengers disembarking from an assault vehicle do not lose their extra attack charge bonuses when disembarking and charging from an assault vehicle. All open-topped vehicles count as Assault Vehicles.",
+        "hidden": false
+      },
+      {
+        "name": "Crusader",
+        "id": "1b49-748b-f949-605f",
+        "description": "Roll extra dice when advancing and use the highest. Adds D3” to pursuit rolls.",
+        "hidden": false
+      },
+      {"name": "Fleet", "id": "bef3-c8ba-1562-3847", "description": "Unit may still charge into melee combat even if it advanced this turn.", "hidden": false},
+      {
+        "name": "Hit & Run",
+        "id": "c551-b9ef-426c-28f6",
+        "description": "Unit may choose to leave combat at the end of the assault phase after taking break tests. Take an initiative test. If passed, the unit moves 3D6” in a chosen direction. The unit does not count as having broken (or fallen back), and any now unengaged enemy units they moved away from may only consolidate 3”.",
+        "hidden": false
+      },
+      {
+        "name": "Infiltrate",
+        "id": "bd6c-904d-0285-5c7d",
+        "description": "During deployment, may be set up after normal deployment. The unit must be set up 12\" or more away from any enemy units that do NOT have line of sight and 18” or more away from enemy units WITH line of sight. The unit also gains Outflank.",
+        "hidden": false
+      },
+      {
+        "name": "Jink",
+        "id": "2de4-2aff-3c75-9b3a",
+        "description": "Units that moved in the prior turn can activate their jink ability as a reaction to being shot and gain a 5+ cover save until the start of its next turn. If a model with this rule used turbo-boosters or moved at flat out speeds, it gains a 4+ cover save instead. Models that utilize a jink only shoot with snap fire on their next turn.",
+        "hidden": false
+      },
+      {
+        "name": "Move Through Cover",
+        "id": "f848-a065-305c-f829",
+        "description": "Roll a 3D6 for difficult terrain tests (instead of 2D6) and choose the highest.",
+        "hidden": false
+      },
+      {
+        "name": "Outflank",
+        "id": "c6e6-e60b-d3e3-75c9",
+        "description": "When units with this ability enter from reserve, they have a chance to enter from the side table edge. On a 1-2, enters from player’s left, 3-4 on players right, 5-6 players choice of side edge. May alternatively choose to enter from reserve normally from the player’s normal table edge(s).",
+        "hidden": false
+      },
+      {
+        "name": "Power of the Machine Spirit",
+        "id": "abcd-539a-fd3d-d56d",
+        "description": "A vehicle moving less than flat out speed and not using smoke launchers can fire one additional main weapon at full Ballistic Skill.",
+        "hidden": false
+      },
+      {"name": "Rage (3rd-5th Edition Codexes)", "id": "e90f-f8c4-7227-9042", "description": "Unit must move towards the closest enemy.", "hidden": false},
+      {
+        "name": "Rage (6th-7th Edition Codexes)",
+        "id": "cde0-068b-e853-305b",
+        "description": "Unit gains +2 attacks instead of +1 when it charges into close combat (aka Berserk Charge)",
+        "hidden": false
+      },
+      {
+        "name": "Relentless",
+        "id": "a1f2-fdff-97f6-5719",
+        "description": "Model may move and fire heavy, ordanance, salvo, or rapid fire weapons as if they remained stationary. May still charge even after firing such weapons.",
+        "hidden": false
+      },
+      {
+        "name": "Scouts",
+        "id": "8732-5349-65e1-7c07",
+        "description": "May always be deployed. Before rolling to see who goes first, may take a bonus normal move. Confers scout ability to a dedicated transport it is mounted in. If both players have scouts, roll-off and alternate moving scouts starting with the winner of the roll-off. The unit also gains Outflank.",
+        "hidden": false
+      },
+      {"name": "Skilled Rider", "id": "f19c-f021-129e-be25", "description": "Re-roll failed dangerous terrain tests. Gains +1 to any Jink saves.", "hidden": false},
+      {"name": "Slow and purposeful", "id": "04b8-4e4f-a308-ad93", "description": "Relentless and always moves as if in difficult terrain.", "hidden": false},
+      {
+        "name": "Swift",
+        "id": "5b02-b2a2-f769-87a4",
+        "description": "Units composed entirely of swift models, fall back 3D6” instead of 2D6”. During pursuit and retreat moves, they move their Initiative Value + 2D6”.",
+        "hidden": false
+      },
+      {
+        "name": "Turbo-Boosters",
+        "id": "210b-db54-7f53-79ac",
+        "description": "Instead of a normal move, unit may turbo-boost up to 24\". Turbo-boosting units may not shoot in the shooting phase or charge in the assault phase. Units that also have the Jink rule gain a 4+ cover save if they used a Turbo-Boost move in their last movement phase.",
+        "hidden": false
+      },
+      {
+        "name": "Adamantium Will",
+        "id": "5c6d-141c-1449-8eb5",
+        "description": "+1 bonus to deny the witch and the unit may attempt to deny the witch even if they are not a psyker themselves.",
+        "hidden": false
+      },
+      {
+        "name": "And They Shall Know no Fear",
+        "id": "e945-84f3-fb87-8e8d",
+        "description": "Automatically passes regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, they automatically regroup and are re-engaged in close combat, and do not suffer extra wounds from being caught in a pursuit. Immune to Fear.",
+        "hidden": false
+      },
+      {
+        "name": "Brotherhood of Psychers",
+        "id": "33d5-ef64-848a-37c6",
+        "description": "Unit counts as Mastery Level 1 Psyker. Uses the unit’s highest leadership value for psychic power test.",
+        "hidden": false
+      },
+      {
+        "name": "Bulky",
+        "id": "f29d-04a5-0684-21a7",
+        "description": "Counts as two models for transport capacity. Very bulky counts as three models. Extremely bulky counts as five.",
+        "hidden": false
+      },
+      {
+        "name": "Counter-Attack",
+        "id": "48b1-cb43-2bf9-87d4",
+        "description": "If this unit is not engaged with any enemy models and an enemy unit successfully completes a charge move against it, the unit may take a Leadership test. If passed, this unit gains +1 attack during the Assault phase.",
+        "hidden": false
+      },
+      {"name": "Daemon", "id": "23df-7cc8-0287-4bab", "description": "Model Gains a 5+ invulnerable save and causes Fear.", "hidden": false},
+      {
+        "name": "Eternal Warrior",
+        "id": "e661-e545-4b0b-9bc6",
+        "description": "Immune to instant death / massive wounds. Model suffers 1 wound instead of D3 wounds.",
+        "hidden": false
+      },
+      {
+        "name": "Fear",
+        "id": "170b-72d1-d2fb-2286",
+        "description": "Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "7829-52eb-2b09-2979",
+        "description": "Automatically pass all Morale and Pinning tests. May not Take Cover! or choose to voluntarily fail a break test.",
+        "hidden": false
+      },
+      {
+        "name": "Feel No Pain",
+        "id": "bb28-3ca1-050a-325d",
+        "description": "A model with Feel No Pain that fails their normal saving throw, may attempt to ignore the wound a second time with Feel No Pain. Roll a D6 and if the value is equal to or above the Feel No Pain value the wound is ignored.  \n(5th Edition): After suffering an unsaved wound, on 4+ the wound is ignored (unless the wound applies instant death or against AP 1 or AP2 weapons). The specific Feel No Pain ability may specify a different saving throw level.\nFeel No Pain (for 6th/7th edition codexes): As above, except the wound is ignored on a 5+ unless otherwise specified.",
+        "hidden": false
+      },
+      {
+        "name": "Furious Charge",
+        "id": "6297-1817-33c0-10da",
+        "description": "Models gain +1 strength and +1 initiative in assault on the turn they charged.",
+        "hidden": false
+      },
+      {
+        "name": "Hammer of Wrath",
+        "id": "2c45-3df7-f1ea-2e2b",
+        "description": "On the turn this unit charges, models may perform ONE of their normally allowed attacks at initiative 10 instead of during their normal initiative step.",
+        "hidden": false
+      },
+      {
+        "name": "Hatred",
+        "id": "78af-e3ea-da98-f3ba",
+        "description": "If a unit with hatred is engaged in melee combat against a hated enemy type, and was NOT engaged in melee combat with that enemy type during the prior turn, the unit may re-roll all failed close combat to-hit rolls against the hated target.",
+        "hidden": false
+      },
+      {
+        "name": "It Will Not Die",
+        "id": "4f8a-836e-a727-b6f1",
+        "description": "Roll a D6 at the start of its turn for each model with less than its starting wounds but is not destroyed. On a 5+ it regains one lost wound. A vehicle with It Will Not Die may, on a 5+, repair an Engine Damaged, Weapon Destroyed, or Immobilized damage result. ",
+        "hidden": false
+      },
+      {
+        "name": "Night Vision",
+        "id": "e6bb-fba1-b2e8-f97e",
+        "description": "Units containing at least one model with this effect ignore night fighting restrictions.",
+        "hidden": false
+      },
+      {
+        "name": "Preferred Enemy",
+        "id": "1799-9b26-acf2-361a",
+        "description": "The unit can re-roll failed hits in close combat against the Everything!.",
+        "hidden": false
+      },
+      {
+        "name": "Shrouded",
+        "id": "df0a-9183-8674-070a",
+        "description": "Adds +2 to the value of cover saves conferred by terrain (Max of 2+ cover save). If in the open, receives a 5+ cover save. Does NOT stack with stealth.",
+        "hidden": false
+      },
+      {
+        "name": "Stealth",
+        "id": "705f-6f00-e003-7a63",
+        "description": "Adds +1 to the value of cover saves conferred by terrain (Max of 2+ cover save). If in the open, receives a 6+ cover save. Does NOT stack with shrouded.",
+        "hidden": false
+      },
+      {"name": "Stubborn", "id": "4114-31c0-1582-a0a4", "description": "Ignore negative leadership modifiers on Morale and Pinning tests.", "hidden": false},
+      {"name": "Swarms", "id": "37c1-a4be-bd53-08ce", "description": "Have stealth and vulnerable to blasts/templates", "hidden": false},
+      {
+        "name": "Tank Hunters",
+        "id": "331c-b681-9f66-6fbf",
+        "description": "+1 to armor penetration rolls. Automatically passes tank shock morale tests.",
+        "hidden": false
+      },
+      {
+        "name": "Vulnerable to Blasts/Templates",
+        "id": "6951-1468-27c0-524d",
+        "description": "Each hit counts as two hits from blast/template weapons.",
+        "hidden": false
+      },
+      {"name": "Zealot", "id": "f34c-ffd4-6dc0-4fac", "description": "A unit with at least one model with this effect gains Fearless and Hatred.", "hidden": false},
+      {"name": "Armourbane", "id": "43ec-a918-e30d-4ae0", "description": "Attack rolls a 2D6 for armor penetration.", "hidden": false},
+      {
+        "name": "Blind",
+        "id": "86e7-62ac-3bbd-bca6",
+        "description": "Unit HIT by a weapon with blind must take an initiative test. If failed, all models are reduced to BS1 and WS1 until the end of their next turn.",
+        "hidden": false
+      },
+      {
+        "name": "Concussive",
+        "id": "37d9-20aa-3538-7eb1",
+        "description": "A model suffering an unsaved wound is reduced to Initiative 1 until the end of the following assault phase. Against units with no Initiative (i.e. vehicles) inflicts crew shaken if hit.",
+        "hidden": false
+      },
+      {"name": "Fleshbane", "id": "0968-3224-1cd2-a3fe", "description": "Always wounds on a 2+. No effect versus vehicles.", "hidden": false},
+      {
+        "name": "Gets Hot",
+        "id": "cd39-72b9-f429-bdf8",
+        "description": "If a model shooting this weapon rolls 1 to hit, it causes an automatic wound on that model and must take an armor or invulnerable save. If the save fails, the shooting model suffers a wound. Vehicles are not affected by Gets Hot.",
+        "hidden": false
+      },
+      {
+        "name": "Graviton",
+        "id": "ccdf-2df2-ccde-f68c",
+        "description": "The to-wound roll is instead equal to the model’s armor save roll. Against vehicles, instead of rolling for armor penetration, roll a d6. On a 1-5 nothing happens. On a 6, the vehicle becomes immobilized.",
+        "hidden": false
+      },
+      {"name": "Ignores Cover", "id": "6bf2-e81e-3db4-f0ce", "description": "weapon negates any cover saves.", "hidden": false},
+      {
+        "name": "Interceptor",
+        "id": "57a8-d109-c85e-2951",
+        "description": "A weapon with this rule may be fired at an enemy unit immediately after that enemy unit enters from reserves and ends the movement phase within line of sight and range of the weapon. If used in this way, the firing model may not shoot in the shooting phase of its following turn.",
+        "hidden": false
+      },
+      {
+        "name": "Haywire",
+        "id": "ec45-ce62-1a5f-6ce7",
+        "description": "Instead of normal armor penetration, roll dice. 1 = no effect, 2-5 = Glancing hit; 6 = penetrating hit.",
+        "hidden": false
+      },
+      {"name": "Lance", "id": "9367-8c64-553d-2552", "description": "Treat vehicle armor greater than 12 as a 12.", "hidden": false},
+      {"name": "Master-Crafted", "id": "8422-c3f7-e17e-105b", "description": "Re-roll one failed to-hit roll per turn.", "hidden": false},
+      {
+        "name": "Melta",
+        "id": "e3cf-733e-f8c1-0615",
+        "description": "When making armor penetration rolls, roll a 2D6 instead of a D6 if the target is at half range or less.",
+        "hidden": false
+      },
+      {
+        "name": "Monster Hunter",
+        "id": "53a7-be37-b0f6-5eff",
+        "description": "Units containing at least one model with this effect rerolls failed to wound rolls against monstrous creatures.",
+        "hidden": false
+      },
+      {
+        "name": "Pinning",
+        "id": "8979-6205-3168-e014",
+        "description": "Unsaved wounds caused by this weapon force the unit to take a Pinning Test (see PINNING).",
+        "hidden": false
+      },
+      {
+        "name": "Poison",
+        "id": "3667-02ba-e4fd-2cc6",
+        "description": "Wounds on a fixed number regardless of strength (i.e. 4+). If the attacker's strength is higher than the defender's toughness, re-roll failed wounds. Poison weapons have no effect against vehicles. Default value is 4+.",
+        "hidden": false
+      },
+      {
+        "name": "Rampage",
+        "id": "7e3c-a817-9d6e-6905",
+        "description": "Models gain +D3 attacks if the enemy units contain more models than friendly models that are locked in close combat.",
+        "hidden": false
+      },
+      {
+        "name": "Rending",
+        "id": "e2ce-19f2-2c05-d5a4",
+        "description": "On a wound roll of a 6, causes automatic wound and the weapon is treated as AP2 for ranged attacks and a power weapon attack for melee attacks. Against vehicles, a penetration roll of a 6 adds an additional D3 to the result of the penetration roll.",
+        "hidden": false
+      },
+      {
+        "name": "Smash",
+        "id": "fd19-02d1-70f1-2a01",
+        "description": "Melee attacks are treated as power weapons (i.e. ignore armor saves). Additionally, this unit may choose to exchange all of its normal attacks to conduct a single smash attack instead. This is resolved at double strength (up to max of 10).",
+        "hidden": false
+      },
+      {"name": "Shred", "id": "9d0f-c0c1-a396-d9d7", "description": "Re-rolls failed to wound rolls.", "hidden": false},
+      {
+        "name": "Soul Blaze",
+        "id": "65b0-6096-1562-6e23",
+        "description": "Units wounded by this attack are set ablaze. Roll D6 at the end of each turn. On a 4+, the unit takes D3 S4 AP5 hits with no cover saves. If less than 4, the blaze goes out and the effect is removed.",
+        "hidden": false
+      },
+      {
+        "name": "Split Fire",
+        "id": "53f4-8643-346d-5641",
+        "description": "If a unit has this listed as a special rule rule, it automatically passes any of its split fire test and may also split its fire between up to three (instead of two) different targets.",
+        "hidden": false
+      },
+      {"name": "Sniper", "id": "3541-4c31-fad4-c0a0", "description": "Hits on a 2+, wounds on 4+. Gains Rending and Pinning.", "hidden": false},
+      {
+        "name": "Strikedown",
+        "id": "536e-7518-f863-4eed",
+        "description": "Models suffering one or more wounds from this weapon (even if saved) move as if in difficult terrain on its next turn.",
+        "hidden": false
+      },
+      {
+        "name": "Torrent",
+        "id": "7586-2fd8-1652-aef8",
+        "description": "Place the flame template in any orientation so long as the template is entirely within 12” range and the tip of the narrower end is closer to the firing model than the tip of the wider end.",
+        "hidden": false
+      },
+      {
+        "name": "Twin-Linked",
+        "id": "b234-202b-7a03-3959",
+        "description": "Re-roll failed to-hit rolls with this weapon. Does not count as two weapons. Twin-linked Template weapons automatically hit all models fully or partially under the template.",
+        "hidden": false
+      },
+      {
+        "name": "Two-Handed",
+        "id": "29de-59ef-a592-80d5",
+        "description": "Model attacking with this weapon does not receive a bonus attack for having additional close combat weapons.",
+        "hidden": false
+      },
+      {
+        "name": "Unwieldy",
+        "id": "84eb-3958-c150-f8c8",
+        "description": "Model attacking with this weapon is at Initiative 1 unless it’s a monstrous creature or vehicle walker.",
+        "hidden": false
+      },
+      {"name": "Missile Lock", "id": "0a04-19cc-c15e-1a98", "description": "Missiles fired by this unit scatter D6” rather than 2D6”.", "hidden": false},
+      {
+        "name": "Skyfire",
+        "id": "73e4-87f7-5c84-7152",
+        "description": "Models shooting with this effect use their normal Ballistic Skill when shooting at flyers, flying creatures, and skimmers, and can only snap fire at other targets.",
+        "hidden": false
+      },
+      {
+        "name": "Strafing Run",
+        "id": "c5ea-97bd-938b-9e75",
+        "description": "When shooting Assault/Heavy/Rapid Fire/Salvo weapons at ground units (without flyer or skimmer type) this vehicle has +1 BS and all shots count as pinning.",
+        "hidden": false
+      },
+      {
+        "name": "Supersonic",
+        "id": "e48d-0878-2388-0115",
+        "description": "Moving at Flat Out speed must move at least 18” and up to a max of 36”. Cannot enter hover mode.",
+        "hidden": false
+      },
+      {
+        "name": "Vector Dancer",
+        "id": "0e0a-c2ad-38f3-c854",
+        "description": "Can make an additional pivot on the spot up to 90-degrees at the end of its move. Cannot move at flat out speed in the following turn.",
+        "hidden": false
+      },
+      {
+        "name": "Vector Strike",
+        "id": "cdbd-8690-67f6-bde5",
+        "description": "Nominate an unengaged model this unit has moved over. That unit takes D3+1 hits resolved at the model’s unmodified strength and AP3. Against vehicles hits are resolved on the side armor. A model making a vector strike counts as having moved for shooting.",
+        "hidden": false
+      },
+      {"name": "DOZER BLADE", "id": "f5ea-3ab8-40ff-891e", "description": "Vehicles with a dozer blade may reroll failed dangerous terrain tests.", "hidden": false},
+      {
+        "name": "EXTRA ARMOR",
+        "id": "552a-3289-b725-0622",
+        "description": "Vehicles with extra armor count Crew Stunned results as Crew Shaken instead.",
+        "hidden": false
+      },
+      {
+        "name": "HUNTER-KILLER MISSILE",
+        "id": "481d-e30a-0cab-1544",
+        "description": "One-time use using the vehicle’s BS. Infinite range, S8, AP3, Heavy 1.",
+        "hidden": false
+      },
+      {
+        "name": "SEARCHLIGHT",
+        "id": "d1c6-8853-bf81-9e1f",
+        "description": "Can be used if NIGHT FIGHTING rules are in effect. Can illuminate itself and a chosen target, negating the effect of night fighting.",
+        "hidden": false
+      },
+      {
+        "name": "SMOKE LAUNCHERS",
+        "id": "726a-8da8-4d56-a424",
+        "description": "Once per game, instead of shooting the smoke launchers may be used. The vehicle and any models within 6” (friend or foe) count as being obscured behind soft cover (5+ save) against shooting attacks until the start of the vehicle’s next turn. Can be used even if the vehicle is shaken or stunned.",
+        "hidden": false
+      },
+      {
+        "name": "ASSAULT",
+        "id": "90ba-c645-5463-675c",
+        "description": "Assault weapons fire X-number of times in the shooting phase.\nUnits with models that shoot with an assault weapon are still eligible to charge in the assault phase.\nModels in units that advance in the movement phase are able to shoot with an assault weapon in the shooting phase, but only shoot with SNAP FIRE.",
+        "hidden": false
+      },
+      {
+        "name": "Barrage weapons or “G”",
+        "id": "4be3-e43e-d726-f0ac",
+        "description": "Typically also count as BLAST weapons (see below), and can either be shot with DIRECT FIRE (treated as a blast weapon) or fired using INDIRECT FIRE. \nINDIRECT FIRE: When fired using indirect fire, the shooting model does not need line of sight to its target and does not use the shooting model’s ballistic skill. Instead, center a BLAST marker on a specific model in range and within the target unit and roll to scatter (2D6” + scatter dice). If a HIT is rolled the blast marker hits the target - otherwise it scatters 2D6” in the direction indicated.\n\n\nDIRECT FIRE: If firing with direct fire, the weapon is subject to the normal shooting rules and may disregard any minimum shooting ranges.\nAny model fully under the template is automatically hit, models partially under are hit on a 4+.\n\n\nPINNING: Units suffering unsaved wounds from INDIRECT FIRE barrage attacks must take a pinning test.\n\n\nMULTIPLE BARRAGE BLASTS: Determine the location of a single barrage hit as normal. For subsequent shots, roll the scatter dice only (no 2D6s) and place the subsequent templates touching the edge of the first template in the direction indicated. On a HIT, templates may be placed anywhere touching or overlapping the first.\n\n\nSTRUCTURES & BUILDING LEVELS: For INDIRECT FIRE, the blast marker only hits models on the top most level at the position of the marker. If the center of the marker scatters over lower levels, move the blast marker to the next level exposed below the blast marker.\n\n",
+        "hidden": false
+      },
+      {
+        "name": "BLAST",
+        "id": "df7e-70a0-4131-50db",
+        "description": "Blast weapons use the normal or large circular blast markers to determine the number of hits by the weapon.\nWhen resolving a blast weapon attack, place the blast marker centered on a hittable model in the target unit. Then, roll to hit as normal using the shooting model’s BS, and apply the results below:\nIf the shot hits: Models wholly under the marker are hit, and models partially under are hit on a 4+.\nIf the shot misses: Roll a scatter dice and move the marker 2D6” in the direction indicated. If a hit is rolled on the scatter dice, it is still moved in the direction of the smaller arrow on the “hit” dice face. Models wholly under the marker are hit, and models partially under are hit on a 4+.\nMaximum Scatter: The maximum distance a blast weapon can scatter is equal to half of the distance between the shooting model and the target location. If the 2D6” result is higher than this distance, use the maximum scatter distance instead of the 2D6” result.\n\n\nALLOCATING HITS & WOUNDS: Hits and wounds resulting from blast weapons do not need to be allocated to the exact models “hit” by the blast marker or even to hittable models only. Hits and wounds can be allocated to any models in the unit. If models from multiple units are hit, hits are resolved separately for each unit.\n\n\nMULTIPLE BLASTS: If the attacking unit shoots with multiple blast weapons, roll to hit and scatter for each weapon once at a time to determine the number of hits made on the unit. Then roll to wound for all of those hits along with any other weapon hits.\n\n\nVEHICLES & BLASTS: Vehicles touched by any part of the blast marker are hit automatically. The facing hit is still determined based on the position of the shooting model relative to the vehicle’s facing arcs.\n\n\nSTRUCTURES & BUILDING LEVELS: The blast marker must be positioned over models at a chosen level within the structure. If the shot hits, only models under the blast marker on that level are hit. If the shot scatters, only models on that level are hit, and if no models are hit then the shot is a complete miss (it doesn’t hit models on a higher or lower level).\n\n\nSHOOTING INTO ENGAGEMENTS: Position blast markers as normal, making note of the total number of models hit by the template, regardless of which side the models are on. After determining the total number hit, roll as described in SHOOTING INTO MELEE COMBAT to determine how many models in each unit are hit.\n\n",
+        "hidden": false
+      },
+      {
+        "name": "HEAVY",
+        "id": "a813-acac-83c1-1dae",
+        "description": "HEAVY X: Heavy weapons fire X-number of times in the shooting phase.\nHeavy weapons may fire normally so long as the firing model has not moved (even if other models in the unit have moved during the turn).\nIf a model with a heavy weapon moves during its movement phase, it may only fire with SNAP FIRE.\nUnits with models firing heavy weapons may not charge in the assault phase.",
+        "hidden": false
+      },
+      {
+        "name": "ORDNANCE",
+        "id": "bfe3-b9fb-4a3a-7b8e",
+        "description": "Figurine models cannot fire ordnance weapons if they moved in the movement phase (not even with snap fire)\nUnits with models that fired with ordnance weapons cannot charge in the assault phase.\nVehicle models that fire with ordnance weapons cannot fire, or have fired, any other weapons that turn.\nOrdnance weapons roll 2D6 on the vehicle damage table, picking the highest result.",
+        "hidden": false
+      },
+      {
+        "name": "PISTOLS",
+        "id": "6f7a-a424-70fb-a859",
+        "description": "PISTOL X: Pistol weapons fire X-number of times in the shooting phase.\nAll pistol weapons also count as an ASSAULT weapon (see above).\nAll pistol weapons count as a melee weapon in close combat fights. However, the pistol weapon itself is not actually fired and used in close combat.",
+        "hidden": false
+      },
+      {
+        "name": "RAPID FIRE",
+        "id": "7b76-ee3c-d78b-87b7",
+        "description": "NUMBER OF SHOTS: Rapid fire weapons may shoot once at their maximum range or twice at half of their maximum range.\nUnits with models firing rapid fire weapons may not charge in the assault phase.",
+        "hidden": false
+      },
+      {
+        "name": "SALVO",
+        "id": "3005-3179-8a26-98b3",
+        "description": "Salvo weapons have two numbers next to the Salvo tag, expressed as “Salvo X/Y”.\nA model that moved may fire a Salvo weapon a number of times equal to the first number (X) at up to half of the weapon’s maximum range.\nA model that did not move may fire a Salvo weapon a number of times equal to the second number (Y) at the weapon’s maximum range. \nUnits with models firing salvo fire weapons may not charge in the assault phase.",
+        "hidden": false
+      },
+      {
+        "name": "TEMPLATE",
+        "id": "3cc9-69ad-c533-4995",
+        "description": "Template weapons use the teardrop shaped flamer template. \nThe target for a template weapon attack must be declared as normal. So long as at least one model in the target unit is hit, the template may be positioned to touch models from other units as well.  \nThe narrow end of the template is placed in base to base contact with the shooting model and aligned straight out from the model in a chosen direction.\nModels fully under the template are hit automatically, and models partially under are hit on a 4+.\n\n\nIGNORES COVER: Template weapons ignore the cover effects and models hit may not utilize cover saves.\nALLOCATING HITS: Hits and wounds resulting from template weapons do not need to be allocated to the exact model “hit” by the template marker - they can be allocated to any hittable models as normal.\n\n\nSNAP FIRE: If the shooting model is subject to shooting with SNAP FIRE, then all models wholly or partially under the template are only hit on a 4+.\n\n\nSTRUCTURES & BUILDING LEVELS: The template marker can be positioned to fire on the same level as the shooting model or one level higher or lower. In all cases, keep the template marker flat horizontally when determining what models are struck.\n\n\nSHOOTING INTO ENGAGEMENTS: Position Template as normal, making note of the total number of models hit by the template, regardless of which side the models are on. After determining the total number hit, roll as described in SHOOTING INTO MELEE COMBAT to determine how many models in each unit are hit.",
+        "hidden": false
+      },
+      {
+        "name": "FORCE WEAPONS",
+        "id": "c501-98fd-a8da-c5dc",
+        "description": "Count as a power weapon. Additionally, a PSYKER wielding a force weapon may make a psychic test after inflicting one or more unsaved wounds. If the test is passed, each unsaved wound deals a massive wound (D3 damage).",
+        "hidden": false
+      },
+      {
+        "name": "LIGHTING CLAWS (SPECIALIST WEAPON)",
+        "id": "8e5e-98a6-7f9d-d0ac",
+        "description": "Counts as a power weapon. Attacker may re-roll failed wounds.",
+        "hidden": false
+      },
+      {
+        "name": "POWER WEAPONS",
+        "id": "b137-bbc1-87fa-18e0",
+        "description": "Negate the target’s normal armor save. Invulnerable saves may be taken.",
+        "hidden": false
+      },
+      {
+        "name": "POWER FIST (SPECIALIST WEAPON)",
+        "id": "578d-03d8-0221-b551",
+        "description": "Negate normal armor saves (as a power weapon) and also doubles the users strength, however the weapon is UNWIELDY (strikes at initiative 1)",
+        "hidden": false
+      },
+      {
+        "name": "SPECIALIST WEAPONS",
+        "id": "0e3f-79a1-b59a-87e7",
+        "description": "Specialist weapons do not grant a +1 bonus for wielding two melee weapons unless the two melee weapons are the exact same specialist weapon.",
+        "hidden": false
+      },
+      {
+        "name": "THUNDER HAMMERS (SPECIALIST WEAPON)",
+        "id": "d83e-48f9-a01e-c580",
+        "description": "Counts as a POWER FIRST. Additionally, models that suffer an unsaved wound strike at Initiative 1 until the end of the next player’s turn. Vehicles hit also suffer crew stunned in addition to any other damage results.",
+        "hidden": false
+      },
+      {"name": "UNWIELDY", "id": "aa70-7cc4-c407-db4c", "description": "Weapons that are unwieldy strike at initiative 1.", "hidden": false},
+      {
+        "name": "WITCHBLADES",
+        "id": "dddd-89a5-23ce-e8e8",
+        "description": "Always wounds on a 2+, with armor saves as normal. Count as Strength 9 against vehicles.",
+        "hidden": false
+      },
+      {
+        "name": "INDEPENDENT CHARACTER",
+        "id": "52ae-1673-b8f1-1cff",
+        "description": "JOINING UNITS: Independent characters can join a unit and will function as part of that unit for movement, coherency, shooting, leadership, assaulting, and other purposes. \nIndependent Characters may NOT join units that include vehicle models or monstrous creatures models.\n\n\nJOINING DURING DEPLOYMENT: Independent characters may be JOINED to a unit prior to deployment. If the joined units were placed in reserve, they count as a single unit when rolling to enter play from reserve.\nIf either unit has any special deployment rules (infiltrator, deep strike, etc.) in order for that ability to be used both the unit and the independent character must have the same ability.\n\n\nJOINING & LEAVING A UNIT: During the MOVEMENT phase independent characters may join or leave friendly units as follows:\nMay JOIN a unit by moving within coherency of the unit and declaring they wish to join the unit after completing their move. The joined unit may not move after being joined by the independent character.\nMay LEAVE a joined unit by declaring they wish to leave before moving the unit or character.\nA character may not join and leave (or leave and join) a unit in the same turn.\nAn independent character cannot leave a unit that is engaged in melee, BROKEN, or PINNED.\n\n\nDURING SHOOTING: Independent characters joined to a unit may always declare and resolve shooting against a different target than the joined unit, whether or not the joined unit SPLITS FIRE.\n\n\nDURING ASSAULT PHASE:\nIf joined to a unit, independent characters must charge with that unit and get into base-to-base contact with an enemy model if possible.\nWhen in a melee engagement, they are treated as part of the unit and allocate their attacks and can be allocated wounds as if they were a normal model in the unit.\nIndependent characters may make pile-in moves first (instead of using the closest model) to ensure that they are able to stay engaged in the melee fight.\n\n\nALLOCATING WOUNDS: When a unit that has been joined by independent characters suffers an unsaved wound, those wounds do NOT have to be allocated to an already wounded independent character (circumventing the normal rule for applying unsaved wounds to wounded models first).\n\n\nSHOOTING INDEPENDENT CHARACTERS: Independent characters that have not joined a unit may only be selected as a target for shooting attacks if at least one of the following situations apply:\nThe independent character is within 18” AND is the closest figurine model to the attacker.\nThe independent character is more than 18” away AND more than 6” from a friendly figurine unit.\nThe independent character is a monstrous creature or flying monstrous creature.\n\n",
+        "hidden": false
+      },
+      {
+        "name": "ZOOMING FLYERS",
+        "id": "98c0-43dc-2906-cfa6",
+        "description": "Flyers that are moving in zooming mode completely ignore underlying terrain, and are assumed to always be moving above it.",
+        "hidden": false
+      },
+      {
+        "name": "VEHICLES & DIFFICULT TERRAIN",
+        "id": "a337-cd82-7089-9d42",
+        "description": "Vehicles are not slowed by difficult terrain and do not need to take difficult terrain tests. Instead, vehicles moving through difficult terrain treat that terrain as dangerous terrain.",
+        "hidden": false
+      },
+      {
+        "name": "SKIMMERS & HOVERING FLYERS",
+        "id": "54cc-6d7d-c637-ad1e",
+        "description": "Skimmers and hovering flyers ignore underlying terrain when moving. If they end their move in difficult terrain or dense terrain where any part of the terrain feature reaches the bottom of the model’s hull in height, it must take a dangerous terrain test.",
+        "hidden": false
+      },
+      {
+        "name": "TRANSPORTS",
+        "id": "3bbd-44c5-f3f9-4118",
+        "description": "Vehicles that are TRANSPORTS allow specific types of models (typically infantry) to EMBARK or DISEMBARK from the vehicle over the course of the game by moving within proximity of a vehicle’s ACCESS POINTS.\n\n\nACCESS POINTS: A vehicle’s profile identifies the location of a vehicle’s access points. \nOPEN-TOPPED: Open-topped vehicles treat the entire HULL of the vehicle as an access point.\n\n\nTRANSPORT CAPACITY: Each transport has a listed transport capacity in its profile. A unit may not embark onto a transport if the vehicle’s transport capacity is below the current number of models in the unit.\nA unit may not embark and disembark (or disembark and then embark) from transports in the same turn.\n\n\nEMBARKING: A whole unit may enter a transport if each model in the embarking unit can be moved to finish its move within 2” of one of the vehicle’s access points. \nIf able to embark, remove the unit from the table and note that the unit is embarked in that specific transport.\nUnits may embark before or after the vehicle has moved.\nOnly one unit can be transported at a time (including any attached INDEPENDENT CHARACTERS).\n\n\nDISEMBARKING: Units embarked on the vehicle may disembark as follows:\nBefore the vehicle moves: \nPlace all models within 2” of the access points.\nThe disembarked unit acts as normal for the remainder of the turn and make make a normal move, advance move, shoot, and assault as normal.\nThe disembarked unit counts as having moved for the turn.\nAfter the vehicles moved 12” or less\nPlace all models within 2” of the access points.\nThe unit may NOT ADVANCE in the movement phase\nThe unit may shoot as normal in the shooting phase.\nThe unit may declare a charge in the assault phase but does not gain any bonus attacks from charging.\n\n\nASSAULT VEHICLES: Vehicles listed as ASSAULT vehicles allow passengers to disembark, charge, AND receive their charge bonus as normal, even if the vehicle moved before passengers disembarked.\nOPEN-TOPPED: Open-topped vehicles always count as ASSAULT vehicles as well.\n\n\nUSING DEDICATED TRANSPORTS: Many units have an option to take a DEDICATED TRANSPORT as an option for the unit. Only the unit that the transport was purchased for may be deployed in the transport at the start of the game. Once the game begins, any unit may use the transport.\n\n",
+        "hidden": false
+      },
+      {
+        "name": "Deep strike",
+        "id": "16af-70ce-610b-a1f4",
+        "description": "Units that enter play from reserves by Deepstriking are placed directly on the board and do not have to move onto the table from a table edge. The following process is used to determine how a deepstriking unit enters play.\n\n\n(1) DETERMINE TARGET LOCATION\nWhen a unit with deepstrike is available to enter play from reserves, place one model (the “center model”) from the deepstriking unit anywhere on the table that is more than 2” from any enemy models.\n\n\n(2) ROLL FOR DEEPSTRIKE SCATTERING\nRoll a 2D6 + scatter die.\nIf a hit is rolled, place remaining models in the unit per step (3) below.\nIf a scatter direction is rolled, determine the adjusted location for the center model, which is 2D6\" in the direction shown by the scatter die (don't move the center model yet!).\n\n\nAdjusted location:\nIf the center model's adjusted location would be on top of a friendly model, move the center model in the indicated direction stopping 2” short from the friendly model.\nIf the center model's adjusted location falls in impassable terrain, off the table, or on top of or within 2\" of an enemy model, a DEEPSTRIKE MISHAP occurs.\nDEEPSTRIKE MISHAP: If a deepstrike mishap occurs, the opposing player instead places the center model within 12” of the target location in any direction of their choosing.\nThe chosen direction cannot result in the adjusted location being on impassable terrain, off the table, within 2\" of an enemy model, OR within 2” of its original position. If no viable direction exists, the unit returns to the reserve pool to be redeployed next turn.\nThe unit suffering a deepstrike mishap must also pass a PINNING TEST (see PINNING) or will become pinned for the remainder of the turn.\n\n\n(3) PLACE REMAINING MODELS\nOnce a valid adjusted location is determined, move the center model to that location. \nPlace all other models in the deepstriking unit within 2\" of the center model. \nModels may not be placed on impassable terrain or within 2\" of enemy models. \nAny models which cannot be placed within 2\" of the center model may be placed in base-to-base contact with another model and as close to the center model as possible. Should there be no space available to place a given model, that model is destroyed.\n\n\nUSING DEEPSTRIKING UNITS\nOnce a deepstriking unit is placed on the table, it is subject to the following restrictions for the remainder of turn:\nModels entering play via deepstriking or disembarking from deepstriking vehicles, may not take a normal move after arriving (or disembarking). However, the unit may shoot, advance D6”, or assault.\nCHARGING AFTER DEEPSTRIKING: Units charging on the turn that they arrived via deepstriking do not gain any bonus attacks for charging AND do not gain any benefits from having assault grenades.  \nDEEPSTRIKING VEHICLES: Vehicles count as having moved at cruising speed on the turn they arrive.\n\n",
+        "hidden": false
+      },
+      {"name": "One shot", "id": "e9b6-fd95-f77d-60d1", "description": "Can only be shot once per game per unit.", "hidden": false},
+      {
+        "name": "ASSAULT/FRAG/PLASMA GRENADES",
+        "id": "588a-161c-56c4-0ac4",
+        "description": "Any model equipped with assault, frag, or plasma grenades (or other equipment that provides a similar effect) that charged into the melee combat this turn ignores the initiative penalty for charging through cover (the models attack at its normal initiative value).",
+        "hidden": false
+      },
+      {
+        "name": "DEFENSIVE GRENADES",
+        "id": "f990-1304-56e7-0d3e",
+        "description": "If a unit with defensive grenades (e.g. Photon grenades) was unengaged at the start of the current assault phase and charged this turn, all charging units lose their bonus attack for charging (counts as a DISORDERED CHARGE).",
+        "hidden": false
+      }
+    ],
     "sharedSelectionEntries": [
       {
         "name": "Battle Size",
@@ -268,6 +973,174 @@
                 "constraints": [{"id": "02b3-be6a-acee-1146", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Warlord",
+        "id": "aa89-877f-47e6-bc8e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Warlord", "id": "e0e3-296a-b01d-ebcc", "hidden": false, "primary": false, "targetId": "8fbc-03bd-b3d1-e212"}],
+        "constraints": [{"id": "03ae-c2dc-fcf7-50cb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord Traits",
+        "id": "e7a5-5493-266f-a794",
+        "hidden": true,
+        "constraints": [
+          {
+            "id": "4ce5-98b5-a430-9a86-min",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "4ce5-98b5-a430-9a86-max",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "8fbc-03bd-b3d1-e212", "childName": "Warlord", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Inspiring presence",
+            "id": "504d-c642-3113-705b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "1f7a-8dca-b8a7-4979", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Inspiring presence",
+                "id": "5fc5-d9b9-d833-dae4",
+                "description": "Friendly units within 12\" of the Warlord can use his Leadership rather than their own.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "The Dust of a Thousand Worlds",
+            "id": "1d0c-05a0-ed88-ea7b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "c3e8-b948-38c4-3e72", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Move Through Cover", "id": "0d06-4717-ab98-4f96", "hidden": false, "targetId": "f848-a065-305c-f829", "type": "rule"}],
+            "rules": [
+              {
+                "name": "The Dust of a Thousand Worlds",
+                "id": "e2e4-7a58-ab6d-8edc",
+                "description": "Your Warlord, and all friendly units within 12\", have the Move Through Cover special rule.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Master of Manoeuvre",
+            "id": "005f-350f-1889-2a5c",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "70eb-d596-6c0e-c221", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Outflank", "id": "74d5-e521-714a-3e3e", "hidden": false, "targetId": "c6e6-e60b-d3e3-75c9", "type": "rule"}],
+            "rules": [
+              {
+                "name": "Master of Manoeuvre",
+                "id": "854e-744d-ed1f-788b",
+                "description": "Your Warlord has the Outflank special rule (not conferred to units he joins).",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Target Priority",
+            "id": "a128-a673-72e0-ce3e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "6183-ebbc-9ecb-0fd4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Target Priority",
+                "id": "9727-d765-4c8c-24d3",
+                "description": "In the Shooting phase your Warlord and all friendly unit within 12\" of him reroll To Hit of 1.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Master of Defense",
+            "id": "f9b5-0643-0a1b-cde2",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "f8cd-e9e9-2b8e-61e4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Counter-Attack", "id": "4bd5-fe3b-7546-163b", "hidden": false, "targetId": "48b1-cb43-2bf9-87d4", "type": "rule"}],
+            "rules": [{"name": "Master of Defense", "id": "125e-14e5-3c6f-4ab8", "description": "Your Warlord has the Counter-Attack special rule.", "hidden": false}]
+          },
+          {
+            "name": "Tenacity",
+            "id": "ba11-0a05-6b74-0be1",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "869c-ab03-67b7-4ad9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [{"name": "Tenacity", "id": "6f0d-bb95-0253-f6a2", "description": "Your Warlord has the Feel No pain Special rule (5+).", "hidden": false}]
+          },
+          {
+            "name": "Coordinated Assault",
+            "id": "15db-fed4-5bd4-1052",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "b3f0-e53c-360e-5011", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [
+              {
+                "name": "Coordinated Assault",
+                "id": "8aeb-afe9-2f8f-eabd",
+                "description": "In the Assault phase, your Warlord and all friendly unit within 12\" of him To Hit rolls of 1.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Master of Offense",
+            "id": "d0a2-f31c-1de0-b5aa",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "e65c-0002-081c-5f60", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Furious Charge", "id": "c4fd-e80d-0644-4954", "hidden": false, "targetId": "6297-1817-33c0-10da", "type": "rule"}],
+            "rules": [{"name": "Master of Offense", "id": "0286-db93-7421-7e93", "description": "Your Warlord has the Furious Charge special rule.", "hidden": false}]
+          },
+          {
+            "name": "Strategic Genius",
+            "id": "722d-0389-94dc-4536",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "7787-b862-6fa6-2941", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "rules": [{"name": "Strategic Genius", "id": "eb2d-37cf-785d-2e6e", "description": "Whilst your Warlord is alive, you can re-roll any Reserve Rolls", "hidden": false}]
           }
         ]
       }
