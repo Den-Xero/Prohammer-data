@@ -59,7 +59,7 @@
         ]
       }
     ],
-    "costTypes": [{"name": "Pts", "id": "4d85-53ef-f7e1-10d4", "defaultCostLimit": -1}],
+    "costTypes": [{"name": "Pts", "id": "51b2-306e-1021-d207", "defaultCostLimit": -1}],
     "forceEntries": [
       {
         "name": "Standard Mission",
