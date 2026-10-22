@@ -149,7 +149,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "a93f-f391-7094-3972", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 13}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
         "entryLinks": [
           {
             "name": "Gauss flayer",
@@ -249,7 +249,7 @@
           {"name": "Infantry", "id": "d5fb-fc30-afaf-f29c", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "63b9-d08f-9ce6-c7ab", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 35}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
         "infoLinks": [
           {"name": "Ever-Living", "id": "872b-9357-ec7e-241d", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
           {"name": "Reanimation protocols", "id": "b7be-8c65-00bc-c829", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
@@ -333,7 +333,7 @@
                 "import": true,
                 "targetId": "c1dc-3228-e530-1330",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               },
               {
                 "name": "Warscythe",
@@ -342,7 +342,7 @@
                 "import": true,
                 "targetId": "7179-9439-99a2-780a",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               },
               {
                 "name": "Voidblade",
@@ -351,7 +351,7 @@
                 "import": true,
                 "targetId": "1129-4a64-dce6-d0cb",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               }
             ]
           },
@@ -369,7 +369,7 @@
                 "import": true,
                 "targetId": "2256-72d0-d7b5-e435",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Phase shifter",
@@ -378,7 +378,7 @@
                 "import": true,
                 "targetId": "c3d2-3ca7-cdd2-ee10",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 45}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}]
               },
               {
                 "name": "Resurrection orb",
@@ -387,7 +387,7 @@
                 "import": true,
                 "targetId": "5fa2-12cd-621a-013b",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
               },
               {
                 "name": "Tesseract labyrinth",
@@ -396,7 +396,7 @@
                 "import": true,
                 "targetId": "7407-0ab3-3c72-f591",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
               },
               {
                 "name": "Sempiternal weave",
@@ -405,7 +405,7 @@
                 "import": true,
                 "targetId": "2cde-f55a-52dd-9ae5",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               }
             ]
           }
@@ -537,7 +537,7 @@
           {"name": "Necron Overlord", "id": "25a9-426c-185d-2cb5", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
           {"name": "HQ", "id": "be29-7d20-ff50-ee93", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 90}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
         "entryLinks": [
           {"name": "Warlord", "id": "602d-7ba1-cd97-d982", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "e7be-15ab-fc73-d671", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -575,7 +575,7 @@
                 "conditions": [
                   {
                     "childId": "3390-8c71-454e-b86c",
-                    "childName": "Sempiternal weave",
+                    "childName": "3390-8c71-454e-b86c",
                     "field": "selections",
                     "includeChildSelections": true,
                     "scope": "parent",
@@ -643,7 +643,7 @@
                 "import": true,
                 "targetId": "c1dc-3228-e530-1330",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               },
               {
                 "name": "Voidblade",
@@ -652,7 +652,7 @@
                 "import": true,
                 "targetId": "1129-4a64-dce6-d0cb",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               },
               {
                 "name": "Warscythe",
@@ -661,7 +661,7 @@
                 "import": true,
                 "targetId": "7179-9439-99a2-780a",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               }
             ]
           },
@@ -678,7 +678,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
                 "infoLinks": [{"name": "Relentless", "id": "995c-c383-14d6-4214", "hidden": false, "targetId": "a1f2-fdff-97f6-5719", "type": "rule"}],
                 "rules": [{"name": "Phaeron", "id": "3a1b-c518-c6e2-165e", "description": "A Phaeron, and any unit he is with, have the Relentless special rule.", "hidden": false}]
               }
@@ -698,7 +698,7 @@
                 "import": true,
                 "targetId": "2256-72d0-d7b5-e435",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Sempiternal weave",
@@ -707,7 +707,7 @@
                 "import": true,
                 "targetId": "2cde-f55a-52dd-9ae5",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Tesseract labyrinth",
@@ -716,7 +716,7 @@
                 "import": true,
                 "targetId": "7407-0ab3-3c72-f591",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
               },
               {
                 "name": "Resurrection orb",
@@ -725,7 +725,7 @@
                 "import": true,
                 "targetId": "5fa2-12cd-621a-013b",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
               },
               {
                 "name": "Phase shifter",
@@ -735,7 +735,7 @@
                 "targetId": "c3d2-3ca7-cdd2-ee10",
                 "type": "selectionEntry",
                 "constraints": [{"id": "29f0-c886-0b74-914c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 45}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}]
               },
               {
                 "name": "Tachyon arrow",
@@ -744,7 +744,7 @@
                 "import": true,
                 "targetId": "0f56-b8af-9740-1f6c",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
               },
               {
                 "name": "Phylactery",
@@ -753,7 +753,7 @@
                 "import": true,
                 "targetId": "1527-4ad8-192b-8775",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               }
             ]
           },
@@ -896,7 +896,7 @@
           {"name": "Character", "id": "6baf-40cd-ad6f-e290", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "HQ", "id": "bbfc-4705-dfa7-b768", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 125}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 125}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 125}],
         "entryLinks": [
           {"name": "Warlord", "id": "c210-9d87-4d92-ef76", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "18b0-e835-008b-19e7", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -987,7 +987,7 @@
                 "import": true,
                 "targetId": "1129-4a64-dce6-d0cb",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               },
               {"name": "Warscythe", "id": "3271-cda1-dbab-6d1b", "hidden": false, "import": true, "targetId": "7179-9439-99a2-780a", "type": "selectionEntry"}
             ]
@@ -1005,7 +1005,7 @@
                 "import": true,
                 "targetId": "2cde-f55a-52dd-9ae5",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Mindshackle scarabs",
@@ -1014,7 +1014,7 @@
                 "import": true,
                 "targetId": "2256-72d0-d7b5-e435",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Tachyon arrow",
@@ -1023,7 +1023,7 @@
                 "import": true,
                 "targetId": "0f56-b8af-9740-1f6c",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
               },
               {
                 "name": "Resurrection orb",
@@ -1032,7 +1032,7 @@
                 "import": true,
                 "targetId": "5fa2-12cd-621a-013b",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
               }
             ]
           }
@@ -1048,7 +1048,7 @@
           {"name": "Infantry", "id": "3e85-f117-08aa-1361", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "b31b-dc3e-2b98-e9c1", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 25}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}],
         "infoLinks": [
           {"name": "Ever-Living", "id": "5373-b844-1d07-353e", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
           {"name": "Reanimation protocols", "id": "9616-bfa2-74e9-9f43", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
@@ -1133,7 +1133,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "entryLinks": [
                   {
                     "name": "Eldritch lance",
@@ -1163,7 +1163,7 @@
                         "targetId": "c21c-59a5-0e51-e8f5",
                         "type": "selectionEntry",
                         "constraints": [{"id": "0d2d-fcaf-fce1-ed0d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}]
                       },
                       {
                         "name": "Gaze of flame",
@@ -1173,7 +1173,7 @@
                         "targetId": "97ff-36e5-0bb7-834e",
                         "type": "selectionEntry",
                         "constraints": [{"id": "1b61-3972-f96c-d3db", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
                       }
                     ]
                   }
@@ -1214,7 +1214,7 @@
                         "targetId": "3ca1-0ec9-dbe9-dd81",
                         "type": "selectionEntry",
                         "constraints": [{"id": "c778-6806-4dd7-8a48", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
                       },
                       {
                         "name": "Timesplinter cloak",
@@ -1224,7 +1224,7 @@
                         "targetId": "f608-ddf3-dea8-0156",
                         "type": "selectionEntry",
                         "constraints": [{"id": "0ed6-75b5-24fe-b0aa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
                       }
                     ]
                   }
@@ -1265,7 +1265,7 @@
                         "targetId": "2673-60c7-07ad-a5f7",
                         "type": "selectionEntry",
                         "constraints": [{"id": "a527-febf-d2a6-36b2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
                       },
                       {
                         "name": "Lightning field",
@@ -1275,7 +1275,7 @@
                         "targetId": "98d5-7b7d-7650-7f8f",
                         "type": "selectionEntry",
                         "constraints": [{"id": "b601-d4c0-69c9-96d9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
                       }
                     ]
                   }
@@ -1287,7 +1287,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
                 "entryLinks": [
                   {
                     "name": "Tremorstave",
@@ -1316,7 +1316,7 @@
                         "targetId": "1bc9-f700-4f68-1c33",
                         "type": "selectionEntry",
                         "constraints": [{"id": "6bec-90db-a178-1cb0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 25}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}]
                       },
                       {
                         "name": "Seismic crucible",
@@ -1326,7 +1326,7 @@
                         "targetId": "9a47-f4ed-254d-9d97",
                         "type": "selectionEntry",
                         "constraints": [{"id": "bf1c-8685-2323-842a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
                       }
                     ]
                   }
@@ -1338,7 +1338,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
                 "entryLinks": [
                   {
                     "name": "Abyssal staff",
@@ -1379,7 +1379,7 @@
                             "value": 1
                           }
                         ],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
                       },
                       {
                         "name": "Veil of darkness",
@@ -1389,7 +1389,7 @@
                         "targetId": "c219-ed46-458a-bfc3",
                         "type": "selectionEntry",
                         "constraints": [{"id": "8262-7539-d725-f924", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
+                        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}]
                       }
                     ]
                   }
@@ -1756,7 +1756,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "5364-caa9-fa31-c747", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 17}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 17}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 17}],
         "infoLinks": [{"name": "Reanimation protocols", "id": "9780-9285-e965-8f72", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}],
         "profiles": [
           {
@@ -1900,7 +1900,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "ff0e-9d05-5f13-fded", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
         "infoLinks": [{"name": "Reanimation protocols", "id": "1590-a8ae-107f-3d45", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}],
         "profiles": [
           {
@@ -1962,7 +1962,7 @@
                 "import": true,
                 "targetId": "2439-9995-9690-11c3",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               }
             ]
           }
@@ -2049,7 +2049,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "6ed3-bbc7-bee9-3316", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 19}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 19}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 19}],
         "entryLinks": [{"name": "Synaptic disintegrator", "id": "b6a5-26c6-2953-8b92", "hidden": false, "import": true, "targetId": "1874-f4c2-849d-255d", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Reanimation protocols", "id": "07f3-745d-ad0b-8fef", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
@@ -2167,7 +2167,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "cb69-3c9c-4e05-8ea8", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 13}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
         "infoLinks": [
           {"name": "Deepstrike", "id": "963e-09b5-e539-19ee", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
           {"name": "Infiltrate", "id": "1546-9e34-1ddb-d422", "hidden": false, "targetId": "bd6c-904d-0285-5c7d", "type": "rule"},
@@ -2225,7 +2225,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Jump Infantry", "id": "bdc2-9f06-36a0-b5f5", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
         "infoLinks": [
           {"name": "Fearless", "id": "5c46-55cb-6665-600c", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
           {"name": "Reanimation protocols", "id": "ca97-7fa1-a400-58a4", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
@@ -2379,7 +2379,7 @@
           {"name": "Walkers", "id": "7ac1-57bc-e875-18eb", "hidden": false, "primary": false, "targetId": "05c3-9c36-1aa1-993c"},
           {"name": "Elites", "id": "18e3-7d81-a20e-3d8c", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 150}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 150}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 150}],
         "entryLinks": [
           {
             "name": "Quantum shielding",
@@ -2582,7 +2582,7 @@
           {"name": "Character", "id": "4fbc-ff21-219e-c59c", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Elites", "id": "8a68-5e57-6bf2-5b80", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 185}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
         "infoLinks": [
           {"name": "Fearless", "id": "0755-0b29-1c0a-ba71", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
           {"name": "Eternal Warrior", "id": "e8d6-2dc4-9847-526f", "hidden": false, "targetId": "e661-e545-4b0b-9bc6", "type": "rule"}
@@ -2652,7 +2652,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "infoLinks": [{"name": "Entropic Strike", "id": "a92a-41de-73f6-7386", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"}],
                 "rules": [
                   {
@@ -2681,7 +2681,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "rules": [
                   {
                     "name": "Lord of fire",
@@ -2709,7 +2709,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
                 "infoLinks": [{"name": "ASSAULT", "id": "f200-59c2-8b31-f1ce", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
                 "profiles": [
                   {
@@ -2745,7 +2745,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
                 "infoLinks": [
                   {"name": "ASSAULT", "id": "0b78-c9ae-c6cf-8618", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
                   {"name": "Stealth", "id": "4ab1-d030-9232-c01e", "hidden": false, "targetId": "705f-6f00-e003-7a63", "type": "rule"},
@@ -2778,7 +2778,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 25}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}],
                 "infoLinks": [
                   {"name": "ASSAULT", "id": "35c7-505f-161b-23e9", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
                   {"name": "BLAST", "id": "4b99-523c-226d-4a27", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
@@ -2817,7 +2817,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}],
                 "rules": [
                   {
                     "name": "Sentient singularity",
@@ -2845,7 +2845,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 35}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
                 "rules": [
                   {
                     "name": "Writhing worldscape",
@@ -2873,7 +2873,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
                 "rules": [
                   {
                     "name": "Grand illusion",
@@ -2901,7 +2901,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
                 "rules": [
                   {
                     "name": "Time's arrow",
@@ -2918,7 +2918,7 @@
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "340a-d6b4-12e0-f6c0", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 45}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}],
                 "infoLinks": [{"name": "ASSAULT", "id": "8ec8-4348-0008-0da8", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
                 "profiles": [
                   {
@@ -2954,7 +2954,7 @@
                     "value": 1
                   }
                 ],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 50}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
                 "rules": [
                   {
                     "name": "Gaze of death",
@@ -2975,7 +2975,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "JetBikes", "id": "0d57-bfa4-17c2-547f", "hidden": false, "primary": false, "targetId": "cf30-5b62-9ce0-3996"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
         "infoLinks": [{"name": "Reanimation protocols", "id": "f607-9988-8169-29e7", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}],
         "profiles": [
           {
@@ -3075,7 +3075,7 @@
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "8815-11fa-0226-5042", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
                 "rules": [{"name": "Nebuloscopes", "id": "136c-1b27-fb7b-6572", "description": "A model with a nebuloscope has a Ballistic Skill of 5", "hidden": false}]
               },
               {
@@ -3086,7 +3086,7 @@
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "9968-f141-b788-ae30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "infoLinks": [{"name": "Stealth", "id": "b8d1-f625-a07d-a679", "hidden": false, "targetId": "705f-6f00-e003-7a63", "type": "rule"}],
                 "rules": [{"name": "Shadowlooms", "id": "0096-891a-1d29-bccf", "description": "A model with a shadowloom has the stealth special rule", "hidden": false}]
               },
@@ -3098,7 +3098,7 @@
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "1de8-7019-abf1-e0ef", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "rules": [{"name": "Shield vanes", "id": "5c42-bc37-f5c6-c158", "description": "A model with a shield vanes has an armour save of 3+", "hidden": false}]
               }
             ]
@@ -3217,7 +3217,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Jump Infantry", "id": "ae9b-f52a-f68e-2019", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
         "entryLinks": [
           {
             "name": "Gauss cannon",
@@ -3267,7 +3267,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Jump Infantry", "id": "280a-0f6c-d5db-fd2b", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 60}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 60}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 60}],
         "entryLinks": [
           {
             "name": "Heavy Gauss cannon",
@@ -3403,7 +3403,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Jump Infantry", "id": "6f26-e337-2272-c848", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 35}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
         "entryLinks": [
           {
             "name": "Phase shifter",
@@ -3470,7 +3470,7 @@
                 "import": true,
                 "targetId": "1b39-b5b4-e751-bbf2",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               },
               {
                 "name": "Whip coils",
@@ -3479,7 +3479,7 @@
                 "import": true,
                 "targetId": "b3dc-cec7-4ac9-7ee9",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               },
               {
                 "name": "Transdimensional beamer",
@@ -3488,7 +3488,7 @@
                 "import": true,
                 "targetId": "3f49-f450-9676-763c",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               }
             ]
           }
@@ -3592,7 +3592,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Beast", "id": "ad92-06ea-12de-e0d3", "hidden": false, "primary": false, "targetId": "8a34-e6ae-d5ec-81ac"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
         "infoLinks": [
           {"name": "Entropic Strike", "id": "2dc6-9e79-c651-5a53", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"},
           {"name": "Fearless", "id": "5866-73a6-a059-582d", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
@@ -3650,7 +3650,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Monstrous Creature", "id": "ae26-7c7e-13f0-68cc", "hidden": false, "primary": false, "targetId": "8098-49a8-0559-48a1"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 50}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
         "infoLinks": [{"name": "Fearless", "id": "1483-fcb5-6bda-7b12", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"}],
         "profiles": [
           {
@@ -3697,7 +3697,7 @@
                 "targetId": "0cf7-4267-5998-c9fb",
                 "type": "selectionEntry",
                 "constraints": [{"id": "8ba1-44fe-7377-2a41", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}]
               },
               {
                 "name": "Gloom prism",
@@ -3707,7 +3707,7 @@
                 "targetId": "b986-a0ca-4f8b-c9f7",
                 "type": "selectionEntry",
                 "constraints": [{"id": "9a6a-dbd0-f93c-e7db", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Twin-Linked Particle Beamers",
@@ -3717,7 +3717,7 @@
                 "targetId": "2edd-103c-fd8c-b6ce",
                 "type": "selectionEntry",
                 "constraints": [{"id": "c405-414d-3e8c-d392", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 25}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}]
               }
             ]
           }
@@ -3816,7 +3816,7 @@
           {"name": "Heavy", "id": "6779-cef2-2db4-0b2d", "hidden": false, "primary": false, "targetId": "0ce9-904e-d732-9748"},
           {"name": "Heavy Support", "id": "3800-7c19-cbe2-2d30", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 200}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 200}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 200}],
         "entryLinks": [
           {
             "name": "gauss flux arcs",
@@ -3996,7 +3996,7 @@
           {"name": "Skimmer", "id": "e974-c1c8-bed1-0966", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
           {"name": "Heavy Support", "id": "127f-f7fd-5953-8fd0", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 175}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
         "entryLinks": [
           {
             "name": "Quantum shielding",
@@ -4097,7 +4097,7 @@
           {"name": "OPEN-TOPPED", "id": "da36-ff25-c3d2-1d00", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
           {"name": "Heavy Support", "id": "4ff6-6bed-1a30-e5fe", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 90}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
         "entryLinks": [
           {
             "name": "Quantum shielding",
@@ -4236,7 +4236,7 @@
           {"name": "Fast Skimmer & Hovering Flyer", "id": "ffbb-300a-3014-479e", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"},
           {"name": "Heavy Support", "id": "0dde-8dd4-ef4b-1bfd", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 175}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
         "entryLinks": [
           {
             "name": "Twin-Linked Tesla destructor",
@@ -4334,7 +4334,7 @@
           {"name": "Dedicated Transport", "id": "c860-56dc-415c-ea18", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "69c2-465d-4dc9-056e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 100}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 100}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 100}],
         "entryLinks": [
           {
             "name": "Twin-Linked Tesla destructor",
@@ -4430,7 +4430,7 @@
           {"name": "Dedicated Transport", "id": "2ab1-6b61-b717-e765", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "0eda-78bd-752b-304a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 80}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 80}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 80}],
         "entryLinks": [
           {
             "name": "Quantum shielding",
@@ -4600,7 +4600,7 @@
           {"name": "Dedicated Transport", "id": "c0bf-35ea-1f5a-5a73", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "a6ca-e983-1285-fdd3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 115}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 115}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 115}],
         "entryLinks": [
           {
             "name": "Quantum shielding",
@@ -4695,7 +4695,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 225}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 225}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 225}],
         "entryLinks": [
           {"name": "Warlord", "id": "ea87-f871-970b-d7c4", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "14bd-0e6b-005f-baf0", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -4908,7 +4908,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 100}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 100}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 100}],
         "entryLinks": [
           {"name": "Warlord", "id": "46e3-666d-4d6d-c305", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "e787-cc06-08b5-2628", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -5025,7 +5025,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 165}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 165}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 165}],
         "entryLinks": [
           {"name": "Warlord", "id": "e7a2-5361-9d99-34ee", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "c6b1-3a0f-5ff1-eed0", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -5200,7 +5200,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 175}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
         "entryLinks": [
           {
             "name": "Mindshackle scarabs",
@@ -5344,7 +5344,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 185}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
         "entryLinks": [
           {"name": "Warlord", "id": "6a20-fda5-dc1a-af2d", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "0270-04b5-4191-3c01", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -5515,7 +5515,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 160}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 160}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 160}],
         "entryLinks": [
           {
             "name": "Sempiternal weave",
@@ -5656,7 +5656,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 165}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 165}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 165}],
         "entryLinks": [
           {"name": "Warlord", "id": "a5b4-2485-a8e5-a496", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
           {"name": "Warlord Traits", "id": "0886-9bb9-853d-af9a", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
@@ -5782,7 +5782,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "1c9a-5aba-0e12-15a7", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
-        "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 17}],
+        "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 17}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 17}],
         "infoLinks": [
           {"name": "Reanimation protocols", "id": "c64e-f587-551b-02fc", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
           {"name": "Furious Charge", "id": "4ad2-6900-b07c-4b5e", "hidden": false, "targetId": "6297-1817-33c0-10da", "type": "rule"},

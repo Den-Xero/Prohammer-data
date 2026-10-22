@@ -59,7 +59,70 @@
         ]
       }
     ],
-    "costTypes": [{"name": "Pts", "id": "51b2-306e-1021-d207", "defaultCostLimit": -1}],
+    "costTypes": [
+      {
+        "name": "Pts",
+        "id": "51b2-306e-1021-d207",
+        "defaultCostLimit": 500,
+        "hidden": false,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "94b3-fa8a-1e11-a604",
+                "childName": "Standard Mission",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "self",
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "roster", "field": "selections", "scope": "self", "type": "notInstanceOf", "value": 1}]
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "name": "Battle Size",
+        "id": "60ec-8314-d936-f7ce",
+        "hidden": false,
+        "import": true,
+        "targetId": "564e-fbc6-5266-3ea4",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "1ffc-bae2-98db-bceb-min",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "1ffc-bae2-98db-bceb-max",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      }
+    ],
     "forceEntries": [
       {
         "name": "Standard Mission",
@@ -829,13 +892,13 @@
                   {
                     "field": "defaultAmount",
                     "type": "set",
-                    "value": "500",
+                    "value": "1000",
                     "conditions": [
                       {
                         "childId": "d62d-db22-4893-4bc0",
                         "childName": "1. Incursion (1000 Point limit)",
                         "field": "selections",
-                        "includeChildSelections": false,
+                        "includeChildSelections": true,
                         "scope": "564e-fbc6-5266-3ea4",
                         "shared": true,
                         "type": "atLeast",
@@ -852,7 +915,7 @@
                         "childId": "baf8-997f-e323-a090",
                         "childName": "2. Strike Force (2000 Point limit)",
                         "field": "selections",
-                        "includeChildSelections": false,
+                        "includeChildSelections": true,
                         "scope": "564e-fbc6-5266-3ea4",
                         "shared": true,
                         "type": "atLeast",
@@ -869,7 +932,7 @@
                         "childId": "4204-82d0-908c-a62a",
                         "childName": "3. Onslaught (3000 Point limit)",
                         "field": "selections",
-                        "includeChildSelections": false,
+                        "includeChildSelections": true,
                         "scope": "564e-fbc6-5266-3ea4",
                         "shared": true,
                         "type": "atLeast",
@@ -886,7 +949,24 @@
                         "childId": "ecbc-82df-3292-2224",
                         "childName": "1. Patrol (500 point limit)",
                         "field": "selections",
-                        "includeChildSelections": false,
+                        "includeChildSelections": true,
+                        "scope": "564e-fbc6-5266-3ea4",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "defaultAmount",
+                    "type": "set",
+                    "value": "1500",
+                    "conditions": [
+                      {
+                        "childId": "dca0-effd-1fd5-1f78",
+                        "childName": "3. Task Force (1500 point limit)",
+                        "field": "selections",
+                        "includeChildSelections": true,
                         "scope": "564e-fbc6-5266-3ea4",
                         "shared": true,
                         "type": "atLeast",
@@ -944,7 +1024,7 @@
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
               },
               {
-                "name": "3. Strike Force (2000 Point limit)",
+                "name": "4. Strike Force (2000 Point limit)",
                 "id": "baf8-997f-e323-a090",
                 "collective": false,
                 "hidden": false,
@@ -954,7 +1034,7 @@
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
               },
               {
-                "name": "4. Onslaught (3000 Point limit)",
+                "name": "5. Onslaught (3000 Point limit)",
                 "id": "4204-82d0-908c-a62a",
                 "collective": false,
                 "hidden": true,
@@ -971,6 +1051,14 @@
                 "sortIndex": 0,
                 "type": "upgrade",
                 "constraints": [{"id": "02b3-be6a-acee-1146", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "3. Task Force (1500 point limit)",
+                "id": "dca0-effd-1fd5-1f78",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "e35b-348a-e2c2-9fa2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ]
           }
