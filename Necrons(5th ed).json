@@ -532,10 +532,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "6124-06d0-d3ce-d6b0", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "8d85-6371-1e0a-c143", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "1eae-1c4d-faf0-bc5d", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "Necron Overlord", "id": "25a9-426c-185d-2cb5", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"}
+          {"name": "Necron Overlord", "id": "25a9-426c-185d-2cb5", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
+          {"name": "HQ", "id": "be29-7d20-ff50-ee93", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
         "entryLinks": [
@@ -892,9 +892,9 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "da26-f422-d4c7-c583", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Jump Infantry", "id": "f845-4446-5801-18a9", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"},
-          {"name": "Character", "id": "6baf-40cd-ad6f-e290", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"}
+          {"name": "Character", "id": "6baf-40cd-ad6f-e290", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
+          {"name": "HQ", "id": "bbfc-4705-dfa7-b768", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 125}],
         "entryLinks": [
@@ -1407,7 +1407,7 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "HQ cost exclusion", "id": "9214-a2cb-16bf-a808", "hidden": false, "primary": false, "targetId": "9c3c-9128-c927-7d00"},
-          {"name": "HQ", "id": "aca6-b014-33f3-023e", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"}
+          {"name": "HQ", "id": "4898-c7cd-8a9e-4100", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [{"id": "0de9-7ba7-0e5a-eec9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "entryLinks": [
@@ -1974,7 +1974,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Elites", "id": "3834-5665-1407-f059", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"}],
+        "categoryLinks": [{"name": "Elites", "id": "2fdd-40ec-e5e1-ba15", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}],
         "entryLinks": [
           {
             "name": "Lychguard",
@@ -2124,7 +2124,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Elites", "id": "14c2-f7d6-4b86-bfd8", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"}],
+        "categoryLinks": [{"name": "Elites", "id": "df4b-12a7-1bf9-d83a", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}],
         "entryLinks": [
           {
             "name": "Deathmark",
@@ -2202,7 +2202,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Elites", "id": "9397-08c6-5b4f-fa69", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"}],
+        "categoryLinks": [{"name": "Elites", "id": "924a-2c7d-9e92-b0f7", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}],
         "entryLinks": [
           {
             "name": "Flayed one",
@@ -2282,7 +2282,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Elites", "id": "bd29-02e3-1747-c1aa", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"}],
+        "categoryLinks": [{"name": "Elites", "id": "bec7-dde5-779f-38cc", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}],
         "entryLinks": [
           {
             "name": "Triarch Praetorian",
@@ -2377,7 +2377,7 @@
           {"name": "Vehicle", "id": "41ae-2d42-6547-d144", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "OPEN-TOPPED", "id": "de6b-5daf-1cce-872e", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
           {"name": "Walkers", "id": "7ac1-57bc-e875-18eb", "hidden": false, "primary": false, "targetId": "05c3-9c36-1aa1-993c"},
-          {"name": "Elites", "id": "f7f8-065d-7da8-0b9c", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"}
+          {"name": "Elites", "id": "18e3-7d81-a20e-3d8c", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 150}],
         "entryLinks": [
@@ -2578,9 +2578,9 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Elites", "id": "f22c-b403-fee9-78e0", "hidden": false, "primary": true, "targetId": "3655-63a8-98da-ecae"},
           {"name": "Monstrous Creature", "id": "292b-34f5-67f8-71af", "hidden": false, "primary": false, "targetId": "8098-49a8-0559-48a1"},
-          {"name": "Character", "id": "4fbc-ff21-219e-c59c", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"}
+          {"name": "Character", "id": "4fbc-ff21-219e-c59c", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
+          {"name": "Elites", "id": "8a68-5e57-6bf2-5b80", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
         "infoLinks": [
@@ -3194,7 +3194,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Fast Attack", "id": "4c8f-0680-5497-9424", "hidden": false, "primary": true, "targetId": "1a8d-e0e5-e3aa-5e8b"}],
+        "categoryLinks": [{"name": "Fast Attack", "id": "e070-82b7-be2a-3ce5", "hidden": false, "primary": true, "targetId": "14a0-40c9-2748-ae6e"}],
         "entryLinks": [
           {
             "name": "Tomb Blade",
@@ -3370,7 +3370,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Fast Attack", "id": "3305-3a44-b80c-6510", "hidden": false, "primary": true, "targetId": "1a8d-e0e5-e3aa-5e8b"}],
+        "categoryLinks": [{"name": "Fast Attack", "id": "e53b-eaf0-0425-eeef", "hidden": false, "primary": true, "targetId": "14a0-40c9-2748-ae6e"}],
         "selectionEntryGroups": [
           {
             "name": "Destroyer",
@@ -3500,7 +3500,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Fast Attack", "id": "68b0-1584-dc56-6d46", "hidden": false, "primary": true, "targetId": "1a8d-e0e5-e3aa-5e8b"}],
+        "categoryLinks": [{"name": "Fast Attack", "id": "c9f6-8ca0-bc18-e593", "hidden": false, "primary": true, "targetId": "14a0-40c9-2748-ae6e"}],
         "entryLinks": [
           {
             "name": "Canoptek warith",
@@ -3627,7 +3627,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Fast Attack", "id": "9ab2-a805-d6b7-b7df", "hidden": false, "primary": true, "targetId": "1a8d-e0e5-e3aa-5e8b"}],
+        "categoryLinks": [{"name": "Fast Attack", "id": "9aec-9bc3-bab7-ee1c", "hidden": false, "primary": true, "targetId": "14a0-40c9-2748-ae6e"}],
         "entryLinks": [
           {
             "name": "Canoptek Scarab",
@@ -3787,7 +3787,7 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Heavy Support", "id": "cfc3-345d-715d-c935", "hidden": false, "primary": true, "targetId": "c0a8-9bc5-00b7-0bae"}],
+        "categoryLinks": [{"name": "Heavy Support", "id": "7979-24f1-241c-8f1e", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}],
         "entryLinks": [
           {
             "name": "Canoptek Spyder",
@@ -3813,8 +3813,8 @@
           {"name": "Vehicle", "id": "0a67-ef7d-051f-5e2f", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Tank/Chariot", "id": "fc99-a344-397b-cb7f", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"},
           {"name": "Skimmer", "id": "41fd-572f-42dc-6783", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
-          {"name": "Heavy Support", "id": "1026-b696-42ac-0569", "hidden": false, "primary": true, "targetId": "c0a8-9bc5-00b7-0bae"},
-          {"name": "Heavy", "id": "6779-cef2-2db4-0b2d", "hidden": false, "primary": false, "targetId": "0ce9-904e-d732-9748"}
+          {"name": "Heavy", "id": "6779-cef2-2db4-0b2d", "hidden": false, "primary": false, "targetId": "0ce9-904e-d732-9748"},
+          {"name": "Heavy Support", "id": "3800-7c19-cbe2-2d30", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 200}],
         "entryLinks": [
@@ -3992,9 +3992,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Vehicle", "id": "3ba6-c0bc-173e-7342", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Heavy Support", "id": "2492-b232-399f-2362", "hidden": false, "primary": true, "targetId": "c0a8-9bc5-00b7-0bae"},
           {"name": "OPEN-TOPPED", "id": "a0d0-e893-c486-5748", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
-          {"name": "Skimmer", "id": "e974-c1c8-bed1-0966", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"}
+          {"name": "Skimmer", "id": "e974-c1c8-bed1-0966", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
+          {"name": "Heavy Support", "id": "127f-f7fd-5953-8fd0", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
         "entryLinks": [
@@ -4092,10 +4092,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Heavy Support", "id": "2d60-9fd6-87d1-ecf6", "hidden": false, "primary": true, "targetId": "c0a8-9bc5-00b7-0bae"},
           {"name": "Vehicle", "id": "04c6-9dc9-57e3-e7f4", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Skimmer", "id": "b93a-5a7d-a3cd-ac74", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
-          {"name": "OPEN-TOPPED", "id": "da36-ff25-c3d2-1d00", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"}
+          {"name": "OPEN-TOPPED", "id": "da36-ff25-c3d2-1d00", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
+          {"name": "Heavy Support", "id": "4ff6-6bed-1a30-e5fe", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
         "entryLinks": [
@@ -4230,11 +4230,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Heavy Support", "id": "7b54-db61-a5c1-6728", "hidden": false, "primary": true, "targetId": "c0a8-9bc5-00b7-0bae"},
           {"name": "Vehicle", "id": "041e-b119-994c-08a6", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Fast Vehicle", "id": "9b14-5a93-c403-6405", "hidden": false, "primary": false, "targetId": "5103-7fed-c250-ac07"},
           {"name": "Skimmer", "id": "e0bf-d6fc-01eb-0787", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
-          {"name": "Fast Skimmer & Hovering Flyer", "id": "ffbb-300a-3014-479e", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"}
+          {"name": "Fast Skimmer & Hovering Flyer", "id": "ffbb-300a-3014-479e", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"},
+          {"name": "Heavy Support", "id": "0dde-8dd4-ef4b-1bfd", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
         ],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 175}],
         "entryLinks": [
@@ -4327,11 +4327,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Dedicated Transport", "id": "5ffb-85d1-c3a9-88ba", "hidden": false, "primary": true, "targetId": "49eb-132c-ab61-6135"},
           {"name": "Vehicle", "id": "cbce-eccb-71c4-a665", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Fast Vehicle", "id": "c9e9-dc82-43f1-93a6", "hidden": false, "primary": false, "targetId": "5103-7fed-c250-ac07"},
           {"name": "Skimmer", "id": "ea69-d697-338b-d69b", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
-          {"name": "Fast Skimmer & Hovering Flyer", "id": "8adb-bac4-04af-ae81", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"}
+          {"name": "Fast Skimmer & Hovering Flyer", "id": "8adb-bac4-04af-ae81", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"},
+          {"name": "Dedicated Transport", "id": "c860-56dc-415c-ea18", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "69c2-465d-4dc9-056e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 100}],
@@ -4422,12 +4422,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Dedicated Transport", "id": "b877-81a7-651a-89b3", "hidden": false, "primary": true, "targetId": "49eb-132c-ab61-6135"},
           {"name": "Vehicle", "id": "a4d9-8f35-f69e-c61e", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Fast Vehicle", "id": "3b66-8650-5db3-7cd9", "hidden": false, "primary": false, "targetId": "5103-7fed-c250-ac07"},
           {"name": "OPEN-TOPPED", "id": "3752-090d-73fe-b799", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
           {"name": "Skimmer", "id": "3725-2b73-91f5-d805", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
-          {"name": "Fast Skimmer & Hovering Flyer", "id": "bf10-8e13-473d-33b7", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"}
+          {"name": "Fast Skimmer & Hovering Flyer", "id": "bf10-8e13-473d-33b7", "hidden": false, "primary": false, "targetId": "4a75-da51-fe91-86b6"},
+          {"name": "Dedicated Transport", "id": "2ab1-6b61-b717-e765", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "0eda-78bd-752b-304a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 80}],
@@ -4594,10 +4594,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Dedicated Transport", "id": "c2b4-5b00-7afc-05d3", "hidden": false, "primary": true, "targetId": "49eb-132c-ab61-6135"},
           {"name": "Vehicle", "id": "f500-6ef7-dcbe-2474", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "OPEN-TOPPED", "id": "e4ab-aa55-0eef-7651", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
-          {"name": "Skimmer", "id": "a0b8-99df-54fc-3f63", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"}
+          {"name": "Skimmer", "id": "a0b8-99df-54fc-3f63", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
+          {"name": "Dedicated Transport", "id": "c0bf-35ea-1f5a-5a73", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"}
         ],
         "constraints": [{"id": "a6ca-e983-1285-fdd3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 115}],
@@ -4677,11 +4677,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "730e-98a4-ad1c-165d", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "b8bd-b84d-eaf6-3306", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "1984-8b37-14f3-0a7b", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "3899-9503-0c06-1208", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
-          {"name": "Unique", "id": "ab80-a0f3-1a14-7509", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "ab80-a0f3-1a14-7509", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "b878-a5e2-8a0a-b7a3", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -4891,10 +4891,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "fc1e-dddb-669c-8c06", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "5514-aff9-c3da-9dd9", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "bbee-e53e-2160-bb78", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "Unique", "id": "3750-540c-4059-853b", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "3750-540c-4059-853b", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "5a02-ef5c-c572-e9bc", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -5008,10 +5008,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "a632-47cb-9486-9791", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "ff5a-f219-5b3b-5f1d", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "9d16-b8e6-6444-1b2e", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "Unique", "id": "d3cc-087d-d415-6fba", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "d3cc-087d-d415-6fba", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "d66a-1099-0218-4a79", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -5182,11 +5182,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "17e4-4d74-d6ff-54d6", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "5c60-9814-533a-1d0c", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "444c-0b30-72df-d8e7", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "00d0-193d-6311-7bab", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
-          {"name": "Unique", "id": "1de1-4c70-1c2a-4e93", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "1de1-4c70-1c2a-4e93", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "a138-598a-be4c-0978", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -5326,11 +5326,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "6dfd-633f-17f9-6069", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "5671-8035-1a60-b32e", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "a3c6-4cfc-31d0-de1e", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "56f9-57fa-b8c8-c350", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
-          {"name": "Unique", "id": "daa6-bc8f-e955-6af3", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "ea7f-3414-9968-9558", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "64bc-318d-65cb-7aac", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -5498,10 +5498,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "fa0f-efe8-0bd0-1084", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "0b0e-868c-3418-f5b3", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "602a-f007-5154-0e46", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "Unique", "id": "43e6-fb41-c736-0b79", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "43e6-fb41-c736-0b79", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "56b0-7192-8e16-42f5", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {
@@ -5638,11 +5638,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "HQ", "id": "746d-ccd2-eab0-971c", "hidden": false, "primary": true, "targetId": "60a8-5e4a-22f4-16b3"},
           {"name": "Infantry", "id": "813e-5700-35a0-1bed", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
           {"name": "Character", "id": "8a59-9f81-0f7f-af15", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "7757-cf03-8706-f009", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
-          {"name": "Unique", "id": "312e-dc41-2e72-fcfc", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
+          {"name": "Unique", "id": "312e-dc41-2e72-fcfc", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
+          {"name": "HQ", "id": "998b-60eb-c365-535d", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
         ],
         "constraints": [
           {

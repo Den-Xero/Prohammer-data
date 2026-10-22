@@ -6,11 +6,11 @@
     "revision": 1,
     "type": "gameSystem",
     "categoryEntries": [
-      {"name": "HQ", "id": "60a8-5e4a-22f4-16b3", "hidden": false},
+      {"name": "HQ", "id": "9cfd-1c32-585f-7d5c", "hidden": false},
       {"name": "Troop", "id": "e338-111e-d0c6-b687", "hidden": false},
-      {"name": "Elites", "id": "3655-63a8-98da-ecae", "hidden": false},
-      {"name": "Fast Attack", "id": "1a8d-e0e5-e3aa-5e8b", "hidden": false},
-      {"name": "Heavy Support", "id": "c0a8-9bc5-00b7-0bae", "hidden": false},
+      {"name": "Elites", "id": "cf47-a0d7-7207-29dc", "hidden": false},
+      {"name": "Fast Attack", "id": "14a0-40c9-2748-ae6e", "hidden": false},
+      {"name": "Heavy Support", "id": "dbd4-63-af05-998", "hidden": false},
       {"name": "Infantry", "id": "20b5-524c-a96c-2fd6", "hidden": false},
       {"name": "Jump Infantry", "id": "35a6-f8d9-8cb6-552d", "hidden": false},
       {"name": "Bike", "id": "edd0-fc21-7f37-734c", "hidden": false},
@@ -26,7 +26,7 @@
       {"name": "Walker", "id": "05c3-9c36-1aa1-993c", "hidden": false},
       {"name": "Zooming Flyer", "id": "17f5-cc4b-dcf0-8a35", "hidden": false},
       {"name": "Character", "id": "0e03-b6b2-342b-e0d6", "hidden": false},
-      {"name": "Dedicated Transport", "id": "49eb-132c-ab61-6135", "hidden": false},
+      {"name": "Dedicated Transport", "id": "ba07-411c-2832-1f79", "hidden": false},
       {"name": "HQ cost exclusion", "id": "9c3c-9128-c927-7d00", "hidden": false},
       {"name": "OPEN-TOPPED", "id": "fc75-8d5a-96f3-af94", "hidden": false},
       {"name": "Vehicle", "id": "37c1-ab57-c339-16d9", "hidden": false},
@@ -70,7 +70,7 @@
             "name": "HQ",
             "id": "c030-7885-6ba8-3a74",
             "hidden": false,
-            "targetId": "60a8-5e4a-22f4-16b3",
+            "targetId": "9cfd-1c32-585f-7d5c",
             "constraints": [
               {"id": "3ac0-c607-ee11-ad7d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "cb5e-9373-0a70-c945", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
@@ -110,24 +110,24 @@
             "name": "Elites",
             "id": "ccb7-1af1-08f8-1d82",
             "hidden": false,
-            "targetId": "3655-63a8-98da-ecae",
+            "targetId": "cf47-a0d7-7207-29dc",
             "constraints": [{"id": "402c-affb-3b39-93a9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
           {
             "name": "Fast Attack",
             "id": "724f-6781-48f8-f2a3",
             "hidden": false,
-            "targetId": "1a8d-e0e5-e3aa-5e8b",
+            "targetId": "14a0-40c9-2748-ae6e",
             "constraints": [{"id": "4f98-96ca-fc04-1b3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
           {
             "name": "Heavy Support",
             "id": "bd71-aa49-31da-c81f",
             "hidden": false,
-            "targetId": "c0a8-9bc5-00b7-0bae",
+            "targetId": "dbd4-63-af05-998",
             "constraints": [{"id": "ebca-9306-13f4-d1eb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
           },
-          {"name": "Dedicated Transport", "id": "7e32-bf11-3322-e556", "hidden": false, "targetId": "49eb-132c-ab61-6135"}
+          {"name": "Dedicated Transport", "id": "7e32-bf11-3322-e556", "hidden": false, "targetId": "ba07-411c-2832-1f79"}
         ],
         "forceEntries": [
           {
@@ -139,7 +139,7 @@
                 "name": "HQ",
                 "id": "ad8d-7fca-f042-83a4",
                 "hidden": false,
-                "targetId": "60a8-5e4a-22f4-16b3",
+                "targetId": "9cfd-1c32-585f-7d5c",
                 "constraints": [
                   {"id": "5fd5-3641-7ea9-375e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f529-7aec-a994-b50e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
@@ -179,24 +179,24 @@
                 "name": "Elites",
                 "id": "b0b9-dcb5-5b29-c2bc",
                 "hidden": false,
-                "targetId": "3655-63a8-98da-ecae",
+                "targetId": "cf47-a0d7-7207-29dc",
                 "constraints": [{"id": "8dca-fe65-ab73-e56d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
               },
               {
                 "name": "Fast Attack",
                 "id": "a9ac-c2f4-bb32-ac45",
                 "hidden": false,
-                "targetId": "1a8d-e0e5-e3aa-5e8b",
+                "targetId": "14a0-40c9-2748-ae6e",
                 "constraints": [{"id": "9db7-1f17-735b-6a90", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
               },
               {
                 "name": "Heavy Support",
                 "id": "7abd-4440-95e8-335f",
                 "hidden": false,
-                "targetId": "c0a8-9bc5-00b7-0bae",
+                "targetId": "dbd4-63-af05-998",
                 "constraints": [{"id": "3035-c2b1-0b13-7a8a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
               },
-              {"name": "Dedicated Transport", "id": "08d0-4681-1def-9bd5", "hidden": false, "targetId": "49eb-132c-ab61-6135"}
+              {"name": "Dedicated Transport", "id": "08d0-4681-1def-9bd5", "hidden": false, "targetId": "ba07-411c-2832-1f79"}
             ]
           }
         ]
