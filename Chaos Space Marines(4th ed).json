@@ -12257,7 +12257,7 @@
         "categoryLinks": [
           {"name": "Dedicated Transport", "id": "1660-2d08-ce51-f74b", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"},
           {"name": "Vehicle", "id": "0980-1c94-15b9-bcf9", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Tank/Chariot", "id": "1d20-9b09-8d3f-511a", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
+          {"name": "Tank", "id": "1d20-9b09-8d3f-511a", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
         ],
         "constraints": [{"id": "9c1e-0c65-6d32-2cce", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 35}],
@@ -12467,7 +12467,7 @@
         "categoryLinks": [
           {"name": "Heavy Support", "id": "dfa9-f81e-6c6b-fdec", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Vehicle", "id": "ffcd-4521-df32-d9e8", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Tank/Chariot", "id": "09ef-df50-f7ea-6a77", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
+          {"name": "Tank", "id": "09ef-df50-f7ea-6a77", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 70}],
         "entryLinks": [
@@ -12676,7 +12676,7 @@
         "categoryLinks": [
           {"name": "Heavy Support", "id": "ea71-c666-89a8-877b", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Vehicle", "id": "4a86-63d7-bcc1-b4dd", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Tank/Chariot", "id": "7c7a-165f-db50-d107", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
+          {"name": "Tank", "id": "7c7a-165f-db50-d107", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 125}],
         "entryLinks": [
@@ -12813,7 +12813,7 @@
         "categoryLinks": [
           {"name": "Heavy Support", "id": "65fb-2b98-2330-4138", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Vehicle", "id": "23ae-41b6-cc73-06c9", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Tank/Chariot", "id": "6d42-990e-53a4-001c", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
+          {"name": "Tank", "id": "6d42-990e-53a4-001c", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 220}],
         "entryLinks": [
@@ -15050,6 +15050,7 @@
         "id": "8c58-02a8-36e0-105a",
         "defaultSelectionEntryId": "none",
         "hidden": false,
+        "constraints": [{"id": "0e4c-d691-aa9f-bae3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "profiles": [
           {
             "name": "Combi-Weapon",
