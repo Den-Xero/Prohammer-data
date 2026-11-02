@@ -62,12 +62,6 @@
         "hidden": false
       },
       {
-        "name": "Living Metal",
-        "id": "e2fa-39e5-d9c9-ce96",
-        "description": "If a model with this special rule suffers a 'crew shaken' result, roll a D6: on a roll of 1, the result is applied normally; on a roll of 2+, the result is ignored. If a model with this special rule suffers a 'crew stunned' result roll a D6: on a roll of 1-3 the result is applied normally; on a roll of 4+ the result is ignored.",
-        "hidden": false
-      },
-      {
         "name": "Reanimation protocols",
         "id": "44a6-b537-52d3-0fb7",
         "description": "Whenever a unit takes one or more casualties, place a counter or other suitable marker next to the unit of how many casualties were taken. If a fall back move was made remove any counters from the unit.\n\n\nAt the end of the phase after any morale checks and fall back moves have been made, roll a D6 for each Reanimation protocol counter next to the unit On a 1-4 the damage is too severe(nothing happens). On a 5 or 6 a Necron Reassembles itself and continues to fight(return one slain model to play with a single wound, place in coherency with a model that has not returned through Reanimation protocols this phase and 1\" from enemy models.). ",
@@ -80,6 +74,22 @@
         "hidden": false
       },
       {"name": "Tesla", "id": "f434-cecf-4397-baf4", "description": "For every To Hit roll of 6, the target suffers 2 additional automatic hits.", "hidden": false}
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Living Metal",
+        "id": "ace2-19f2-182c-7889",
+        "hidden": false,
+        "typeId": "e150-914c-d218-a5ff",
+        "typeName": "Abilities",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "If a model with this special rule suffers a 'crew shaken' result, roll a D6: on a roll of 1, the result is applied normally; on a roll of 2+, the result is ignored. If a model with this special rule suffers a 'crew stunned' result roll a D6: on a roll of 1-3 the result is applied normally; on a roll of 4+ the result is ignored.",
+            "typeId": "3841-e529-1333-b029"
+          }
+        ]
+      }
     ],
     "sharedSelectionEntries": [
       {
@@ -183,7 +193,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ]
@@ -196,7 +206,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "RAPID FIRE", "id": "f3bb-a198-4589-98af", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
+          {"name": "Rapid Fire", "id": "f3bb-a198-4589-98af", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
           {"name": "Gauss", "id": "7bdc-8267-615a-bafb", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"}
         ],
         "profiles": [
@@ -210,7 +220,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "RAPID FIRE, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Rapid Fire, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -222,7 +232,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "ASSAULT X", "id": "d48f-a600-290c-51ee", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+        "infoLinks": [{"name": "Assault", "id": "d48f-a600-290c-51ee", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
         "profiles": [
           {
             "name": "Staff of light",
@@ -234,7 +244,7 @@
               {"name": "Range", "$text": "12\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "3", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 3", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 3", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -272,7 +282,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ],
             "modifiers": [
               {
@@ -418,7 +428,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "POWER WEAPONS", "id": "3ca8-6e5b-ec57-8d19", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"}],
+        "infoLinks": [{"name": "Power Weapons", "id": "3ca8-6e5b-ec57-8d19", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"}],
         "profiles": [
           {
             "name": "Hyperphase sword",
@@ -428,9 +438,9 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Strength", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "POWER WEAPONS", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Power Weapons", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -442,7 +452,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "ASSAULT X", "id": "4c7c-9ce9-19f3-e800", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+        "infoLinks": [{"name": "Assault", "id": "4c7c-9ce9-19f3-e800", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
         "profiles": [
           {
             "name": "Gautlet of fire",
@@ -454,16 +464,22 @@
               {"name": "Range", "$text": "Template", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1", "typeId": "dbd5-a62e-abc4-431f"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
-            "name": "Gauntlet of fire",
-            "id": "2947-1b17-77d9-7d56",
-            "description": "Attacks made with a gauntlet of fire re-roll failed rolls To Hit and To Wound in close combat.",
-            "hidden": false
+            "name": "Gautlet of fire",
+            "id": "7ced-9960-0756-aa95",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Attacks made with a gauntlet of fire re-roll failed rolls To Hit and To Wound in close combat.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -487,7 +503,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Strength", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
               {"name": "Type", "$text": "Rending, Entropic Strike", "typeId": "dbd5-a62e-abc4-431f"}
             ]
@@ -510,18 +526,24 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Strength", "$text": "+2", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "Str", "$text": "+2", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "\n", "typeId": "dbd5-a62e-abc4-431f"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Warscythe",
-            "id": "813b-9a9e-1feb-e42b",
-            "description": "Warscythe roll 2D6 for Armour Penetration. Armour saves are not permitted against Wounds caused by a warscythe.",
-            "hidden": false
+            "id": "2892-0a08-46cf-90e0",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Warscythe roll 2D6 for Armour Penetration. Armour saves are not permitted against Wounds caused by a warscythe.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -533,9 +555,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "8d85-6371-1e0a-c143", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "1eae-1c4d-faf0-bc5d", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "25a9-426c-185d-2cb5", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
-          {"name": "HQ", "id": "be29-7d20-ff50-ee93", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "be29-7d20-ff50-ee93", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "b123-40a4-f868-2b41", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 90}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 90}],
         "entryLinks": [
@@ -544,7 +566,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "811b-f09d-419a-5fc5", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "d7b5-a060-579b-1b2e", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "d7b5-a060-579b-1b2e", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "9011-691f-6fb8-a41c", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -679,8 +701,17 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
-                "infoLinks": [{"name": "Relentless", "id": "995c-c383-14d6-4214", "hidden": false, "targetId": "a1f2-fdff-97f6-5719", "type": "rule"}],
-                "rules": [{"name": "Phaeron", "id": "3a1b-c518-c6e2-165e", "description": "A Phaeron, and any unit he is with, have the Relentless special rule.", "hidden": false}]
+                "infoLinks": [{"name": "Relentless", "id": "5cb7-e7b3-6d42-5550", "hidden": false, "targetId": "8b6a-dc33-1c28-ca4f", "type": "profile"}],
+                "profiles": [
+                  {
+                    "name": "Phaeron",
+                    "id": "5781-b6e4-9aa1-6aaf",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "A Phaeron, and any unit he is with, have the Relentless special rule.", "typeId": "3841-e529-1333-b029"}]
+                  }
+                ]
               }
             ]
           },
@@ -784,12 +815,16 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "8aa7-cce8-420e-a7a7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
+        "profiles": [
           {
             "name": "Resurrection orb",
-            "id": "38ff-9b79-1bfc-f573",
-            "description": "The bearer of the resurrection orb (and his unit) pass Reanimation Protocols rolls on a 4+.",
-            "hidden": false
+            "id": "34c5-fe5d-5223-de96",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {"name": "Description", "$text": "The bearer of the resurrection orb (and his unit) pass Reanimation Protocols rolls on a 4+.", "typeId": "3841-e529-1333-b029"}
+            ]
           }
         ]
       },
@@ -800,7 +835,16 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "e808-04f2-3a3f-ef8e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [{"name": "Sempiternal weave", "id": "f36e-6320-4edc-5024", "description": "A model with sempiternal weave has a 2+ armour save.", "hidden": false}]
+        "profiles": [
+          {
+            "name": "Sempiternal weave",
+            "id": "002f-4997-c8b0-45c2",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A model with sempiternal weave has a 2+ armour save.", "typeId": "3841-e529-1333-b029"}]
+          }
+        ]
       },
       {
         "name": "Tesseract labyrinth",
@@ -809,12 +853,20 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "08dc-7126-cc02-8615", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
+        "profiles": [
           {
             "name": "Tesseract labyrinth",
-            "id": "6bd9-6c7b-ca92-0a37",
-            "description": "One use only. The bearer can use the tesseract labyrinth in lieu of making close combat attacks that round. Choose a character or monstrous creature in base contact with the bearer. The victim must immediately roll equal to or under its remaining Wounds on a D6 or be trapped within the tesseract labyrinth forever. Remove as a casualty with no saves of any kind allowed.",
-            "hidden": false
+            "id": "4530-b8ed-cb75-230c",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "One use only. The bearer can use the tesseract labyrinth in lieu of making close combat attacks that round. Choose a character or monstrous creature in base contact with the bearer. The victim must immediately roll equal to or under its remaining Wounds on a D6 or be trapped within the tesseract labyrinth forever. Remove as a casualty with no saves of any kind allowed.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -824,7 +876,16 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [{"name": "Phase shifter", "id": "da11-cb85-9d87-eff6", "description": "A model with a Phase shifter has a 3+ invulnerable save", "hidden": false}]
+        "profiles": [
+          {
+            "name": "Phase shifter",
+            "id": "a12f-1edf-a90a-e135",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A model with a Phase shifter has a 3+ invulnerable save", "typeId": "3841-e529-1333-b029"}]
+          }
+        ]
       },
       {
         "name": "Mindshackle scarabs",
@@ -833,12 +894,20 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "e27c-6d94-ff32-49e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
+        "profiles": [
           {
             "name": "Mindshackle scarabs",
-            "id": "f35c-c45a-95ef-d835",
-            "description": "At the start of the Assault phase, after assault moves have been made, but before any blows are struck, randomly select an enemy model in base contact with the bearer of the Mindshackle scarabs. That model must immediately take a Leadership test on 3D6. If the test is failed the victim strikes out at his allies. Instead of a normal attack he inflicts D3 hits on his own unit when it is his turn to to attack. These hits are resolved at the victims Strength, and benefit from any abilities and penalties from his close combat weapons(the controller of the Mindshackle scarabs chooses which, if there is a choice). If he is still alive, the victim returns back to normal once all blows in that round of combat has been struck.",
-            "hidden": false
+            "id": "68b1-9094-5f5f-2b8a",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of the Assault phase, after assault moves have been made, but before any blows are struck, randomly select an enemy model in base contact with the bearer of the Mindshackle scarabs. That model must immediately take a Leadership test on 3D6. If the test is failed the victim strikes out at his allies. Instead of a normal attack he inflicts D3 hits on his own unit when it is his turn to to attack. These hits are resolved at the victims Strength, and benefit from any abilities and penalties from his close combat weapons(the controller of the Mindshackle scarabs chooses which, if there is a choice). If he is still alive, the victim returns back to normal once all blows in that round of combat has been struck.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -849,12 +918,20 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "aa35-8c0d-627d-a9d7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "rules": [
+        "profiles": [
           {
             "name": "Phylactery",
-            "id": "4524-ad02-d653-1e07",
-            "description": "One use only. A model with a Phylactery that passes his first Reanimation protocols roll returns to play with D3 Wound.",
-            "hidden": false
+            "id": "84eb-d6bd-e81b-f386",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "One use only. A model with a Phylactery that passes his first Reanimation protocols roll returns to play with D3 Wound.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -866,7 +943,7 @@
         "type": "upgrade",
         "constraints": [{"id": "f4ae-cb39-854b-9706", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "infoLinks": [
-          {"name": "ASSAULT", "id": "a3a0-9fcb-a96a-f4e2", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "a3a0-9fcb-a96a-f4e2", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "One shot", "id": "5655-2114-164c-12c9", "hidden": false, "targetId": "e9b6-fd95-f77d-60d1", "type": "rule"}
         ],
         "profiles": [
@@ -893,18 +970,19 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Jump Infantry", "id": "f845-4446-5801-18a9", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"},
-          {"name": "Character", "id": "6baf-40cd-ad6f-e290", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "HQ", "id": "bbfc-4705-dfa7-b768", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "bbfc-4705-dfa7-b768", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "4b29-f60c-c2fd-09c7", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 125}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 125}],
         "entryLinks": [
           {"name": "Warlord", "id": "c210-9d87-4d92-ef76", "hidden": false, "import": true, "targetId": "aa89-877f-47e6-bc8e", "type": "selectionEntry"},
-          {"name": "Warlord Traits", "id": "18b0-e835-008b-19e7", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
+          {"name": "Warlord Traits", "id": "18b0-e835-008b-19e7", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"},
+          {"name": "Jump Infantry", "id": "4122-1c0d-47f1-734d", "hidden": false, "import": true, "targetId": "5015-2211-547c-cec9", "type": "selectionEntry"}
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "7de9-a4a4-6558-bc28", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "3332-250f-c044-a541", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
-          {"name": "Preferred Enemy(Everything!)", "id": "c583-41fc-4da2-e2d8", "hidden": false, "targetId": "1799-9b26-acf2-361a", "type": "rule"},
+          {"name": "Independent Character", "id": "3332-250f-c044-a541", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Preferred Enemy", "id": "c583-41fc-4da2-e2d8", "hidden": false, "targetId": "1799-9b26-acf2-361a", "type": "rule"},
           {"name": "Reanimation protocols", "id": "8a9a-5c91-472f-b73e", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -963,9 +1041,16 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Preferred Enemy(Everything!)",
+            "id": "9723-82e4-7a10-cd62",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This models Units Preferred Enemy is Everything!", "typeId": "3841-e529-1333-b029"}]
           }
         ],
-        "rules": [{"name": "Preferred Enemy(Everything!)", "id": "a17a-8306-0aa1-ee9b", "description": "This models Units Preferred Enemy is Everything!", "hidden": false}],
         "selectionEntryGroups": [
           {
             "name": "Wargear options",
@@ -1071,7 +1156,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ],
             "modifiers": [
               {
@@ -1450,12 +1535,20 @@
             ]
           }
         ],
-        "rules": [
+        "profiles": [
           {
             "name": "Royal court",
-            "id": "1c99-47bc-0548-88c6",
-            "description": "Before battle, each member of the Royal court has the option of being split off from his unit and assigned to lead a different unit from the following list: Necron Warrrior, Necron Immortals, Lychguard or Deathmarks. only one member of the royal court can join each unit in this manner. Otherwise they remain part of the Royal court.",
-            "hidden": false
+            "id": "62dd-9a45-62cd-70fe",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Before battle, each member of the Royal court has the option of being split off from his unit and assigned to lead a different unit from the following list: Necron Warrrior, Necron Immortals, Lychguard or Deathmarks. only one member of the royal court can join each unit in this manner. Otherwise they remain part of the Royal court.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1465,12 +1558,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Nightmare shroud",
-            "id": "2e1f-320d-4ad1-a2b5",
-            "description": "The Nightmare shroud can be used during shooting phase instead of firing a weapon. Choose an unengaged enemy unit within 18\" of the Cryptek. that unit must immediately take a Morale check.",
-            "hidden": false
+            "id": "f7f9-4082-9cb9-2c33",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The Nightmare shroud can be used during shooting phase instead of firing a weapon. Choose an unengaged enemy unit within 18\" of the Cryptek. that unit must immediately take a Morale check.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1480,12 +1581,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Veil of darkness",
-            "id": "e3c0-fd4a-4f88-451d",
-            "description": "A Cryptek with a Veil of darkness can use it in its Movement phase instead of moving normally. The Cryptek and his unit and removed from the tabletop and immediately Deep Strike back onto the battlefield. The Veil of darkness cannot be used if the Cryptek or his unit are locked in combat.",
-            "hidden": false
+            "id": "749d-2f91-8611-05b3",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "A Cryptek with a Veil of darkness can use it in its Movement phase instead of moving normally. The Cryptek and his unit and removed from the tabletop and immediately Deep Strike back onto the battlefield. The Veil of darkness cannot be used if the Cryptek or his unit are locked in combat.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1495,7 +1604,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "ASSAULT X", "id": "0195-4467-718f-e1b7", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+        "infoLinks": [{"name": "Assault", "id": "0195-4467-718f-e1b7", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
         "profiles": [
           {
             "name": "Abyssal staff",
@@ -1507,7 +1616,7 @@
               {"name": "Range", "$text": "Template", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "8", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "1", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Shroud of Despair", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Shroud of Despair", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ],
@@ -1515,7 +1624,7 @@
           {
             "name": "Shroud of Despair",
             "id": "ff28-48f3-5ed1-d33f",
-            "description": "Shroud of Despair: To Wound rolls from the abyssal staff's shooting attacks are made against the target's Leadership, rather than Toughness. The abyssal staff's shooting attack has no effect against vehicles.",
+            "description": "To Wound rolls from the abyssal staff's shooting attacks are made against the target's Leadership, rather than Toughness. The abyssal staff's shooting attack has no effect against vehicles.",
             "hidden": false
           }
         ]
@@ -1526,7 +1635,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "ASSAULT X", "id": "600e-32a7-3a45-bdee", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+        "infoLinks": [{"name": "Assault", "id": "600e-32a7-3a45-bdee", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
         "profiles": [
           {
             "name": "Eldritch lance",
@@ -1538,7 +1647,7 @@
               {"name": "Range", "$text": "36\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "8", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "2", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -1550,13 +1659,21 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 0}],
-        "infoLinks": [{"name": "DEFENSIVE GRENADES", "id": "7402-20a0-89b3-128b", "hidden": false, "targetId": "f990-1304-56e7-0d3e", "type": "rule"}],
-        "rules": [
+        "infoLinks": [{"name": "Defensive Grenades", "id": "8ad3-162b-9c9a-2bb9", "hidden": false, "targetId": "fb34-4bca-90ef-5139", "type": "profile"}],
+        "profiles": [
           {
             "name": "Gaze of flame",
-            "id": "e9ae-28d8-d994-9b92",
-            "description": "The Cryptek, and his unit, are treated as being armed with defensive grenades. The rest of the unit loses this ability if the Cryptek is removed as a casualty.",
-            "hidden": false
+            "id": "e3d5-97db-9016-94b7",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The Cryptek, and his unit, are treated as being armed with defensive grenades. The rest of the unit loses this ability if the Cryptek is removed as a casualty.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1566,12 +1683,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Solar pulse",
-            "id": "bee6-aa54-f7d1-9af5",
-            "description": "One use only. The solar pulse can be used at the start of any turn. If the night fighting rule are in effect, they cease to apply untill the end of the turn. If the night Fighting rule are not in effect, then they apply until the end of the turn.",
-            "hidden": false
+            "id": "ebcb-4f94-c53d-e9c5",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "One use only. The solar pulse can be used at the start of any turn. If the night fighting rule are in effect, they cease to apply untill the end of the turn. If the night Fighting rule are not in effect, then they apply until the end of the turn.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1581,12 +1706,33 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Aeonstave",
-            "id": "908e-d4e2-6d80-e49f",
-            "description": "The Aeonstave is a close combat weapon. Any enemy that suffers an unsaved Wound from an Aeonstave loses the Fleet special rule(if he has it) and has his Weapon Skill, Ballistic Skill, Initiative and Attacks values reduced to 1 for the remainder of the game.",
-            "hidden": false
+            "id": "1610-bbf7-f3be-64b1",
+            "hidden": false,
+            "typeId": "2fa0-e132-3671-7499",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
+              {"name": "Type", "$text": "Aeonstave", "typeId": "dbd5-a62e-abc4-431f"}
+            ]
+          },
+          {
+            "name": "Aeonstave",
+            "id": "a1be-8f7e-f68a-ca43",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The Aeonstave is a close combat weapon. Any enemy that suffers an unsaved Wound from an Aeonstave loses the Fleet special rule(if he has it) and has his Weapon Skill, Ballistic Skill, Initiative and Attacks values reduced to 1 for the remainder of the game.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1596,12 +1742,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Chronometron",
-            "id": "bc11-8994-32b2-87fb",
-            "description": "A model with a Chronometron can re-roll one of his D6 rolls each phase. If the bearer is in a unit, this ability can be used to instead re-roll one of the unit's D6 rolls each phase.",
-            "hidden": false
+            "id": "775d-336b-9d62-b0c2",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "A model with a Chronometron can re-roll one of his D6 rolls each phase. If the bearer is in a unit, this ability can be used to instead re-roll one of the unit's D6 rolls each phase.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1611,7 +1765,16 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [{"name": "Timesplinter cloak", "id": "d9e6-a3cf-7587-3b6f", "description": "A model with a Timesplinter cloak has a 3+ invulnerable save.", "hidden": false}]
+        "profiles": [
+          {
+            "name": "Timesplinter cloak",
+            "id": "505e-d20c-d653-ae6a",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A model with a Timesplinter cloak has a 3+ invulnerable save.", "typeId": "3841-e529-1333-b029"}]
+          }
+        ]
       },
       {
         "name": "Voltaic staff",
@@ -1619,7 +1782,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "ASSAULT X", "id": "40f6-c3ec-8e22-89b9", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+        "infoLinks": [{"name": "Assault", "id": "40f6-c3ec-8e22-89b9", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
         "profiles": [
           {
             "name": "Voltaic staff",
@@ -1631,7 +1794,7 @@
               {"name": "Range", "$text": "12\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 4, Haywire", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 4, Haywire", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ],
@@ -1650,12 +1813,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Lightning field",
-            "id": "21ed-8623-f0d0-f303",
-            "description": "When an enemy unit successfully moves into assault with the Cryptek(or his unit) the assaulting unit immediately suffers D6 Strength 8, Ap5 hits. the rest of the unit loses this ability if the Cryptek is removed as a casualty.",
-            "hidden": false
+            "id": "835d-bc3c-54b4-74d9",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When an enemy unit successfully moves into assault with the Cryptek(or his unit) the assaulting unit immediately suffers D6 Strength 8, Ap 5 hits. the rest of the unit loses this ability if the Cryptek is removed as a casualty.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1665,12 +1836,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Ether crystal",
-            "id": "edcd-b7bc-5f17-70c0",
-            "description": "Any enemy unit arriving by Deeo Strike within 6\" of the bearer of an Ether crystal suffers D6 Strength 8, AP 5 hits. If any enemy units arrives by Deep Strike within range of one or more Ether crystal, then increase the number of hits by one for each Ether crystal beyond the first(it doesn't suffer D6 hits per Ether crystal).",
-            "hidden": false
+            "id": "ce13-216c-ec31-e2bd",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Any enemy unit arriving by Deeo Strike within 6\" of the bearer of an Ether crystal suffers D6 Strength 8, AP 5 hits. If any enemy units arrives by Deep Strike within range of one or more Ether crystal, then increase the number of hits by one for each Ether crystal beyond the first(it doesn't suffer D6 hits per Ether crystal).",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1681,8 +1860,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT X", "id": "6374-bd1f-780c-50fb", "exportable": false, "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
-          {"name": "BLAST", "id": "fa4e-b6fa-9deb-a2a5", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+          {"name": "Assault", "id": "6374-bd1f-780c-50fb", "exportable": false, "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Blast", "id": "fa4e-b6fa-9deb-a2a5", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
         ],
         "profiles": [
           {
@@ -1695,7 +1874,7 @@
               {"name": "Range", "$text": "36\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, BLAST, Quake", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Blast, Quake", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ],
@@ -1714,12 +1893,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Seismic crucible",
-            "id": "7004-b485-0d4c-0dfb",
-            "description": "At the start of the enemy Assault phase, toll a D3 and nominate an enemy unit. If the nominated unit attempts to assault the cryptek, or his unit, reduce their assault move by the result of the D3 for that phase.",
-            "hidden": false
+            "id": "8731-8f4c-46de-1401",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of the enemy Assault phase, toll a D3 and nominate an enemy unit. If the nominated unit attempts to assault the cryptek, or his unit, reduce their assault move by the result of the D3 for that phase.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -1730,7 +1917,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT X", "id": "e358-08aa-e4b5-c40e", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "e358-08aa-e4b5-c40e", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Entropic Strike", "id": "27a6-706d-1d92-b8c4", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"}
         ],
         "profiles": [
@@ -1744,7 +1931,7 @@
               {"name": "Range", "$text": "Infinite", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Entropic Strike", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Entropic Strike", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -1776,7 +1963,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ],
@@ -1805,7 +1992,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "RAPID FIRE", "id": "0658-a874-80f6-469c", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
+          {"name": "Rapid Fire", "id": "0658-a874-80f6-469c", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
           {"name": "Gauss", "id": "decb-2bb8-98e1-49e2", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"}
         ],
         "profiles": [
@@ -1819,7 +2006,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "RAPID FIRE, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Rapid Fire, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -1874,7 +2061,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT X", "id": "3960-f0c9-1ef3-f429", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "3960-f0c9-1ef3-f429", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Tesla", "id": "f8f8-68ea-9ad8-0dc6", "hidden": false, "targetId": "f434-cecf-4397-baf4", "type": "rule"}
         ],
         "profiles": [
@@ -1888,7 +2075,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -1920,7 +2107,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ],
             "modifiers": [
               {
@@ -2017,7 +2204,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "POWER WEAPONS", "id": "f802-2642-6f62-7a67", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"}],
+        "infoLinks": [{"name": "Power Weapons", "id": "f802-2642-6f62-7a67", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"}],
         "profiles": [
           {
             "name": "Hyperphase sword",
@@ -2027,18 +2214,24 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Strength", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "POWER WEAPONS", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Power Weapons", "typeId": "dbd5-a62e-abc4-431f"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Dispersion shields",
-            "id": "11c2-c8e6-89b9-57dc",
-            "description": "Dispersion shields: A Lychguard with a Dispersion shields has a 4+ invulnerable save. If this save is made against a shooting attack, choose an unengaged enemy unit within 6\" - that unit suffers a single hit with a Strength and AP equal to that of the initial shot. If there is no unengaged enemy unit within 6\", then the wound is still saved, but the shot is not redirected. this does not cause templates or blast markers to be repositioned.",
-            "hidden": false
+            "id": "9306-3da4-4d8d-dcf3",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Dispersion shields: A Lychguard with a Dispersion shields has a 4+ invulnerable save. If this save is made against a shooting attack, choose an unengaged enemy unit within 6\" - that unit suffers a single hit with a Strength and AP equal to that of the initial shot. If there is no unengaged enemy unit within 6\", then the wound is still saved, but the shot is not redirected. this does not cause templates or blast markers to be repositioned.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -2053,7 +2246,7 @@
         "entryLinks": [{"name": "Synaptic disintegrator", "id": "b6a5-26c6-2953-8b92", "hidden": false, "import": true, "targetId": "1874-f4c2-849d-255d", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Reanimation protocols", "id": "07f3-745d-ad0b-8fef", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
-          {"name": "Deepstrike", "id": "e864-1103-113a-9b06", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"}
+          {"name": "Deep strike", "id": "e864-1103-113a-9b06", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"}
         ],
         "profiles": [
           {
@@ -2073,22 +2266,36 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Ethereal Interception",
-            "id": "122f-3de5-530b-9c93",
-            "description": "Immediately after an enemy unit arrives from reserve, any Deathmarks units in Deep Strike reserve that have not yet entered play can themselves choose to enter play via Deep Strike, usually in the enemy turn, Any Deathmark units that choose not to enter play in this fashion make a reserve rolls as normal in subsequent turns.",
-            "hidden": false
+            "id": "9181-fcb5-2195-3684",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Immediately after an enemy unit arrives from reserve, any Deathmarks units in Deep Strike reserve that have not yet entered play can themselves choose to enter play via Deep Strike, usually in the enemy turn, Any Deathmark units that choose not to enter play in this fashion make a reserve rolls as normal in subsequent turns.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Hunters from Hyperspace",
-            "id": "a417-cdcd-1ba6-b028",
-            "description": "When a Deathmark unit deploys, choose a non-vehicle enemy unit on the battlefield(even a unit in a transport) to be their prey - place a counter next to the chosen unit to serve as a reminder. Any Deathmark unit that shoot at, or strikes blow against, a unit marked in this fashion will score a wound on a roll of 2+.",
-            "hidden": false
+            "id": "f0ef-2842-cf9c-6ef6",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When a Deathmark unit deploys, choose a non-vehicle enemy unit on the battlefield(even a unit in a transport) to be their prey - place a counter next to the chosen unit to serve as a reminder. Any Deathmark unit that shoot at, or strikes blow against, a unit marked in this fashion will score a wound on a roll of 2+.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -2100,7 +2307,7 @@
         "type": "upgrade",
         "infoLinks": [
           {"name": "Sniper", "id": "59eb-de41-bc5e-80a3", "hidden": false, "targetId": "3541-4c31-fad4-c0a0", "type": "rule"},
-          {"name": "RAPID FIRE", "id": "5acc-ea84-1f5a-6fcc", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"}
+          {"name": "Rapid Fire", "id": "5acc-ea84-1f5a-6fcc", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"}
         ],
         "profiles": [
           {
@@ -2113,7 +2320,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "x", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "RAPID FIRE, Sniper", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Rapid Fire, Sniper", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2169,9 +2376,10 @@
         "categoryLinks": [{"name": "Infantry", "id": "cb69-3c9c-4e05-8ea8", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 13}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 13}],
         "infoLinks": [
-          {"name": "Deepstrike", "id": "963e-09b5-e539-19ee", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
-          {"name": "Infiltrate", "id": "1546-9e34-1ddb-d422", "hidden": false, "targetId": "bd6c-904d-0285-5c7d", "type": "rule"},
-          {"name": "Reanimation protocols", "id": "ab18-4295-1f43-f215", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
+          {"name": "Deep strike", "id": "963e-09b5-e539-19ee", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
+          {"name": "Reanimation protocols", "id": "ab18-4295-1f43-f215", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
+          {"name": "Infiltrate", "id": "419a-ff22-f43e-5fad", "hidden": false, "targetId": "ec1b-5829-d1f5-2bc4", "type": "profile"},
+          {"name": "Outflank", "id": "cc15-a3fd-bee9-0e1d", "hidden": false, "targetId": "82c0-43aa-34d6-3bd1", "type": "profile"}
         ],
         "profiles": [
           {
@@ -2191,7 +2399,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ]
@@ -2226,9 +2434,10 @@
         "type": "model",
         "categoryLinks": [{"name": "Jump Infantry", "id": "bdc2-9f06-36a0-b5f5", "hidden": false, "primary": false, "targetId": "35a6-f8d9-8cb6-552d"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
+        "entryLinks": [{"name": "Jump Infantry", "id": "1ef6-4ffa-fbf0-35b7", "hidden": false, "import": true, "targetId": "5015-2211-547c-cec9", "type": "selectionEntry"}],
         "infoLinks": [
-          {"name": "Fearless", "id": "5c46-55cb-6665-600c", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
-          {"name": "Reanimation protocols", "id": "ca97-7fa1-a400-58a4", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
+          {"name": "Reanimation protocols", "id": "ca97-7fa1-a400-58a4", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
+          {"name": "Fearless", "id": "1c66-41f2-0777-508f", "hidden": false, "targetId": "17ec-cbd7-689f-52c6", "type": "profile"}
         ],
         "profiles": [
           {
@@ -2248,7 +2457,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ],
@@ -2306,8 +2515,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "POWER WEAPONS", "id": "b8cc-1cd8-98ba-ca95", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"},
-          {"name": "ASSAULT X", "id": "974c-434c-dfe8-ed1f", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}
+          {"name": "Power Weapons", "id": "b8cc-1cd8-98ba-ca95", "hidden": false, "targetId": "b137-bbc1-87fa-18e0", "type": "rule"},
+          {"name": "Assault", "id": "974c-434c-dfe8-ed1f", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}
         ],
         "profiles": [
           {
@@ -2320,7 +2529,7 @@
               {"name": "Range", "$text": "6\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "2", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, POWER WEAPONS", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Power Weapons", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2336,7 +2545,7 @@
         "infoLinks": [
           {"name": "Entropic Strike", "id": "8f16-9841-b1f3-66e8", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"},
           {"name": "Rending", "id": "652c-f7fd-a740-14fe", "hidden": false, "targetId": "e2ce-19f2-2c05-d5a4", "type": "rule"},
-          {"name": "PISTOLS", "id": "de80-ac63-4c7e-dc50", "hidden": false, "targetId": "6f7a-a424-70fb-a859", "type": "rule"}
+          {"name": "Pistol", "id": "de80-ac63-4c7e-dc50", "hidden": false, "targetId": "6f7a-a424-70fb-a859", "type": "rule"}
         ],
         "profiles": [
           {
@@ -2347,7 +2556,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Strength", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
               {"name": "Type", "$text": "Rending, Entropic Strike", "typeId": "dbd5-a62e-abc4-431f"}
             ]
@@ -2362,7 +2571,7 @@
               {"name": "Range", "$text": "12\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "PISTOLS", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Pistol", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2376,7 +2585,7 @@
         "categoryLinks": [
           {"name": "Vehicle", "id": "41ae-2d42-6547-d144", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "OPEN-TOPPED", "id": "de6b-5daf-1cce-872e", "hidden": false, "primary": false, "targetId": "fc75-8d5a-96f3-af94"},
-          {"name": "Walkers", "id": "7ac1-57bc-e875-18eb", "hidden": false, "primary": false, "targetId": "05c3-9c36-1aa1-993c"},
+          {"name": "Walker", "id": "7ac1-57bc-e875-18eb", "hidden": false, "primary": false, "targetId": "05c3-9c36-1aa1-993c"},
           {"name": "Elites", "id": "18e3-7d81-a20e-3d8c", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 150}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 150}],
@@ -2395,9 +2604,9 @@
           }
         ],
         "infoLinks": [
-          {"name": "VEHICLES & DIFFICULT TERRAIN", "id": "be4d-86d2-101e-6e73", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
-          {"name": "Living Metal", "id": "a699-d0f1-dce6-62a6", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"},
-          {"name": "Move Through Cover", "id": "495f-d314-b77a-8fb9", "hidden": false, "targetId": "f848-a065-305c-f829", "type": "rule"}
+          {"name": "Vehicles & Difficult Terrain", "id": "be4d-86d2-101e-6e73", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Move Through Cover", "id": "495f-d314-b77a-8fb9", "hidden": false, "targetId": "f848-a065-305c-f829", "type": "rule"},
+          {"name": "Living Metal", "id": "b912-7114-790e-cac3", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
         ],
         "profiles": [
           {
@@ -2417,16 +2626,22 @@
               {"name": "A", "$text": "3", "typeId": "e84e-7d21-b608-67a3"},
               {"name": "Struc", "$text": "1", "typeId": "a8dc-eec0-9a40-d0d6"},
               {"name": "InSv", "$text": "-", "typeId": "ed5a-9d95-f8be-ea63"},
-              {"name": "FNP", "$text": "-", "typeId": "2d29-65b6-fb5f-cb2f"}
+              {"name": "FNP", "$text": "-", "typeId": "3163-3182-c12b-4863"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Targeting Relay",
-            "id": "800e-d328-fe97-5766",
-            "description": "If a Triarch Stalker shoots at an enemy unit and manages at least one hit, place a counter or coin next to the target. All other friendly unit that shoot at the same target later in the same Shooting phase count their weapons as twin-linked.",
-            "hidden": false
+            "id": "89c5-13ff-09eb-e761",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If a Triarch Stalker shoots at an enemy unit and manages at least one hit, place a counter or coin next to the target. All other friendly unit that shoot at the same target later in the same Shooting phase count their weapons as twin-linked.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -2469,12 +2684,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Quantum shielding",
-            "id": "7693-ccc6-552c-b24b",
-            "description": "Until the vehicle suffers a penetrating hit, it counts all Armour Values on its front and side facings as being 2 points higher. Once the vehicle has suffered a penetrating hit, it uses its own armour value against subsequent hits.",
-            "hidden": false
+            "id": "2609-2e19-9651-6245",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Until the vehicle suffers a penetrating hit, it counts all Armour Values on its front and side facings as being 2 points higher. Once the vehicle has suffered a penetrating hit, it uses its own armour value against subsequent hits.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -2485,7 +2708,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "HEAVY", "id": "c839-4db6-2c0c-1bb0", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+          {"name": "Heavy", "id": "c839-4db6-2c0c-1bb0", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
           {"name": "Melta", "id": "0eac-a99b-8893-6f85", "hidden": false, "targetId": "e3cf-733e-f8c1-0615", "type": "rule"}
         ],
         "profiles": [
@@ -2499,7 +2722,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "8", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "1", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 2, Melta", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 2, Melta", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           },
           {
@@ -2512,7 +2735,7 @@
               {"name": "Range", "$text": "Template", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 1", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 1", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2525,8 +2748,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "HEAVY", "id": "2145-63bf-e912-4975", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
-          {"name": "BLAST", "id": "67a5-9aa5-1804-ace8", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+          {"name": "Heavy", "id": "2145-63bf-e912-4975", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+          {"name": "Blast", "id": "67a5-9aa5-1804-ace8", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
         ],
         "profiles": [
           {
@@ -2539,7 +2762,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "7", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 1, Large BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 1, Large Blast", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2551,7 +2774,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "1bc1-3747-3164-b4e3", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "1bc1-3747-3164-b4e3", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Gauss", "id": "bc21-5433-5cfa-de58", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"},
           {"name": "Twin-Linked", "id": "9823-6589-a37a-d961", "hidden": false, "targetId": "b234-202b-7a03-3959", "type": "rule"}
         ],
@@ -2566,7 +2789,7 @@
               {"name": "Range", "$text": "36\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "9", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "2", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Gauss, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Gauss, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -2583,9 +2806,10 @@
           {"name": "Elites", "id": "8a68-5e57-6bf2-5b80", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"}
         ],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 185}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 185}],
+        "entryLinks": [{"name": "Monstrous Creatures", "id": "697a-23e4-8a31-8708", "hidden": false, "import": true, "targetId": "f49a-31fc-41cd-ffd4", "type": "selectionEntry"}],
         "infoLinks": [
-          {"name": "Fearless", "id": "0755-0b29-1c0a-ba71", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
-          {"name": "Eternal Warrior", "id": "e8d6-2dc4-9847-526f", "hidden": false, "targetId": "e661-e545-4b0b-9bc6", "type": "rule"}
+          {"name": "Eternal Warrior", "id": "9b8f-5880-6046-7cc1", "hidden": false, "targetId": "fbc6-178b-64c4-e1a6", "type": "profile"},
+          {"name": "Fearless", "id": "4864-bfd6-7d05-8f82", "hidden": false, "targetId": "17ec-cbd7-689f-52c6", "type": "profile"}
         ],
         "profiles": [
           {
@@ -2605,22 +2829,30 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "4+", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Immune to natural law",
-            "id": "d84a-2603-671a-c4de",
-            "description": "C'tan shards ignore the effects of difficult and dangerous terrain while moving",
-            "hidden": false
+            "id": "9e98-8045-0466-f2bc",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "C'tan shards ignore the effects of difficult and dangerous terrain while moving", "typeId": "3841-e529-1333-b029"}]
           },
           {
             "name": "Necrodermis",
-            "id": "1f1d-2d0e-b446-ef9f",
-            "description": "C'tan shards have a 4+ invulnerable save. If the C'tan chard loses its last Wound, models within D6\" of the C'tan shard suffer a Strength 4 AP 1 hit.",
-            "hidden": false
+            "id": "6499-dc8a-8a1c-3d23",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "C'tan shards have a 4+ invulnerable save. If the C'tan chard loses its last Wound, models within D6\" of the C'tan shard suffer a Strength 4 AP 1 hit.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -2654,12 +2886,14 @@
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
                 "infoLinks": [{"name": "Entropic Strike", "id": "a92a-41de-73f6-7386", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Entropic touch",
-                    "id": "d614-1342-8422-ae32",
-                    "description": "The C'tan shard's close combat attacks have the Entropic strike special rule.",
-                    "hidden": false
+                    "id": "781b-37c1-4b05-7191",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "The C'tan shard's close combat attacks have the Entropic strike special rule.", "typeId": "3841-e529-1333-b029"}]
                   }
                 ]
               },
@@ -2682,12 +2916,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Lord of fire",
-                    "id": "821f-c5f1-bd11-1a55",
-                    "description": "All flamer weapons(as well as heat rays, burnas, skorchas, inferno cannons and any weapon described as using 'flame' or 'fire' as its effect or in its special rules) and weapons with the melta type fired within 12\" of the C'tan shard have a chance of exploding. Roll a D6 each time such a weapon is fired within range. On a roll of a 1, the weapon detonates. If carried by a non-vehicle model, the model is removed from play as a casualty, If mounted on a vehicle, it counts as a weapon destroyed result. In either case the shot(s) are lost.",
-                    "hidden": false
+                    "id": "e848-f5c6-9562-d008",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "All flamer weapons(as well as heat rays, burnas, skorchas, inferno cannons and any weapon described as using 'flame' or 'fire' as its effect or in its special rules) and weapons with the melta type fired within 12\" of the C'tan shard have a chance of exploding. Roll a D6 each time such a weapon is fired within range. On a roll of a 1, the weapon detonates. If carried by a non-vehicle model, the model is removed from play as a casualty, If mounted on a vehicle, it counts as a weapon destroyed result. In either case the shot(s) are lost.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2710,7 +2952,7 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
-                "infoLinks": [{"name": "ASSAULT", "id": "f200-59c2-8b31-f1ce", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+                "infoLinks": [{"name": "Assault", "id": "f200-59c2-8b31-f1ce", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
                 "profiles": [
                   {
                     "name": "Pyreshards",
@@ -2722,7 +2964,7 @@
                       {"name": "Range", "$text": "18\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                       {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
                       {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-                      {"name": "Type", "$text": "ASSAULT 8", "typeId": "dbd5-a62e-abc4-431f"}
+                      {"name": "Type", "$text": "Assault 8", "typeId": "dbd5-a62e-abc4-431f"}
                     ]
                   }
                 ]
@@ -2747,16 +2989,24 @@
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
                 "infoLinks": [
-                  {"name": "ASSAULT", "id": "0b78-c9ae-c6cf-8618", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
-                  {"name": "Stealth", "id": "4ab1-d030-9232-c01e", "hidden": false, "targetId": "705f-6f00-e003-7a63", "type": "rule"},
-                  {"name": "DEFENSIVE GRENADES", "id": "5ee7-34e5-05df-439a", "hidden": false, "targetId": "f990-1304-56e7-0d3e", "type": "rule"}
+                  {"name": "Assault", "id": "0b78-c9ae-c6cf-8618", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+                  {"name": "Defensive Grenades", "id": "3c75-fd50-b0d5-b4ac", "hidden": false, "targetId": "fb34-4bca-90ef-5139", "type": "profile"},
+                  {"name": "Stealth", "id": "8d19-56de-0c4a-a9b2", "hidden": false, "targetId": "2263-3e04-f543-d4ef", "type": "profile"}
                 ],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Swarm of spirit dust",
-                    "id": "71a7-b3b6-a422-50dc",
-                    "description": "The C'tan shard is treated as having assault and defensive grenades. Furthermore it has the Stealth special rule.",
-                    "hidden": false
+                    "id": "3def-eee7-26bd-af87",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "The C'tan shard is treated as having assault and defensive grenades. Furthermore it has the Stealth special rule.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2780,8 +3030,8 @@
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 25}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 25}],
                 "infoLinks": [
-                  {"name": "ASSAULT", "id": "35c7-505f-161b-23e9", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
-                  {"name": "BLAST", "id": "4b99-523c-226d-4a27", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+                  {"name": "Assault", "id": "35c7-505f-161b-23e9", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+                  {"name": "Blast", "id": "4b99-523c-226d-4a27", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
                 ],
                 "profiles": [
                   {
@@ -2794,7 +3044,7 @@
                       {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                       {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
                       {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-                      {"name": "Type", "$text": "ASSAULT 1, Large BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+                      {"name": "Type", "$text": "Assault 1, Large Blast", "typeId": "dbd5-a62e-abc4-431f"}
                     ]
                   }
                 ]
@@ -2818,12 +3068,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 30}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 30}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Sentient singularity",
-                    "id": "03a0-21b3-1a82-fcbf",
-                    "description": "All enemy vehicles within 6\" of the C'tan shard treat all terrain as dangerous(if a vehicle starts its movement more than 6\" away from the C'tan shard of the C'tan shard). Additionally, Deep Strike enemy units attempting to arrive within 6\" of the C'tan shard automatically suffer a Deep Strike mishap if their scatter roll is a double(whether or not a hit was rolled).",
-                    "hidden": false
+                    "id": "cff7-0021-52c0-2a68",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "All enemy vehicles within 6\" of the C'tan shard treat all terrain as dangerous(if a vehicle starts its movement more than 6\" away from the C'tan shard of the C'tan shard). Additionally, Deep Strike enemy units attempting to arrive within 6\" of the C'tan shard automatically suffer a Deep Strike mishap if their scatter roll is a double(whether or not a hit was rolled).",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2846,12 +3104,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 35}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 35}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Writhing worldscape",
-                    "id": "5168-3dcf-4a45-204f",
-                    "description": "Whilst the C'tan shard is on the battlefield, all difficult terrain is also dangerous for the enemy. If the terrain is already dangerous, the Dangerous terrain test is failed on a 1 or 2.",
-                    "hidden": false
+                    "id": "24c7-7b4d-e188-b1a3",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Whilst the C'tan shard is on the battlefield, all difficult terrain is also dangerous for the enemy. If the terrain is already dangerous, the Dangerous terrain test is failed on a 1 or 2.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2874,12 +3140,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Grand illusion",
-                    "id": "67a4-f558-2eee-543c",
-                    "description": "After all forces have been deployed and all scout moves have been made, roll a D3. You can immediately redeploy this many friendly units, subject to the normal deployment rules for the mission. This power can be used to move units into, or out of, reserve.",
-                    "hidden": false
+                    "id": "810c-7b98-5b46-392a",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "After all forces have been deployed and all scout moves have been made, roll a D3. You can immediately redeploy this many friendly units, subject to the normal deployment rules for the mission. This power can be used to move units into, or out of, reserve.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2902,12 +3176,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 40}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 40}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Time's arrow",
-                    "id": "67c9-8b20-bdaa-bef5",
-                    "description": "At the start of the Assault phase, after assault moves have been made but before blow are struck, nominate one enemy model in base contact with the C'tan shard(if there are any). that model must pass an Initiative test or be removed as a casualty with no save of any kind allowed.",
-                    "hidden": false
+                    "id": "4108-a79e-c747-05d5",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "At the start of the Assault phase, after assault moves have been made but before blow are struck, nominate one enemy model in base contact with the C'tan shard(if there are any). that model must pass an Initiative test or be removed as a casualty with no save of any kind allowed.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2919,7 +3201,7 @@
                 "type": "upgrade",
                 "constraints": [{"id": "340a-d6b4-12e0-f6c0", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 45}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}],
-                "infoLinks": [{"name": "ASSAULT", "id": "8ec8-4348-0008-0da8", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
+                "infoLinks": [{"name": "Assault", "id": "8ec8-4348-0008-0da8", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"}],
                 "profiles": [
                   {
                     "name": "Transdimensional thunderbolt",
@@ -2931,7 +3213,7 @@
                       {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                       {"name": "Str", "$text": "9", "typeId": "a2c5-ec2c-1fcc-5485"},
                       {"name": "AP", "$text": "2", "typeId": "496d-5030-c6b3-ea53"},
-                      {"name": "Type", "$text": "ASSAULT 1", "typeId": "dbd5-a62e-abc4-431f"}
+                      {"name": "Type", "$text": "Assault 1", "typeId": "dbd5-a62e-abc4-431f"}
                     ]
                   }
                 ]
@@ -2955,12 +3237,20 @@
                   }
                 ],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 50}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Gaze of death",
-                    "id": "7568-67eb-2933-5ead",
-                    "description": "In the Assault phase, after all other blows in the C'tan Shard's combat have been struck, centre the large blast marker on the C'tan shard. All other models beneath the marker (friend or foe) suffer a Strength 3 hit with no armour saves allowed. If the C'tan shard causes one or more unsaved Wounds in this manner, it regains one Wound lost earlier in the battle. These Wounds do not count towards combat resolution.",
-                    "hidden": false
+                    "id": "f9dd-3c0f-9931-ec6a",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In the Assault phase, after all other blows in the C'tan Shard's combat have been struck, centre the large blast marker on the C'tan shard. All other models beneath the marker (friend or foe) suffer a Strength 3 hit with no armour saves allowed. If the C'tan shard causes one or more unsaved Wounds in this manner, it regains one Wound lost earlier in the battle. These Wounds do not count towards combat resolution.",
+                        "typeId": "3841-e529-1333-b029"
+                      }
+                    ]
                   }
                 ]
               }
@@ -2974,8 +3264,9 @@
         "hidden": false,
         "import": true,
         "type": "model",
-        "categoryLinks": [{"name": "JetBikes", "id": "0d57-bfa4-17c2-547f", "hidden": false, "primary": false, "targetId": "cf30-5b62-9ce0-3996"}],
+        "categoryLinks": [{"name": "JetBike", "id": "0d57-bfa4-17c2-547f", "hidden": false, "primary": false, "targetId": "cf30-5b62-9ce0-3996"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 20}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 20}],
+        "entryLinks": [{"name": "Jetbikes", "id": "0e4c-cc17-dfbd-0053", "hidden": false, "import": true, "targetId": "64f6-29a5-6a55-708c", "type": "selectionEntry"}],
         "infoLinks": [{"name": "Reanimation protocols", "id": "f607-9988-8169-29e7", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}],
         "profiles": [
           {
@@ -2995,7 +3286,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "4+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "", "typeId": "9822-ba7b-9cf7-378c"}
             ],
             "modifiers": [
               {
@@ -3076,7 +3367,16 @@
                 "type": "upgrade",
                 "constraints": [{"id": "8815-11fa-0226-5042", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}],
-                "rules": [{"name": "Nebuloscopes", "id": "136c-1b27-fb7b-6572", "description": "A model with a nebuloscope has a Ballistic Skill of 5", "hidden": false}]
+                "profiles": [
+                  {
+                    "name": "Nebuloscopes",
+                    "id": "c35a-87a9-56da-c77d",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "A model with a nebuloscope has a Ballistic Skill of 5", "typeId": "3841-e529-1333-b029"}]
+                  }
+                ]
               },
               {
                 "name": "Shadowlooms",
@@ -3087,8 +3387,17 @@
                 "type": "upgrade",
                 "constraints": [{"id": "9968-f141-b788-ae30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
-                "infoLinks": [{"name": "Stealth", "id": "b8d1-f625-a07d-a679", "hidden": false, "targetId": "705f-6f00-e003-7a63", "type": "rule"}],
-                "rules": [{"name": "Shadowlooms", "id": "0096-891a-1d29-bccf", "description": "A model with a shadowloom has the stealth special rule", "hidden": false}]
+                "infoLinks": [{"name": "Stealth", "id": "5b2f-bd3c-659c-2402", "hidden": false, "targetId": "2263-3e04-f543-d4ef", "type": "profile"}],
+                "profiles": [
+                  {
+                    "name": "Shadowlooms",
+                    "id": "3835-8820-2c3e-9366",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "A model with a shadowloom has the stealth special rule", "typeId": "3841-e529-1333-b029"}]
+                  }
+                ]
               },
               {
                 "name": "Shield vanes",
@@ -3099,7 +3408,16 @@
                 "type": "upgrade",
                 "constraints": [{"id": "1de8-7019-abf1-e0ef", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 10}],
-                "rules": [{"name": "Shield vanes", "id": "5c42-bc37-f5c6-c158", "description": "A model with a shield vanes has an armour save of 3+", "hidden": false}]
+                "profiles": [
+                  {
+                    "name": "Shield vanes",
+                    "id": "ba5f-a1f3-053b-28d5",
+                    "hidden": false,
+                    "typeId": "e150-914c-d218-a5ff",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "A model with a shield vanes has an armour save of 3+", "typeId": "3841-e529-1333-b029"}]
+                  }
+                ]
               }
             ]
           }
@@ -3113,7 +3431,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "998c-3c77-b6a2-f8be", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "998c-3c77-b6a2-f8be", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Tesla", "id": "3dc2-76ea-c4a6-c2fd", "hidden": false, "targetId": "f434-cecf-4397-baf4", "type": "rule"},
           {"name": "Twin-Linked", "id": "baf2-e2dd-4699-c0f5", "hidden": false, "targetId": "b234-202b-7a03-3959", "type": "rule"}
         ],
@@ -3128,7 +3446,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Twin-Linked, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Twin-Linked, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3141,7 +3459,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "RAPID FIRE", "id": "27b5-fe20-026a-abe1", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
+          {"name": "Rapid Fire", "id": "27b5-fe20-026a-abe1", "hidden": false, "targetId": "7b76-ee3c-d78b-87b7", "type": "rule"},
           {"name": "Gauss", "id": "fa5e-830a-833b-86d5", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"},
           {"name": "Twin-Linked", "id": "0a27-b4c1-6101-f038", "hidden": false, "targetId": "b234-202b-7a03-3959", "type": "rule"}
         ],
@@ -3156,7 +3474,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "RAPID FIRE, Twin-Linked, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Rapid Fire, Twin-Linked, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3169,8 +3487,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "HEAVY", "id": "769f-2089-8666-e75b", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
-          {"name": "BLAST", "id": "0c8a-28a4-11ac-34d1", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+          {"name": "Heavy", "id": "769f-2089-8666-e75b", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+          {"name": "Blast", "id": "0c8a-28a4-11ac-34d1", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
         ],
         "profiles": [
           {
@@ -3183,7 +3501,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 1, BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 1, Blast", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3230,7 +3548,8 @@
               {"id": "72e6-c381-1c71-7010-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "72e6-c381-1c71-7010-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
-          }
+          },
+          {"name": "Jump Infantry", "id": "37b2-37a4-828e-7ec8", "hidden": false, "import": true, "targetId": "5015-2211-547c-cec9", "type": "selectionEntry"}
         ],
         "infoLinks": [
           {"name": "Preferred Enemy", "id": "0630-ec6b-32f1-1c3c", "hidden": false, "targetId": "1799-9b26-acf2-361a", "type": "rule"},
@@ -3254,11 +3573,18 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
+          },
+          {
+            "name": "Preferred Enemy(Everything!)",
+            "id": "8893-6944-baa2-59d1",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This models Units Preferred Enemy is Everything!", "typeId": "3841-e529-1333-b029"}]
           }
-        ],
-        "rules": [{"name": "Preferred Enemy(Everything!)", "id": "0c4c-406e-ab60-4bbb", "description": "This models Units Preferred Enemy is Everything!", "hidden": false}]
+        ]
       },
       {
         "name": "Heavy Destroyer",
@@ -3304,11 +3630,18 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
+          },
+          {
+            "name": "Preferred Enemy(Everything!)",
+            "id": "0866-5085-3b46-fd48",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This models Units Preferred Enemy is Everything!", "typeId": "3841-e529-1333-b029"}]
           }
-        ],
-        "rules": [{"name": "Preferred Enemy(Everything!)", "id": "27d6-c2a4-cbba-a53f", "description": "This models Units Preferred Enemy is Everything!", "hidden": false}]
+        ]
       },
       {
         "name": "Gauss cannon",
@@ -3318,7 +3651,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "bdca-ada2-1857-6d38", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "bdca-ada2-1857-6d38", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Gauss", "id": "4f7e-94a1-38b3-4fc8", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"}
         ],
         "profiles": [
@@ -3332,7 +3665,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "5", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "3", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 2, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 2, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3345,7 +3678,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "e532-8245-5c57-fc29", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "e532-8245-5c57-fc29", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Gauss", "id": "cca7-8398-17e3-10d6", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"}
         ],
         "profiles": [
@@ -3359,7 +3692,7 @@
               {"name": "Range", "$text": "36\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "9", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "2", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3416,9 +3749,10 @@
               {"id": "6d45-f543-691c-debe-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "6d45-f543-691c-debe-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ]
-          }
+          },
+          {"name": "Jump Infantry", "id": "19ad-c733-e866-b302", "hidden": false, "import": true, "targetId": "5015-2211-547c-cec9", "type": "selectionEntry"}
         ],
-        "infoLinks": [{"name": "Fearless", "id": "073b-9896-fcbc-e3ff", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"}],
+        "infoLinks": [{"name": "Fearless", "id": "eb16-86f7-0f2e-ee8b", "hidden": false, "targetId": "17ec-cbd7-689f-52c6", "type": "profile"}],
         "profiles": [
           {
             "name": "Canoptek warith",
@@ -3437,22 +3771,30 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "3+", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Phase attacks",
-            "id": "8712-f493-0978-c8b3",
-            "description": "Close combat attacks made by Canoptek wraiths have the rending special rule.",
-            "hidden": false
+            "id": "bbd2-27b9-a9e8-7ae4",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "Close combat attacks made by Canoptek wraiths have the rending special rule.", "typeId": "3841-e529-1333-b029"}]
           },
           {
             "name": "Wraithflight",
-            "id": "ed73-e4a8-0a37-7f2b",
-            "description": "Canoptek wraiths are never slowed by Difficult Terrain, and automatically pass Dangerous Terrain tests.",
-            "hidden": false
+            "id": "2e79-8133-052e-3661",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Canoptek wraiths are never slowed by Difficult Terrain, and automatically pass Dangerous Terrain tests.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -3522,7 +3864,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "PISTOLS", "id": "8fd2-373b-d208-8936", "hidden": false, "targetId": "6f7a-a424-70fb-a859", "type": "rule"}],
+        "infoLinks": [{"name": "Pistol", "id": "8fd2-373b-d208-8936", "hidden": false, "targetId": "6f7a-a424-70fb-a859", "type": "rule"}],
         "profiles": [
           {
             "name": "Particle caster",
@@ -3534,7 +3876,7 @@
               {"name": "Range", "$text": "12\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "PISTOL", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Pistol", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3545,12 +3887,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Whip coils",
-            "id": "842a-32e0-8eb7-5cc3",
-            "description": "Whilst any enemy model is in base contact with a model with whip coils they count their Initiative value as 1, regardless of their actual Initiative value.",
-            "hidden": false
+            "id": "4649-a154-075f-a4f5",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Whilst any enemy model is in base contact with a model with whip coils they count their Initiative value as 1, regardless of their actual Initiative value.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -3560,7 +3910,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "infoLinks": [{"name": "HEAVY", "id": "a0fb-3e45-1108-fe91", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
+        "infoLinks": [{"name": "Heavy", "id": "a0fb-3e45-1108-fe91", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
         "profiles": [
           {
             "name": "Transdimensional beamer",
@@ -3572,7 +3922,7 @@
               {"name": "Range", "$text": "12\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "x", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 1, Exile Ray", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 1, Exile Ray", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ],
@@ -3593,10 +3943,11 @@
         "type": "model",
         "categoryLinks": [{"name": "Beast", "id": "ad92-06ea-12de-e0d3", "hidden": false, "primary": false, "targetId": "8a34-e6ae-d5ec-81ac"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}],
+        "entryLinks": [{"name": "Beasts", "id": "9760-68e4-76ef-6549", "hidden": false, "import": true, "targetId": "5882-d31b-36a5-97ce", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Entropic Strike", "id": "2dc6-9e79-c651-5a53", "hidden": false, "targetId": "caed-8665-58b0-3f35", "type": "rule"},
-          {"name": "Fearless", "id": "5866-73a6-a059-582d", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"},
-          {"name": "Swarms", "id": "ad29-13c6-892e-ed2d", "hidden": false, "targetId": "37c1-a4be-bd53-08ce", "type": "rule"}
+          {"name": "Swarms", "id": "ad29-13c6-892e-ed2d", "hidden": false, "targetId": "37c1-a4be-bd53-08ce", "type": "rule"},
+          {"name": "Fearless", "id": "deda-5acc-7ec7-78c4", "hidden": false, "targetId": "17ec-cbd7-689f-52c6", "type": "profile"}
         ],
         "profiles": [
           {
@@ -3616,7 +3967,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "5+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ]
@@ -3651,7 +4002,8 @@
         "type": "model",
         "categoryLinks": [{"name": "Monstrous Creature", "id": "ae26-7c7e-13f0-68cc", "hidden": false, "primary": false, "targetId": "8098-49a8-0559-48a1"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 50}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 50}],
-        "infoLinks": [{"name": "Fearless", "id": "1483-fcb5-6bda-7b12", "hidden": false, "targetId": "7829-52eb-2b09-2979", "type": "rule"}],
+        "entryLinks": [{"name": "Monstrous Creatures", "id": "35d7-0ed7-5052-c53e", "hidden": false, "import": true, "targetId": "f49a-31fc-41cd-ffd4", "type": "selectionEntry"}],
+        "infoLinks": [{"name": "Fearless", "id": "f68c-2c84-9fb0-d208", "hidden": false, "targetId": "17ec-cbd7-689f-52c6", "type": "profile"}],
         "profiles": [
           {
             "name": "Canoptek Spyder",
@@ -3670,16 +4022,22 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Scarab hive",
-            "id": "62d2-30a5-5fd7-b82f",
-            "description": "At the start of each Necron Movement phase, a Canoptek Spyder that is not locked in close combat can expend energy to create a Canoptek scarab swarm.\n\n\nNominate a canoptek Scarab unit within 6\" and roll a D6. On a roll of 2-6, add one base to the Canoptek scarab unit - the base can move and act normally this turn. This can take the unit beyond its starting size. On a roll of a 1, the Scarab base is still placed, however, the Canoptek spyder is drained by the energy expenditure and suffer a Wound with no armour or cover saves allowed. If the Scarab base cannot be placed for any reason, it is destroyed.",
-            "hidden": false
+            "id": "06dd-67c0-cbb3-a163",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of each Necron Movement phase, a Canoptek Spyder that is not locked in close combat can expend energy to create a Canoptek scarab swarm.\n\nNominate a canoptek Scarab unit within 6\" and roll a D6. On a roll of 2-6, add one base to the Canoptek scarab unit - the base can move and act normally this turn. This can take the unit beyond its starting size. On a roll of a 1, the Scarab base is still placed, however, the Canoptek spyder is drained by the energy expenditure and suffer a Wound with no armour or cover saves allowed. If the Scarab base cannot be placed for any reason, it is destroyed.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -3729,12 +4087,33 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Fabricator claw array",
-            "id": "c3c5-0974-bbb1-2b95",
-            "description": "The fabricator claw array is a close combat weapon. In addition, if a Canoptek spyder with fabricator claws is in base contact with a damaged vehicle during the Shooting phase, it can attempt to repair one vehicle instead of making a shooting attack.\n\n\nRoll a D6. If the result is 4+, then either a Weapon Destroyed result or Immobilised result (owning player's choice) is repaired. If a Weapon Destroyed result is repaired, that weapon can be fired in the Shooting phase of its next turn. The Canoptek spyder cannot repair if it has gone to ground.",
-            "hidden": false
+            "id": "6b73-ce48-85ce-cfe3",
+            "hidden": false,
+            "typeId": "2fa0-e132-3671-7499",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
+              {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
+              {"name": "Type", "$text": "Fabricator claw array", "typeId": "dbd5-a62e-abc4-431f"}
+            ]
+          },
+          {
+            "name": "Fabricator claw array",
+            "id": "c85e-bbbf-96df-17e7",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The fabricator claw array is a close combat weapon. In addition, if a Canoptek spyder with fabricator claws is in base contact with a damaged vehicle during the Shooting phase, it can attempt to repair one vehicle instead of making a shooting attack.\n\nRoll a D6. If the result is 4+, then either a Weapon Destroyed result or Immobilised result (owning player's choice) is repaired. If a Weapon Destroyed result is repaired, that weapon can be fired in the Shooting phase of its next turn. The Canoptek spyder cannot repair if it has gone to ground.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -3744,12 +4123,20 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "rules": [
+        "profiles": [
           {
             "name": "Gloom prism",
-            "id": "a1ce-8b18-ebdb-329c",
-            "description": "Each time an enemy unit attempts to target the Canoptek spyder, or a friendly unit within 3\", with a psychic power, roll a D6 if the Psychic test is passed. On a 4+, the power is nullified and has no effect.",
-            "hidden": false
+            "id": "44bd-c122-05a5-70ec",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Each time an enemy unit attempts to target the Canoptek spyder, or a friendly unit within 3\", with a psychic power, roll a D6 if the Psychic test is passed. On a 4+, the power is nullified and has no effect.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -3761,8 +4148,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "HEAVY", "id": "5888-fed5-c924-6ad2", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
-          {"name": "BLAST", "id": "32ff-6b6a-590e-1938", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"},
+          {"name": "Heavy", "id": "5888-fed5-c924-6ad2", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+          {"name": "Blast", "id": "32ff-6b6a-590e-1938", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"},
           {"name": "Twin-Linked", "id": "636e-d065-cc39-00fa", "hidden": false, "targetId": "b234-202b-7a03-3959", "type": "rule"}
         ],
         "profiles": [
@@ -3776,7 +4163,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 1, BLAST, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 1, Blast, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -3845,7 +4232,9 @@
         ],
         "infoLinks": [
           {"name": "Deep strike", "id": "8e31-a705-1bdc-2287", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
-          {"name": "Living Metal", "id": "875a-f8c8-755f-1153", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}
+          {"name": "Skimmer & Hovering Flyers", "id": "4cb3-457c-c2ab-340d", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "2b61-745d-6231-0921", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Living Metal", "id": "7371-a520-df59-db1e", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
         ],
         "profiles": [
           {
@@ -3861,16 +4250,22 @@
               {"name": "R", "$text": "14", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "2", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Heavy",
-            "id": "3d78-bab7-6125-5bf0",
-            "description": "The vehicle cannot move faster than combat speed. When it shoots, it counts as having remained stationary.\n\n\nIf a Monolith is held in reserve, it must arrive by Deep Strike.",
-            "hidden": false
+            "id": "23c5-7e45-abe6-e19a",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The vehicle cannot move faster than combat speed. When it shoots, it counts as having remained stationary.\n\n\nIf a Monolith is held in reserve, it must arrive by Deep Strike.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -3884,7 +4279,7 @@
               {"id": "b667-7bda-9a7b-67e8-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b667-7bda-9a7b-67e8-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "infoLinks": [{"name": "HEAVY", "id": "8cc0-710a-1738-11d9", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
+            "infoLinks": [{"name": "Heavy", "id": "8cc0-710a-1738-11d9", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
             "profiles": [
               {
                 "name": "Portal of exile",
@@ -3896,7 +4291,7 @@
                   {"name": "Range", "$text": "D6\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                   {"name": "Str", "$text": "x", "typeId": "a2c5-ec2c-1fcc-5485"},
                   {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-                  {"name": "Type", "$text": "HEAVY 1, Special", "typeId": "dbd5-a62e-abc4-431f"}
+                  {"name": "Type", "$text": "Heavy 1, Special", "typeId": "dbd5-a62e-abc4-431f"}
                 ]
               }
             ],
@@ -3931,7 +4326,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "HEAVY", "id": "533e-28c9-7dca-6c16", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+          {"name": "Heavy", "id": "533e-28c9-7dca-6c16", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
           {"name": "Gauss", "id": "adfd-c69d-09f7-afea", "hidden": false, "targetId": "fd7d-cd0d-5fb7-0339", "type": "rule"}
         ],
         "profiles": [
@@ -3945,16 +4340,22 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "HEAVY 3, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Heavy 3, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
-            "name": "Gauss flux arc",
-            "id": "e833-39bd-debe-6acc",
-            "description": "A Gauss flux arc can be fired at a different target unit to other weapons on the vehicle(including other gauss flux arcs) subject to the normal rules for shooting.",
-            "hidden": false
+            "name": "gauss flux arcs",
+            "id": "c6a7-420f-7683-e994",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "A Gauss flux arc can be fired at a different target unit to other weapons on the vehicle(including other gauss flux arcs) subject to the normal rules for shooting.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -3965,8 +4366,8 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ORDNANCE", "id": "133e-735f-d5d7-1f05", "hidden": false, "targetId": "bfe3-b9fb-4a3a-7b8e", "type": "rule"},
-          {"name": "BLAST", "id": "b2a1-66c7-56ae-c201", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+          {"name": "Ordnance", "id": "133e-735f-d5d7-1f05", "hidden": false, "targetId": "bfe3-b9fb-4a3a-7b8e", "type": "rule"},
+          {"name": "Blast", "id": "b2a1-66c7-56ae-c201", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
         ],
         "profiles": [
           {
@@ -3979,7 +4380,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "8", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "3", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ORDNANCE 1, Large BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Ordnance 1, Large Blast", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -4012,7 +4413,11 @@
           },
           {"name": "Two gauss flayer arrays", "id": "8b37-3478-8f4a-7fbb", "hidden": false, "import": true, "targetId": "000e-4b83-e271-bf62", "type": "selectionEntry"}
         ],
-        "infoLinks": [{"name": "Living Metal", "id": "55eb-d31d-4b7f-21dc", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Skimmer & Hovering Flyers", "id": "b9b9-2824-8b89-aed9", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "d2e0-53a0-d83b-2e67", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Living Metal", "id": "5767-22ae-43e9-e8d3", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
+        ],
         "profiles": [
           {
             "name": "Doomsday ark",
@@ -4027,7 +4432,7 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
           }
         ],
@@ -4043,8 +4448,8 @@
               {"id": "987d-15f2-b3d7-de0c-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "infoLinks": [
-              {"name": "HEAVY", "id": "0200-f081-29f8-1e3c", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
-              {"name": "BLAST", "id": "684b-cb5a-3f00-7104", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
+              {"name": "Heavy", "id": "0200-f081-29f8-1e3c", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"},
+              {"name": "Blast", "id": "684b-cb5a-3f00-7104", "hidden": false, "targetId": "df7e-70a0-4131-50db", "type": "rule"}
             ],
             "profiles": [
               {
@@ -4057,7 +4462,7 @@
                   {"name": "Range", "$text": "72\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                   {"name": "Str", "$text": "9", "typeId": "a2c5-ec2c-1fcc-5485"},
                   {"name": "AP", "$text": "1", "typeId": "496d-5030-c6b3-ea53"},
-                  {"name": "Type", "$text": "HEAVY 1, Large BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+                  {"name": "Type", "$text": "Heavy 1, Large Blast", "typeId": "dbd5-a62e-abc4-431f"}
                 ]
               },
               {
@@ -4070,16 +4475,22 @@
                   {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
                   {"name": "Str", "$text": "7", "typeId": "a2c5-ec2c-1fcc-5485"},
                   {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
-                  {"name": "Type", "$text": "HEAVY 1, BLAST", "typeId": "dbd5-a62e-abc4-431f"}
+                  {"name": "Type", "$text": "Heavy 1, Blast", "typeId": "dbd5-a62e-abc4-431f"}
                 ]
-              }
-            ],
-            "rules": [
+              },
               {
                 "name": "Doomsday cannon",
-                "id": "b771-4d13-74da-b2c6",
-                "description": "For the Doomsday cannon to be fired at full effect, the Doomsday Ark must remain stationary. The faster the Doomsday Ark moves, the more energy is directed away from the Doomsday cannon.\n\n\nAccordingly, the Doomsday cannon has two profiles: one for if the Doomsday ark remained stationary in the previous Movement phase and  one for if it moved.",
-                "hidden": false
+                "id": "6d56-fc2c-923c-d4d3",
+                "hidden": false,
+                "typeId": "e150-914c-d218-a5ff",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "For the Doomsday cannon to be fired at full effect, the Doomsday Ark must remain stationary. The faster the Doomsday Ark moves, the more energy is directed away from the Doomsday cannon.\n\nAccordingly, the Doomsday cannon has two profiles: one for if the Doomsday ark remained stationary in the previous Movement phase and one for if it moved.",
+                    "typeId": "3841-e529-1333-b029"
+                  }
+                ]
               }
             ]
           }
@@ -4124,7 +4535,11 @@
             ]
           }
         ],
-        "infoLinks": [{"name": "Living Metal", "id": "84a1-5232-1964-d8ef", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Skimmer & Hovering Flyers", "id": "417d-7296-42dd-1e13", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "62c8-05f8-0274-3893", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Living Metal", "id": "7461-da2b-6bf0-3c26", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
+        ],
         "profiles": [
           {
             "name": "Annihilation barge",
@@ -4139,7 +4554,7 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
           }
         ],
@@ -4168,7 +4583,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "7e56-3b36-aab9-69ae", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "7e56-3b36-aab9-69ae", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Tesla", "id": "c641-81e4-6452-8a5f", "hidden": false, "targetId": "f434-cecf-4397-baf4", "type": "rule"},
           {"name": "Twin-Linked", "id": "0702-08ee-6bef-9229", "hidden": false, "targetId": "b234-202b-7a03-3959", "type": "rule"}
         ],
@@ -4183,7 +4598,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "7", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 4, Tesla, Arc, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 4, Tesla, Arc, Twin-Linked", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ],
@@ -4204,7 +4619,7 @@
         "import": true,
         "type": "upgrade",
         "infoLinks": [
-          {"name": "ASSAULT", "id": "3f5e-24ab-a9f6-720a", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "3f5e-24ab-a9f6-720a", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "Tesla", "id": "2799-c940-14da-6656", "hidden": false, "targetId": "f434-cecf-4397-baf4", "type": "rule"}
         ],
         "profiles": [
@@ -4218,7 +4633,7 @@
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 2, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 2, Tesla", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -4253,7 +4668,9 @@
         ],
         "infoLinks": [
           {"name": "Deep strike", "id": "97c5-6199-8b37-e8fd", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
-          {"name": "Living Metal", "id": "e048-dc85-380f-653e", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}
+          {"name": "Skimmer & Hovering Flyers", "id": "2f7b-c0be-eca6-d20e", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "3698-9734-9173-e907", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Living Metal", "id": "2663-2f79-558b-5e65", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
         ],
         "profiles": [
           {
@@ -4269,18 +4686,25 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Aerial Assault",
-            "id": "69b3-3a2d-0d39-388a",
-            "description": "A Doom Scythe that moved at cruising speed can fire all of its weapons.",
-            "hidden": false
+            "id": "e1ef-d290-4a1a-c411",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A Doom Scythe that moved at cruising speed can fire all of its weapons.", "typeId": "3841-e529-1333-b029"}]
           },
-          {"name": "Supersonic", "id": "24b7-da78-5c6f-8058", "description": "A Doom Scythe that moves flat out may move up to 36\"", "hidden": false}
+          {
+            "name": "Supersonic",
+            "id": "e693-65fa-9bd6-a9d4",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A Doom Scythe that moves flat out may move up to 36\"", "typeId": "3841-e529-1333-b029"}]
+          }
         ],
         "selectionEntries": [
           {
@@ -4293,7 +4717,7 @@
               {"id": "712c-069c-8925-a768-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "712c-069c-8925-a768-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "infoLinks": [{"name": "HEAVY", "id": "352f-d51e-6195-37cb", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
+            "infoLinks": [{"name": "Heavy", "id": "352f-d51e-6195-37cb", "hidden": false, "targetId": "a813-acac-83c1-1dae", "type": "rule"}],
             "profiles": [
               {
                 "name": "Death ray",
@@ -4305,7 +4729,7 @@
                   {"name": "Range", "$text": "12\"(special)", "typeId": "cbb0-2b5d-d6fd-88d1"},
                   {"name": "Str", "$text": "10", "typeId": "a2c5-ec2c-1fcc-5485"},
                   {"name": "AP", "$text": "1", "typeId": "496d-5030-c6b3-ea53"},
-                  {"name": "Type", "$text": "HEAVY 1", "typeId": "dbd5-a62e-abc4-431f"}
+                  {"name": "Type", "$text": "Heavy 1, Death ray", "typeId": "dbd5-a62e-abc4-431f"}
                 ]
               }
             ],
@@ -4351,7 +4775,10 @@
         ],
         "infoLinks": [
           {"name": "Deep strike", "id": "4b56-983d-62fa-8c60", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"},
-          {"name": "Living Metal", "id": "40d7-b585-da75-08f6", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}
+          {"name": "Skimmer & Hovering Flyers", "id": "4e97-c363-6bd2-5a9a", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "e533-d986-2a96-47cc", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Transports", "id": "f9d9-8d36-7f93-58a3", "hidden": false, "targetId": "3bbd-44c5-f3f9-4118", "type": "rule"},
+          {"name": "Living Metal", "id": "55c3-3595-2dbe-52eb", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"}
         ],
         "modifiers": [
           {
@@ -4388,31 +4815,61 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Transport",
-            "id": "9f5f-3025-4a64-42d2",
-            "description": "The Night Scythe has a transport capacity of 15. It can carry jump infantry (each model takes up two points of transport capacity). If the night Scythe is destroyed, the embarked unit is not allowed to disembark, but instead enters reserve ( when they arrive, they cannot deep strike).",
-            "hidden": false
           },
-          {"name": "Fire Points", "id": "1c8d-0492-4a8a-4892", "description": "None", "hidden": false},
           {
             "name": "Access Points",
-            "id": "175a-b73c-3c8b-f6af",
-            "description": "Treat the wormhole gateway on the underside of the night scythe as the access point. For the purpose of embarking or disembarking from a Night Scythe, measure to and from the model's base. For example, models wishing to embark within a Night Scythe can do so if at the end of their movement, all models of the unit are within 2\" of the night Scythe base.",
-            "hidden": false
+            "id": "0e01-cc21-1e8e-0515",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Treat the wormhole gateway on the underside of the night scythe as the access point. For the purpose of embarking or disembarking from a Night Scythe, measure to and from the model's base. For example, models wishing to embark within a Night Scythe can do so if at the end of their movement, all models of the unit are within 2\" of the night Scythe base.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Aerial Assault",
-            "id": "3e0e-e884-47f7-950b",
-            "description": "A Night Scythe that moved at cruising speed can fire all of its weapons.",
-            "hidden": false
+            "id": "50ed-2c99-df3d-f96b",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A Night Scythe that moved at cruising speed can fire all of its weapons.", "typeId": "3841-e529-1333-b029"}]
           },
-          {"name": "Supersonic", "id": "72a8-709a-a471-673d", "description": "A Night Scythe that moves flat out may move up to 36\"", "hidden": false}
+          {
+            "name": "Fire Points",
+            "id": "c3f1-866a-2f6c-65e9",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "None", "typeId": "3841-e529-1333-b029"}]
+          },
+          {
+            "name": "Supersonic",
+            "id": "8fd7-ca7d-6816-6f25",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "A Night Scythe that moves flat out may move up to 36\"", "typeId": "3841-e529-1333-b029"}]
+          },
+          {
+            "name": "Transport",
+            "id": "a55e-648e-4e59-d2d7",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The Night Scythe has a transport capacity of 15. It can carry jump infantry (each model takes up two points of transport capacity). If the night Scythe is destroyed, the embarked unit is not allowed to disembark, but instead enters reserve ( when they arrive, they cannot deep strike).",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          }
         ]
       },
       {
@@ -4445,7 +4902,13 @@
             ]
           }
         ],
-        "infoLinks": [{"name": "Living Metal", "id": "aebc-cf76-1dbc-f31b", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Skimmer & Hovering Flyers", "id": "b6d1-de03-c9a5-cb59", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "e710-7fc6-b118-701d", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Transports", "id": "643a-4cfd-949e-6e31", "hidden": false, "targetId": "3bbd-44c5-f3f9-4118", "type": "rule"},
+          {"name": "Living Metal", "id": "d771-4898-f20e-6a8d", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"},
+          {"name": "Assault Vehicle", "id": "c485-2929-fb2c-a34f", "hidden": false, "targetId": "cdde-f0c3-266c-7739", "type": "profile"}
+        ],
         "modifiers": [
           {
             "field": "0eda-78bd-752b-304a",
@@ -4480,23 +4943,44 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
-          }
-        ],
-        "rules": [
-          {"name": "Transport", "id": "ded2-b145-6a3a-66ff", "description": "The Catacomb Command Barge can carry one independent character.", "hidden": false},
+          },
           {
             "name": "Sweep Attack",
-            "id": "5745-d9c9-cb06-d602",
-            "description": "Whilst a character remains embarked on a Catacomb Command Barge, he can make three special 'sweep' attacks each turn. These attacks can be made in the Movement phase against one enemy unit that the Catacomb Command Barge moves over. All attacks must be resolved on the same unit.\n\n\nRoll To Hit and To Wound separately for each Sweep Attack. If the Catacomb Command Barge moved at combat speed this turn, a Sweep Attack hits on a 3+, otherwise it hits on a 4+. For each success, the unit suffers a hit at the character's Strength, plus any Strength bonuses and special abilities for his close combat weapon. Hits against vehicles are resolved against rear armour. On a Sweep Attack where the To Hit dice roll is a 6, you can choose which model the resulting wound (if there is one) is allocated against. Cover saves are not permitted against Wounds caused by Sweep Attacks.",
-            "hidden": false
+            "id": "c728-023f-8b92-8b6d",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Whilst a character remains embarked on a Catacomb Command Barge, he can make three special 'sweep' attacks each turn. These attacks can be made in the Movement phase against one enemy unit that the Catacomb Command Barge moves over. All attacks must be resolved on the same unit.\n\n\nRoll To Hit and To Wound separately for each Sweep Attack. If the Catacomb Command Barge moved at combat speed this turn, a Sweep Attack hits on a 3+, otherwise it hits on a 4+. For each success, the unit suffers a hit at the character's Strength, plus any Strength bonuses and special abilities for his close combat weapon. Hits against vehicles are resolved against rear armour. On a Sweep Attack where the To Hit dice roll is a 6, you can choose which model the resulting wound (if there is one) is allocated against. Cover saves are not permitted against Wounds caused by Sweep Attacks.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Symbiotic Repair",
-            "id": "fbc9-7f92-4bd3-9805",
-            "description": "If the Catacomb Command Barge Suffers an Immobilised or weapon destroyed result, the embarked character can reduce his remaining Wounds by 1 to negate the result. This cannot be done if it would cause the character to be removed as a casualty.",
-            "hidden": false
+            "id": "2e00-d8ae-3696-e3fa",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If the Catacomb Command Barge Suffers an Immobilised or weapon destroyed result, the embarked character can reduce his remaining Wounds by 1 to negate the result. This cannot be done if it would cause the character to be removed as a casualty.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "Transport",
+            "id": "1609-77b6-b087-5477",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "The Catacomb Command Barge can carry one independent character.", "typeId": "3841-e529-1333-b029"}]
           }
         ],
         "selectionEntryGroups": [
@@ -4526,12 +5010,20 @@
           {"id": "5a53-ab3a-5127-9296-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "5a53-ab3a-5127-9296-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "rules": [
+        "profiles": [
           {
             "name": "Two gauss flayer arrays",
-            "id": "00be-68cb-5b43-8efb",
-            "description": "The ark has two separate arrays of five gauss flayers - one located along each flank - enabling it to 'broadside' enemy units. The two arrays can shoot at different targets to each other and other weapons, although all guns in the same array must shoot at the same target.",
-            "hidden": false
+            "id": "5fa6-e21c-1718-092d",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The ark has two separate arrays of five gauss flayers - one located along each flank - enabling it to 'broadside' enemy units. The two arrays can shoot at different targets to each other and other weapons, although all guns in the same array must shoot at the same target.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -4616,7 +5108,13 @@
           },
           {"name": "Two gauss flayer arrays", "id": "d1b4-c712-a18e-d47f", "hidden": false, "import": true, "targetId": "000e-4b83-e271-bf62", "type": "selectionEntry"}
         ],
-        "infoLinks": [{"name": "Living Metal", "id": "70a9-e990-8b45-878d", "hidden": false, "targetId": "e2fa-39e5-d9c9-ce96", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Skimmer & Hovering Flyers", "id": "1952-1000-175a-a9af", "hidden": false, "targetId": "54cc-6d7d-c637-ad1e", "type": "rule"},
+          {"name": "Vehicles & Difficult Terrain", "id": "7b54-1ff7-e534-d20c", "hidden": false, "targetId": "a337-cd82-7089-9d42", "type": "rule"},
+          {"name": "Transports", "id": "c749-a011-b722-9096", "hidden": false, "targetId": "3bbd-44c5-f3f9-4118", "type": "rule"},
+          {"name": "Living Metal", "id": "910c-e493-1f0b-dbff", "hidden": false, "targetId": "ace2-19f2-182c-7889", "type": "profile"},
+          {"name": "Assault Vehicle", "id": "fca6-a3c9-201a-1f8a", "hidden": false, "targetId": "cdde-f0c3-266c-7739", "type": "profile"}
+        ],
         "modifiers": [
           {
             "field": "a6ca-e983-1285-fdd3",
@@ -4651,22 +5149,36 @@
               {"name": "R", "$text": "11", "typeId": "717f-55da-4ced-63b9"},
               {"name": "Struc", "$text": "1", "typeId": "bb9b-dcf2-5ccb-f632"},
               {"name": "InSv", "$text": "-", "typeId": "972f-0bfa-8722-6eb2"},
-              {"name": "FNP", "$text": "-", "typeId": "01fb-49d9-af22-5fcf"}
+              {"name": "FNP", "$text": "-", "typeId": "a6a0-88ae-7de2-2a58"}
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Transport",
-            "id": "1cf4-7073-fe0d-30f6",
-            "description": "The Ghost are has transport capacity of ten models. It can only carry Necron Warriors, Necron Lords, Overlords, Crypteks and the Necron special characters.",
-            "hidden": false
           },
           {
             "name": "Repair Barge",
-            "id": "cb8b-61c7-9e5c-1aa0",
-            "description": "At the start of each Necron Movement phase, a Ghost Ark can expend energy to repair fallen Necrons. Nominate a unit of Necron Warriors within 6\" (or embarked on) the Ghost Ark and roll a D6. If the score is a 2+, add D3 Models to the unit - the models can move and act normally this turn. This cannot take the unit beyond its starting size. If a model cannot be placed for any reason, it is destroyed. On a roll of 1, place the models as described above, however the Ghost Ark is drained and suffers a glancing hit with no saves allowed.",
-            "hidden": false
+            "id": "f7bd-ef14-0569-9a0e",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of each Necron Movement phase, a Ghost Ark can expend energy to repair fallen Necrons. Nominate a unit of Necron Warriors within 6\" (or embarked on) the Ghost Ark and roll a D6. If the score is a 2+, add D3 Models to the unit - the models can move and act normally this turn. This cannot take the unit beyond its starting size. If a model cannot be placed for any reason, it is destroyed. On a roll of 1, place the models as described above, however the Ghost Ark is drained and suffers a glancing hit with no saves allowed.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "Transport",
+            "id": "354c-59ee-917b-cfe3",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "The Ghost are has transport capacity of ten models. It can only carry Necron Warriors, Necron Lords, Overlords, Crypteks and the Necron special characters.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -4678,10 +5190,10 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "b8bd-b84d-eaf6-3306", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "1984-8b37-14f3-0a7b", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "3899-9503-0c06-1208", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
           {"name": "Unique", "id": "ab80-a0f3-1a14-7509", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "b878-a5e2-8a0a-b7a3", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "b878-a5e2-8a0a-b7a3", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "5d1a-2a97-079b-682a", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -4701,10 +5213,10 @@
           {"name": "Warlord Traits", "id": "14bd-0e6b-005f-baf0", "hidden": false, "import": true, "targetId": "e7a5-5493-266f-a794", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
-          {"name": "ASSAULT", "id": "1709-21fc-5405-33d5", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
+          {"name": "Assault", "id": "1709-21fc-5405-33d5", "hidden": false, "targetId": "90ba-c645-5463-675c", "type": "rule"},
           {"name": "One shot", "id": "0746-2866-3fa0-89ab", "hidden": false, "targetId": "e9b6-fd95-f77d-60d1", "type": "rule"},
           {"name": "Ever-Living", "id": "1882-cb8c-7389-5e4d", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "32c4-c55f-c127-1c52", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "32c4-c55f-c127-1c52", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "8556-1145-bd28-b3f0", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -4757,40 +5269,78 @@
               {"name": "Range", "$text": "2D6\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "6", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "1", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "ASSAULT 1, One shot", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "Assault 1, One shot", "typeId": "dbd5-a62e-abc4-431f"}
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Bloodswarm nanoscrabs",
-            "id": "66ea-5e24-6c59-649a",
-            "description": "At the start of the first game turn, randomly choose one non-vehicle unit in the enemy army. This unit is infested with bloodswarm nanoscarbs - any Flayed One packs entering play via Deep Strike do not scatter if the aim to arrive within 6\" of this unit.",
-            "hidden": false
           },
           {
-            "name": "Staff of the Destroyer",
-            "id": "93fa-737b-e1bc-2bc6",
-            "description": "When firing the Staff of the Destroyer, nominate a direction. then roll 2D6 and extend a straight line from Imotekh's base in the chosen direction, a distance equal to the total rolled. Any unit, friendly or enemy, under this line takes a number of hits equal to the number of models in the unit under the line.",
-            "hidden": false
+            "name": "Bloodswarm nanoscrabs",
+            "id": "af44-6a29-74a9-e894",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of the first game turn, randomly choose one non-vehicle unit in the enemy army. This unit is infested with bloodswarm nanoscarbs - any Flayed One packs entering play via Deep Strike do not scatter if the aim to arrive within 6\" of this unit.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Humiliating Defeat",
-            "id": "32a2-fe6d-a903-39ad",
-            "description": "If a Character loses its final Wound to Imotekh's close combat attacks, roll D3. Imotekh counts as having scored this many extra wounds for the purposes of calculating the assault result",
-            "hidden": false
+            "id": "b3ba-0df1-c530-6bbe",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If a Character loses its final Wound to Imotekh's close combat attacks, roll D3. Imotekh counts as having scored this many extra wounds for the purposes of calculating the assault result",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Hyperlogical Strategy",
-            "id": "4fe1-8cac-7460-58db",
-            "description": "An army that includes Imotekh the Stormlord seizes the initiative on a roll of 4+. However, Greenskins always mange to confound his plans somehow, so an army that includes Imotekh can never attempt to seize the initiative against Orks.",
-            "hidden": false
+            "id": "ae44-c63a-5a9a-0f7a",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "An army that includes Imotekh the Stormlord seizes the initiative on a roll of 4+. However, Greenskins always mange to confound his plans somehow, so an army that includes Imotekh can never attempt to seize the initiative against Orks.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Lord of the Storm",
-            "id": "8040-6022-975f-c1ca",
-            "description": "If your army includes Imotekh the Stormlord, the Night Fighting rules automatically apply during the first game turn. Furthermore, you can attempt to keep the Night Fighting rules in play in subsequent game turns by rolling a D6 at the start of the turn. If the result is grater than the turn number, the storm continues and the Night Fighting rules remain in play. If not, the Night Fighting rules cease to be in effect and are not used for the rest of the battle.\n\n\nIn addition, whilst the Night Fighting rules remain in play, roll a D6 for each unengaged enemy unit on the battlefield at the start of each Necron Shooting phase. On a roll of a 6, that unit is struck by a bolt of lighting and suffers D6 Strength 8, AP 5 hits (vehicles are hit on their side armour). Note that Night Fighting rules brought into play by a Solar Pulse do not generate lightning.",
-            "hidden": false
+            "id": "9a86-ab79-8e87-7ba2",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If your army includes Imotekh the Stormlord, the Night Fighting rules automatically apply during the first game turn. Furthermore, you can attempt to keep the Night Fighting rules in play in subsequent game turns by rolling a D6 at the start of the turn. If the result is grater than the turn number, the storm continues and the Night Fighting rules remain in play. If not, the Night Fighting rules cease to be in effect and are not used for the rest of the battle.\n\n\n\n\nIn addition, whilst the Night Fighting rules remain in play, roll a D6 for each unengaged enemy unit on the battlefield at the start of each Necron Shooting phase. On a roll of a 6, that unit is struck by a bolt of lighting and suffers D6 Strength 8, AP 5 hits (vehicles are hit on their side armour). Note that Night Fighting rules brought into play by a Solar Pulse do not generate lightning.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "Staff of the Destroyer",
+            "id": "98d0-cc54-82bc-6293",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When firing the Staff of the Destroyer, nominate a direction. then roll 2D6 and extend a straight line from Imotekh's base in the chosen direction, a distance equal to the total rolled. Any unit, friendly or enemy, under this line takes a number of hits equal to the number of models in the unit under the line.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -4801,11 +5351,20 @@
             "import": true,
             "type": "upgrade",
             "constraints": [
-              {"id": "a71a-81e5-3a87-00f9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "a71a-81e5-3a87-00f9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "a71a-81e5-3a87-00f9-min-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "a71a-81e5-3a87-00f9-min-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "infoLinks": [{"name": "Relentless", "id": "8eda-6bd3-e3d9-750e", "hidden": false, "targetId": "a1f2-fdff-97f6-5719", "type": "rule"}],
-            "rules": [{"name": "Phaeron", "id": "6f66-a483-623a-4139", "description": "A Phaeron, and any unit he is with, have the Relentless special rule.", "hidden": false}]
+            "infoLinks": [{"name": "Relentless", "id": "c029-1ea9-5e84-2740", "hidden": false, "targetId": "8b6a-dc33-1c28-ca4f", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Phaeron",
+                "id": "c45c-e94b-8efa-0046",
+                "hidden": false,
+                "typeId": "e150-914c-d218-a5ff",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "A Phaeron, and any unit he is with, have the Relentless special rule.", "typeId": "3841-e529-1333-b029"}]
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -4892,9 +5451,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "5514-aff9-c3da-9dd9", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "bbee-e53e-2160-bb78", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
-          {"name": "Unique", "id": "3750-540c-4059-853b", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "5a02-ef5c-c572-e9bc", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "5a02-ef5c-c572-e9bc", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "fdc9-b661-f93c-1576", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"},
+          {"name": "Unique", "id": "fe91-88ae-6228-d8b8", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"}
         ],
         "constraints": [
           {
@@ -4915,7 +5474,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "c5a0-79a5-5d56-5d0d", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "80f7-397d-c779-5a6e", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "80f7-397d-c779-5a6e", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "f58d-0978-c10d-b592", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -4957,14 +5516,20 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Mechanical Augmentation",
-            "id": "51a3-5d1e-c607-2b8f",
-            "description": "At the start of the game, before forces have been deployed, nominate one unit of Necron Warriors or Immortals to be the recipient of Szeras' upgrades. That unit receives one upgrade from the following list - roll a D6 to determine which:\n\n\n1-2 Hardened Carapace: The unit is Toughness 5 for the duration of the game.\n\n\n3-4 Improved Optics: The unit is Ballistic Skill 5 for the duration of the game.\n\n\n5-6 Enhanced Servomotors: The unit is Strength 5 for the duration of the game.",
-            "hidden": false
+            "id": "b361-f83e-cbe7-c8e6",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of the game, before forces have been deployed, nominate one unit of Necron Warriors or Immortals to be the recipient of Szeras' upgrades. That unit receives one upgrade from the following list - roll a D6 to determine which:\n\n\n\n\n1-2 Hardened Carapace: The unit is Toughness 5 for the duration of the game.\n\n\n\n\n3-4 Improved Optics: The unit is Ballistic Skill 5 for the duration of the game.\n\n\n\n\n5-6 Enhanced Servomotors: The unit is Strength 5 for the duration of the game.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -5009,9 +5574,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "ff5a-f219-5b3b-5f1d", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "9d16-b8e6-6444-1b2e", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Unique", "id": "d3cc-087d-d415-6fba", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "d66a-1099-0218-4a79", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "d66a-1099-0218-4a79", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "f143-2ba8-42ee-8330", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -5032,7 +5597,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "b5d6-0c53-5b0e-8687", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "a0ff-b6c3-0426-e20a", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "a0ff-b6c3-0426-e20a", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "ed92-d32e-b1a8-9b85", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -5113,32 +5678,62 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Staff of tomorrow",
-            "id": "42d2-fecb-63bc-af79",
-            "description": "Orikan re-rolls failed To Hit rolls in close combat. Wounds caused by the Staff of Tomorrow ignore armour saves.",
-            "hidden": false
           },
           {
             "name": "Lord of Time",
-            "id": "eac9-b190-dd0e-a372",
-            "description": "This ability can be used once, at the start of one of your turns. For the remainder of that turn, any unsuccessful reserve rolls must be re-rolled.",
-            "hidden": false
+            "id": "cc06-25ec-8e33-0b43",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This ability can be used once, at the start of one of your turns. For the remainder of that turn, any unsuccessful reserve rolls must be re-rolled.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
-            "name": "The Stars Are Right",
-            "id": "7fa7-7dca-779c-beb2",
-            "description": "Orikan starts the game with the first of the two profiles given above but, as the game progresses, there is a chance that the stars will come into alignment and restore to him a portion of ancient power. Roll a D6 at the start of each of your turn. If the dice roll is less than or equal to the turn number, then the constellations have come into alignment and Orikan has unlocked a portion of celestial power (bwahahaha!). Orikan henceforth uses the Empowered profile (it's still the same model) Once Oriken powers up, continues to roll a D6 at the start of each of your turns; if the result is less than or equal to the turn number, the power recedes, Orikan returns to his initial profile and no further transformation rolls are made. Wounds suffered are carried over between incarnation (which can mean that Orikan is removed as a casualty if he transforms back to his weaker incarnation)",
-            "hidden": false
+            "name": "Staff of tomorrow",
+            "id": "7f21-114a-d1ff-5f84",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Orikan re-rolls failed To Hit rolls in close combat. Wounds caused by the Staff of Tomorrow ignore armour saves.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Temporal Snares",
-            "id": "5af3-05aa-13f1-c738",
-            "description": "During the first game turn, all enemy units that move count as moving through difficult terrain. If they are actually moving through difficult terrain, then a unit can move the lowest D6 result of thier difficult terrain test, rather than the highest.",
-            "hidden": false
+            "id": "d54f-2988-13a8-38fd",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "During the first game turn, all enemy units that move count as moving through difficult terrain. If they are actually moving through difficult terrain, then a unit can move the lowest D6 result of thier difficult terrain test, rather than the highest.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "The Stars Are Right",
+            "id": "4187-014c-1590-44db",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Orikan starts the game with the first of the two profiles given above but, as the game progresses, there is a chance that the stars will come into alignment and restore to him a portion of ancient power. Roll a D6 at the start of each of your turn. If the dice roll is less than or equal to the turn number, then the constellations have come into alignment and Orikan has unlocked a portion of celestial power (bwahahaha!). Orikan henceforth uses the Empowered profile (it's still the same model) Once Oriken powers up, continues to roll a D6 at the start of each of your turns; if the result is less than or equal to the turn number, the power recedes, Orikan returns to his initial profile and no further transformation rolls are made. Wounds suffered are carried over between incarnation (which can mean that Orikan is removed as a casualty if he transforms back to his weaker incarnation)",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -5183,10 +5778,10 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "5c60-9814-533a-1d0c", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "444c-0b30-72df-d8e7", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "00d0-193d-6311-7bab", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
           {"name": "Unique", "id": "1de1-4c70-1c2a-4e93", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "a138-598a-be4c-0978", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "a138-598a-be4c-0978", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "a28b-a1fa-d2aa-5951", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -5219,7 +5814,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "4e22-2774-04d7-c0de", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "298e-6a89-362e-cba0", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "298e-6a89-362e-cba0", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "1d76-add0-5912-323c", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -5261,26 +5856,48 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Empathic Obliterator",
-            "id": "a932-4f03-5761-8636",
-            "description": "If Trazyn kills one or more enemies in close combat, the Empathic Obliterator unleashes a psionic shockwave. This occurs after all blows have been struck, but before the Assault Results are determined.\n\n\nTo resolve the psionic shockwave, roll a D6 for every model in the combat (friendly and enemy) with exactly the same name on their characteristic profile as a model slain by Trazyn that phase. If the score is 4+, that model suffers a Wound (armour saves are taken as normal). For example, if Trazyn slew a Space Marine Sergeant, roll for all other Space Marine Sergeants in the combat; if Trazyn slew an Ork Boy, roll for all other Ork Boyz in the combat.\n\n\nWounds caused by the psionic shockwave count towards the Assault result.",
-            "hidden": false
           },
           {
             "name": "'Excellent! Another Piece for the Collection' ",
-            "id": "afb2-2329-86e4-0374",
-            "description": "Trazyn is a scoring unit and can claim objectives. He's not really capturing a martial objective, as such, but is seeking to claim an artefact hidden nearby - any military gains as a result of this are totally coincidental (but no less useful for Trazyn's controlling player).",
-            "hidden": false
+            "id": "a6bf-e148-df92-2318",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Trazyn is a scoring unit and can claim objectives. He's not really capturing a martial objective, as such, but is seeking to claim an artefact hidden nearby - any military gains as a result of this are totally coincidental (but no less useful for Trazyn's controlling player).",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "Empathic Obliterator",
+            "id": "c5bf-47c3-3bc5-f630",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If Trazyn kills one or more enemies in close combat, the Empathic Obliterator unleashes a psionic shockwave. This occurs after all blows have been struck, but before the Assault Results are determined.\n\n\n\n\nTo resolve the psionic shockwave, roll a D6 for every model in the combat (friendly and enemy) with exactly the same name on their characteristic profile as a model slain by Trazyn that phase. If the score is 4+, that model suffers a Wound (armour saves are taken as normal). For example, if Trazyn slew a Space Marine Sergeant, roll for all other Space Marine Sergeants in the combat; if Trazyn slew an Ork Boy, roll for all other Ork Boyz in the combat.\n\n\n\n\nWounds caused by the psionic shockwave count towards the Assault result.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Surrogate Hosts",
-            "id": "30b7-6025-165c-fe6d",
-            "description": "If Trazyn is removed from play as a casualty, roll a D6. On a score of 1, remove Trazyn from play as normal. If the score is 2+, randomly choose another model from all the friendly Lychguards, Crypteks, Necron Lords and Overlords on the table (not counting special character versions of any of the above). Remove the nominated model from play as a casualty, and return Trazyn to play in its place - his remaining Wounds are now equal to the number of Wounds the removed model has remaining. Trazyn only awards kill points once he has been slain and does not return. Models removed because they have been replaced by Trazyn award kill points as normal.",
-            "hidden": false
+            "id": "cfe6-50b7-49c6-6a10",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If Trazyn is removed from play as a casualty, roll a D6. On a score of 1, remove Trazyn from play as normal. If the score is 2+, randomly choose another model from all the friendly Lychguards, Crypteks, Necron Lords and Overlords on the table (not counting special character versions of any of the above). Remove the nominated model from play as a casualty, and return Trazyn to play in its place - his remaining Wounds are now equal to the number of Wounds the removed model has remaining. Trazyn only awards kill points once he has been slain and does not return. Models removed because they have been replaced by Trazyn award kill points as normal.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -5291,11 +5908,20 @@
             "import": true,
             "type": "upgrade",
             "constraints": [
-              {"id": "068a-0e54-6b50-9c24-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "068a-0e54-6b50-9c24-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "068a-0e54-6b50-9c24-min-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "068a-0e54-6b50-9c24-min-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "infoLinks": [{"name": "Relentless", "id": "4bb6-caba-c598-59a6", "hidden": false, "targetId": "a1f2-fdff-97f6-5719", "type": "rule"}],
-            "rules": [{"name": "Phaeron", "id": "d353-f69c-95c5-6a98", "description": "A Phaeron, and any unit he is with, have the Relentless special rule.", "hidden": false}]
+            "infoLinks": [{"name": "Relentless", "id": "c06e-87a0-1e30-397b", "hidden": false, "targetId": "8b6a-dc33-1c28-ca4f", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Phaeron",
+                "id": "f77e-fe5a-6a1f-88f5",
+                "hidden": false,
+                "typeId": "e150-914c-d218-a5ff",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "A Phaeron, and any unit he is with, have the Relentless special rule.", "typeId": "3841-e529-1333-b029"}]
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -5327,10 +5953,10 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "5671-8035-1a60-b32e", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "a3c6-4cfc-31d0-de1e", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "56f9-57fa-b8c8-c350", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
           {"name": "Unique", "id": "ea7f-3414-9968-9558", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "64bc-318d-65cb-7aac", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "64bc-318d-65cb-7aac", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "5447-6bfd-b204-7d53", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -5351,7 +5977,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "29e9-e4b7-573c-9904", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "e4de-acc7-c349-fc25", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "e4de-acc7-c349-fc25", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "36f5-50cc-5b5b-37ff", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "profiles": [
@@ -5393,26 +6019,48 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Adaptive Tactics",
-            "id": "e463-36ed-ae90-de88",
-            "description": "At the start of each of your turns in which Zahndrekh is on the battlefield, choose one friendly unit, then choose one of the following special rules: Counter-attack, Furious Charge, Hit and Run, Night Vision/Acute Senses, Stealth and Tank Hunters. The chosen unit has the chosen special rule until the start of your next turn.",
-            "hidden": false
+            "id": "bb22-bee5-33cc-f148",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of each of your turns in which Zahndrekh is on the battlefield, choose one friendly unit, then choose one of the following special rules: Counter-attack, Furious Charge, Hit and Run, Night Vision/Acute Senses, Stealth and Tank Hunters. The chosen unit has the chosen special rule until the start of your next turn.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Counter Tactics",
-            "id": "bdf0-709b-23ad-89b1",
-            "description": "At the start of each of your turns in which Zahndrekh is on the battlefield choose one enemy unit within his line of sight. That unit loses the following special rules (if it has them), and cannot gain them, until the start of your next turn: Acute Senses, Counter-attack, Furious Charge, Hit and Run, Night Vision, Stealth and Tank Hunters.",
-            "hidden": false
+            "id": "8458-6b9c-0325-2992",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of each of your turns in which Zahndrekh is on the battlefield choose one enemy unit within his line of sight. That unit loses the following special rules (if it has them), and cannot gain them, until the start of your next turn: Acute Senses, Counter-attack, Furious Charge, Hit and Run, Night Vision, Stealth and Tank Hunters.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Phased Reinforcements",
-            "id": "8928-8d63-8ad1-2872",
-            "description": "If Zahndrekh is on the battlefield, any number of units in reserve that are able to Deep Strike can choose to enter play in the enemy turn, via Deep Strike, immediately after any enemy unit has arrived from reserve, normally during the enemy's Movement phase.",
-            "hidden": false
+            "id": "9d16-6215-7d63-49a8",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If Zahndrekh is on the battlefield, any number of units in reserve that are able to Deep Strike can choose to enter play in the enemy turn, via Deep Strike, immediately after any enemy unit has arrived from reserve, normally during the enemy's Movement phase.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -5499,9 +6147,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "0b0e-868c-3418-f5b3", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "602a-f007-5154-0e46", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Unique", "id": "43e6-fb41-c736-0b79", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "56b0-7192-8e16-42f5", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "56b0-7192-8e16-42f5", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "df9d-0bb2-51e2-95c6", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -5546,7 +6194,7 @@
         ],
         "infoLinks": [
           {"name": "Ever-Living", "id": "7a92-f46a-b72d-5879", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "5649-0229-81b0-5ee0", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Independent Character", "id": "5649-0229-81b0-5ee0", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
           {"name": "Reanimation protocols", "id": "0e07-8949-4243-b944", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
         ],
         "modifiers": [
@@ -5608,26 +6256,48 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Ghostwalk Mantle",
-            "id": "572c-a3e6-11fd-08b9",
-            "description": "Obyron can use the Ghostwalk Mantle in his Movement phase instead of moving normally. If he does, Obyron and his unit are removed from the tabletop and replaced together anywhere on the board using the rules for Deep Strike. Unlike other veils of darkness, the Ghostwalk Mantle can even be used if Obyron or his unit are locked in combat. Any enemy unit no longer locked in combat as a result of this move consolidate immediately.",
-            "hidden": false
           },
           {
             "name": "Cleaving Counterblow",
-            "id": "390b-5218-e2c8-4e38",
-            "description": "When enemies attempt to strike Obyron in close combat, keep track of the number of Attacks that fail To Hit (misses that are successfully re-rolled do not count towards this total) before Obyron makes his own attacks. For each miss Obyron makes a bonus Attack (up to a maximum of 6 bonus Attacks) when it is his turn to strike. Enemy misses that occur after Obyron has attacked do not generate bonus Attacks. Any bonus Attacks not used by the end of the Assault phase are lost.",
-            "hidden": false
+            "id": "9260-2667-9ffb-dc1b",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When enemies attempt to strike Obyron in close combat, keep track of the number of Attacks that fail To Hit (misses that are successfully re-rolled do not count towards this total) before Obyron makes his own attacks. For each miss Obyron makes a bonus Attack (up to a maximum of 6 bonus Attacks) when it is his turn to strike. Enemy misses that occur after Obyron has attacked do not generate bonus Attacks. Any bonus Attacks not used by the end of the Assault phase are lost.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
+          },
+          {
+            "name": "Ghostwalk Mantle",
+            "id": "09fd-1df6-b015-e3a1",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Obyron can use the Ghostwalk Mantle in his Movement phase instead of moving normally. If he does, Obyron and his unit are removed from the tabletop and replaced together anywhere on the board using the rules for Deep Strike. Unlike other veils of darkness, the Ghostwalk Mantle can even be used if Obyron or his unit are locked in combat. Any enemy unit no longer locked in combat as a result of this move consolidate immediately.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "The Vargard's duty",
-            "id": "2b4d-8a6f-e83e-476f",
-            "description": "If Obyron uses his Ghostwalk Mantle, he does not scatter providing that he aims to arrive within 6\" of Zahndrekh. Furthermore, if an enemy unit launches an assault on Zahndrekh's unit, Obyron immediately leaves his unit and must pile in to that combat, regardless of how far from it he is - we assume he uses the ghostwalk Mantle to reach his master's side. Any enemy units no longer locked in combat as a result of this pile in move immediately consolidates. If Obyron is embarked on a transport or in a building when this special rule is triggered, ignore the normal rules for disembarkation - Obyron is simply removed from his current location and 'plied in' to Zahndrkh's combat.",
-            "hidden": false
+            "id": "bcd5-7f9c-b4f4-ad03",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "If Obyron uses his Ghostwalk Mantle, he does not scatter providing that he aims to arrive within 6\" of Zahndrekh. Furthermore, if an enemy unit launches an assault on Zahndrekh's unit, Obyron immediately leaves his unit and must pile in to that combat, regardless of how far from it he is - we assume he uses the ghostwalk Mantle to reach his master's side. Any enemy units no longer locked in combat as a result of this pile in move immediately consolidates. If Obyron is embarked on a transport or in a building when this special rule is triggered, ignore the normal rules for disembarkation - Obyron is simply removed from his current location and 'plied in' to Zahndrkh's combat.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ]
       },
@@ -5639,10 +6309,10 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Infantry", "id": "813e-5700-35a0-1bed", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"},
-          {"name": "Character", "id": "8a59-9f81-0f7f-af15", "hidden": false, "primary": false, "targetId": "0e03-b6b2-342b-e0d6"},
           {"name": "Necron Overlord", "id": "7757-cf03-8706-f009", "hidden": false, "primary": false, "targetId": "672c-d085-ce30-0e8a"},
           {"name": "Unique", "id": "312e-dc41-2e72-fcfc", "hidden": false, "primary": false, "targetId": "7dd6-9194-5df9-80ae"},
-          {"name": "HQ", "id": "998b-60eb-c365-535d", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "HQ", "id": "998b-60eb-c365-535d", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Independent Character", "id": "a7e1-7c78-7ff4-c42d", "hidden": false, "primary": false, "targetId": "15b0-93bd-ae58-f913"}
         ],
         "constraints": [
           {
@@ -5664,9 +6334,9 @@
         "infoLinks": [
           {"name": "Counter-Attack", "id": "f2f5-f8e1-5f89-aa66", "hidden": false, "targetId": "48b1-cb43-2bf9-87d4", "type": "rule"},
           {"name": "Ever-Living", "id": "2caa-6a1a-44d4-134b", "hidden": false, "targetId": "7774-df8a-9f61-94b3", "type": "rule"},
-          {"name": "Furious Charge", "id": "9d78-b7d1-5a92-f95c", "hidden": false, "targetId": "6297-1817-33c0-10da", "type": "rule"},
-          {"name": "INDEPENDENT CHARACTER", "id": "c127-88cf-ab8e-3c18", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
-          {"name": "Reanimation protocols", "id": "0d56-7b94-e296-c271", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"}
+          {"name": "Independent Character", "id": "c127-88cf-ab8e-3c18", "hidden": false, "targetId": "52ae-1673-b8f1-1cff", "type": "rule"},
+          {"name": "Reanimation protocols", "id": "0d56-7b94-e296-c271", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
+          {"name": "Furious Charge", "id": "1fcd-d2ea-608c-e3c2", "hidden": false, "targetId": "cd35-c9ff-5ecc-6c16", "type": "profile"}
         ],
         "profiles": [
           {
@@ -5707,20 +6377,34 @@
                 ]
               }
             ]
-          }
-        ],
-        "rules": [
+          },
           {
             "name": "Mind in the Machine",
-            "id": "f6e6-0903-4708-3029",
-            "description": "At the start of your Shooting phase, chose an enemy vehicle within 18\" and in Anrakyr's line of sight and roll a D6. On a roll of 3+, Anrakyr overrides the targeting systems in that vehicle - you can immediately shoot with it as if it were your unit. The vehicle cannot alter its facing, and fires as if it had not moved. For the purposes of this attack, ignore any 'crew stunned' or 'crew shaken' results the target is suffering from - but destroyed weapons cannot be fired. once these shooting attacks have been resolved, the vehicle returns to your opponent's control.",
-            "hidden": false
+            "id": "db1a-9856-3620-8c38",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of your Shooting phase, chose an enemy vehicle within 18\" and in Anrakyr's line of sight and roll a D6. On a roll of 3+, Anrakyr overrides the targeting systems in that vehicle - you can immediately shoot with it as if it were your unit. The vehicle cannot alter its facing, and fires as if it had not moved. For the purposes of this attack, ignore any 'crew stunned' or 'crew shaken' results the target is suffering from - but destroyed weapons cannot be fired. once these shooting attacks have been resolved, the vehicle returns to your opponent's control.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           },
           {
             "name": "Pyrrhian Eternals",
-            "id": "c1c4-ff40-e8f0-4647",
-            "description": "An army that includes Anrakyr the Travekker can also include a unit of Pyrrhian Eternals, as detailed in his army list entry. These are treated exactly as the Necron Immortals entry on Page 34, save for the fact that these also have the Furious Charge and Counter-attack special rules.",
-            "hidden": false
+            "id": "f095-0f46-b857-395d",
+            "hidden": false,
+            "typeId": "e150-914c-d218-a5ff",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "An army that includes Anrakyr the Travekker can also include a unit of Pyrrhian Eternals, as detailed in his army list entry. These are treated exactly as the Necron Immortals entry on Page 34, save for the fact that these also have the Furious Charge and Counter-attack special rules.",
+                "typeId": "3841-e529-1333-b029"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -5785,8 +6469,8 @@
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 17}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 17}],
         "infoLinks": [
           {"name": "Reanimation protocols", "id": "c64e-f587-551b-02fc", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
-          {"name": "Furious Charge", "id": "4ad2-6900-b07c-4b5e", "hidden": false, "targetId": "6297-1817-33c0-10da", "type": "rule"},
-          {"name": "Counter-Attack", "id": "89df-d365-dff0-c1ac", "hidden": false, "targetId": "48b1-cb43-2bf9-87d4", "type": "rule"}
+          {"name": "Counter-Attack", "id": "89df-d365-dff0-c1ac", "hidden": false, "targetId": "48b1-cb43-2bf9-87d4", "type": "rule"},
+          {"name": "Furious Charge", "id": "40ef-8a2c-0f91-cfbc", "hidden": false, "targetId": "cd35-c9ff-5ecc-6c16", "type": "profile"}
         ],
         "profiles": [
           {
@@ -5806,7 +6490,7 @@
               {"name": "Ld", "$text": "10", "typeId": "a6f4-c826-e65f-2dde"},
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "-", "typeId": "1e8a-c284-7f6c-3c55"},
-              {"name": "FNP", "$text": "-", "typeId": "6232-45c8-1c13-4021"}
+              {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
             ]
           }
         ],
