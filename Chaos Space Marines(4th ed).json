@@ -6,7 +6,7 @@
     "gameSystemId": "sys-e128-3141-0857-8aeb",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 1,
+    "revision": 1.1,
     "type": "catalogue",
     "categoryEntries": [{"name": "Chaos Rhino", "id": "f97d-f50e-6a7c-7a13", "hidden": false}, {"name": "Chaos Land Raider", "id": "cd53-4466-e423-8f9e", "hidden": false}],
     "entryLinks": [
@@ -6594,6 +6594,23 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "field": "9822-ba7b-9cf7-378c",
+                    "type": "set",
+                    "value": "5+",
+                    "conditions": [
+                      {
+                        "childId": "ba11-0a05-6b74-0be1",
+                        "childName": "Tenacity",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model-self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -7867,6 +7884,23 @@
                         "value": 1
                       }
                     ]
+                  },
+                  {
+                    "field": "9822-ba7b-9cf7-378c",
+                    "type": "set",
+                    "value": "5+",
+                    "conditions": [
+                      {
+                        "childId": "ba11-0a05-6b74-0be1",
+                        "childName": "Tenacity",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model-self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -8534,6 +8568,23 @@
                       {
                         "childId": "875f-7d7f-8471-a6b9",
                         "childName": "Mark of Slaanesh",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model-self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "9822-ba7b-9cf7-378c",
+                    "type": "set",
+                    "value": "5+",
+                    "conditions": [
+                      {
+                        "childId": "ba11-0a05-6b74-0be1",
+                        "childName": "Tenacity",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "model-self",
@@ -13317,6 +13368,25 @@
               {"name": "Sv", "$text": "2+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "4+", "typeId": "1e8a-c284-7f6c-3c55"},
               {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
+            ],
+            "modifiers": [
+              {
+                "field": "9822-ba7b-9cf7-378c",
+                "type": "set",
+                "value": "5+",
+                "conditions": [
+                  {
+                    "childId": "ba11-0a05-6b74-0be1",
+                    "childName": "Tenacity",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model-self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
@@ -13486,6 +13556,25 @@
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "5+", "typeId": "1e8a-c284-7f6c-3c55"},
               {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
+            ],
+            "modifiers": [
+              {
+                "field": "9822-ba7b-9cf7-378c",
+                "type": "set",
+                "value": "5+",
+                "conditions": [
+                  {
+                    "childId": "ba11-0a05-6b74-0be1",
+                    "childName": "Tenacity",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model-self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
@@ -13649,6 +13738,25 @@
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "4+", "typeId": "1e8a-c284-7f6c-3c55"},
               {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
+            ],
+            "modifiers": [
+              {
+                "field": "9822-ba7b-9cf7-378c",
+                "type": "set",
+                "value": "5+",
+                "conditions": [
+                  {
+                    "childId": "ba11-0a05-6b74-0be1",
+                    "childName": "Tenacity",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model-self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
@@ -14169,6 +14277,25 @@
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "5+", "typeId": "1e8a-c284-7f6c-3c55"},
               {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
+            ],
+            "modifiers": [
+              {
+                "field": "9822-ba7b-9cf7-378c",
+                "type": "set",
+                "value": "5+",
+                "conditions": [
+                  {
+                    "childId": "ba11-0a05-6b74-0be1",
+                    "childName": "Tenacity",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model-self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
@@ -14567,6 +14694,25 @@
               {"name": "Sv", "$text": "3+", "typeId": "07fb-93bc-7877-d7d1"},
               {"name": "InSv", "$text": "5+", "typeId": "1e8a-c284-7f6c-3c55"},
               {"name": "FNP", "$text": "-", "typeId": "9822-ba7b-9cf7-378c"}
+            ],
+            "modifiers": [
+              {
+                "field": "9822-ba7b-9cf7-378c",
+                "type": "set",
+                "value": "5+",
+                "conditions": [
+                  {
+                    "childId": "ba11-0a05-6b74-0be1",
+                    "childName": "Tenacity",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "model-self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
             ]
           },
           {
