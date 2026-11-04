@@ -5273,6 +5273,7 @@
                 "constraints": [
                   {"id": "ad74-44a3-596e-c0f2", "field": "selections", "includeChildSelections": true, "scope": "2963-ef8e-0f9e-5395", "shared": true, "type": "max", "value": 1}
                 ],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
                 "modifiers": [
                   {
                     "field": "ad74-44a3-596e-c0f2",

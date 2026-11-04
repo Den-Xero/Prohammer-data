@@ -6,7 +6,7 @@
     "gameSystemId": "sys-e128-3141-0857-8aeb",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 1,
+    "revision": 1.1,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Necron Overlord", "id": "672c-d085-ce30-0e8a", "hidden": false},
@@ -2243,7 +2243,21 @@
         "type": "model",
         "categoryLinks": [{"name": "Infantry", "id": "6ed3-bbc7-bee9-3316", "hidden": false, "primary": false, "targetId": "20b5-524c-a96c-2fd6"}],
         "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 19}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 19}],
-        "entryLinks": [{"name": "Synaptic disintegrator", "id": "b6a5-26c6-2953-8b92", "hidden": false, "import": true, "targetId": "1874-f4c2-849d-255d", "type": "selectionEntry"}],
+        "entryLinks": [
+          {
+            "name": "Synaptic disintegrator",
+            "id": "b6a5-26c6-2953-8b92",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "targetId": "1874-f4c2-849d-255d",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "abcf-97cd-bc1a-f576-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "abcf-97cd-bc1a-f576-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
         "infoLinks": [
           {"name": "Reanimation protocols", "id": "07f3-745d-ad0b-8fef", "hidden": false, "targetId": "44a6-b537-52d3-0fb7", "type": "rule"},
           {"name": "Deep strike", "id": "e864-1103-113a-9b06", "hidden": false, "targetId": "16af-70ce-610b-a1f4", "type": "rule"}
@@ -4198,7 +4212,7 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Vehicle", "id": "0a67-ef7d-051f-5e2f", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
-          {"name": "Tank/Chariot", "id": "fc99-a344-397b-cb7f", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"},
+          {"name": "Tank", "id": "fc99-a344-397b-cb7f", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"},
           {"name": "Skimmer", "id": "41fd-572f-42dc-6783", "hidden": false, "primary": false, "targetId": "64b5-e28c-0071-b486"},
           {"name": "Heavy", "id": "6779-cef2-2db4-0b2d", "hidden": false, "primary": false, "targetId": "0ce9-904e-d732-9748"},
           {"name": "Heavy Support", "id": "3800-7c19-cbe2-2d30", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"}
