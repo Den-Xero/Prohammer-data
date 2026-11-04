@@ -13069,7 +13069,6 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Dedicated Transport", "id": "3218-f8e6-2c44-7b69", "hidden": false, "primary": true, "targetId": "ba07-411c-2832-1f79"},
-          {"name": "Heavy Support", "id": "f5b8-e708-d4fa-6d25", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Vehicle", "id": "1eab-5732-2de8-9430", "hidden": false, "primary": false, "targetId": "37c1-ab57-c339-16d9"},
           {"name": "Tank", "id": "712b-befd-4022-38f0", "hidden": false, "primary": false, "targetId": "084f-994b-df5d-0353"}
         ],
