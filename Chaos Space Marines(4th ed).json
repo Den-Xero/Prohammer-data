@@ -1363,7 +1363,7 @@
               {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "-", "typeId": "a2c5-ec2c-1fcc-5485"},
               {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "", "typeId": "dbd5-a62e-abc4-431f"}
+              {"name": "Type", "$text": "-", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
