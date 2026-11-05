@@ -219,7 +219,7 @@
             "characteristics": [
               {"name": "Range", "$text": "24\"", "typeId": "cbb0-2b5d-d6fd-88d1"},
               {"name": "Str", "$text": "4", "typeId": "a2c5-ec2c-1fcc-5485"},
-              {"name": "AP", "$text": "4", "typeId": "496d-5030-c6b3-ea53"},
+              {"name": "AP", "$text": "5", "typeId": "496d-5030-c6b3-ea53"},
               {"name": "Type", "$text": "Rapid Fire, Gauss", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
@@ -388,6 +388,7 @@
                 "import": true,
                 "targetId": "c3d2-3ca7-cdd2-ee10",
                 "type": "selectionEntry",
+                "constraints": [{"id": "2fc8-6e86-5745-bd1b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 45}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 45}]
               },
               {
@@ -520,19 +521,6 @@
         "profiles": [
           {
             "name": "Warscythe",
-            "id": "fc74-b64d-a05f-9a6d",
-            "hidden": false,
-            "typeId": "2fa0-e132-3671-7499",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
-              {"name": "Str", "$text": "+2", "typeId": "a2c5-ec2c-1fcc-5485"},
-              {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
-              {"name": "Type", "$text": "\n", "typeId": "dbd5-a62e-abc4-431f"}
-            ]
-          },
-          {
-            "name": "Warscythe",
             "id": "2892-0a08-46cf-90e0",
             "hidden": false,
             "typeId": "e150-914c-d218-a5ff",
@@ -543,6 +531,19 @@
                 "$text": "Warscythe roll 2D6 for Armour Penetration. Armour saves are not permitted against Wounds caused by a warscythe.",
                 "typeId": "3841-e529-1333-b029"
               }
+            ]
+          },
+          {
+            "name": "Warscythe",
+            "id": "ceec-e829-2f9a-57bd",
+            "hidden": false,
+            "typeId": "2fa0-e132-3671-7499",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "-", "typeId": "cbb0-2b5d-d6fd-88d1"},
+              {"name": "Str", "$text": "+2", "typeId": "a2c5-ec2c-1fcc-5485"},
+              {"name": "AP", "$text": "-", "typeId": "496d-5030-c6b3-ea53"},
+              {"name": "Type", "$text": "Warscythe", "typeId": "dbd5-a62e-abc4-431f"}
             ]
           }
         ]
@@ -1185,12 +1186,9 @@
             "id": "afeb-3a00-0bfd-6357",
             "collapsible": true,
             "collective": true,
-            "defaultSelectionEntryId": "6811-7dd7-9cc8-ef8d",
+            "defaultSelectionEntryId": "none",
             "hidden": false,
-            "constraints": [
-              {"id": "000f-1c5a-3126-35a9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "000f-1c5a-3126-35a9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
+            "constraints": [{"id": "000f-1c5a-3126-35a9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "entryLinks": [{"name": "Staff of light", "id": "02b9-c1db-90c4-bc05", "hidden": false, "import": true, "targetId": "8198-9b24-29e4-c840", "type": "selectionEntry"}],
             "modifiers": [
               {
@@ -2677,7 +2675,7 @@
                 "import": true,
                 "targetId": "946d-fdc2-4fb1-120c",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 15}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 15}]
               },
               {
                 "name": "Particle shredder",
@@ -2686,7 +2684,7 @@
                 "import": true,
                 "targetId": "3d90-71ef-a3ec-90cc",
                 "type": "selectionEntry",
-                "costs": [{"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}, {"name": "Pts", "typeId": "4d85-53ef-f7e1-10d4", "value": 5}]
               }
             ]
           }
@@ -3363,7 +3361,15 @@
                 "type": "selectionEntry"
               },
               {"name": "Twin-Linked Gauss blaster", "id": "cc97-bcaf-2cfa-6847", "hidden": false, "import": true, "targetId": "a7aa-ef70-b94d-72ff", "type": "selectionEntry"},
-              {"name": "Particle Beamers", "id": "669c-6c51-894b-feb3", "hidden": false, "import": true, "targetId": "646f-aadb-ccc0-1454", "type": "selectionEntry"}
+              {
+                "name": "Particle Beamers",
+                "id": "669c-6c51-894b-feb3",
+                "hidden": false,
+                "import": true,
+                "targetId": "646f-aadb-ccc0-1454",
+                "type": "selectionEntry",
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 10}]
+              }
             ]
           },
           {

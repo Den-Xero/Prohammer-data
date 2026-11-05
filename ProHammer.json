@@ -3,7 +3,7 @@
     "name": "ProHammer",
     "id": "sys-e128-3141-0857-8aeb",
     "battleScribeVersion": "2.03",
-    "revision": 1,
+    "revision": 1.1,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "HQ", "id": "9cfd-1c32-585f-7d5c", "hidden": false},
@@ -1877,7 +1877,7 @@
                 "characteristics": [
                   {
                     "name": "Description",
-                    "$text": "In the Assault phase, your Warlord and all friendly unit within 12\" of him To Hit rolls of 1.",
+                    "$text": "In the Assault phase, your Warlord and all friendly unit within 12\" of him reroll To Hit rolls of 1.",
                     "typeId": "3841-e529-1333-b029"
                   }
                 ]
