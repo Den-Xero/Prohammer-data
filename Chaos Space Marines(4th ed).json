@@ -5215,15 +5215,6 @@
                 "constraints": [{"id": "cd1e-47b4-4702-ea44", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Combi-Weapons",
-                "id": "8a6c-9ca0-342d-55ec",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "targetId": "8c58-02a8-36e0-105a",
-                "type": "selectionEntryGroup"
-              },
-              {
                 "name": "Reaper Autocannon",
                 "id": "b74c-1b13-d1ea-ecd9",
                 "hidden": false,
@@ -5318,6 +5309,18 @@
                     "value": 1
                   }
                 ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Combi-Weapons",
+                "id": "bebb-3b7f-ec2a-d453",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
+                "entryLinks": [{"name": "Combi-Weapons", "id": "daa0-244f-2784-8b21", "hidden": false, "import": true, "targetId": "8c58-02a8-36e0-105a", "type": "selectionEntryGroup"}]
               }
             ]
           }
@@ -5683,15 +5686,6 @@
                 "constraints": [{"id": "9daa-1154-defe-f60d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Combi-Weapons",
-                "id": "1c15-984c-94c7-c874",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "targetId": "8c58-02a8-36e0-105a",
-                "type": "selectionEntryGroup"
-              },
-              {
                 "name": "Reaper Autocannon",
                 "id": "9644-975d-ee40-1a0c",
                 "hidden": false,
@@ -5741,6 +5735,7 @@
                 "constraints": [
                   {"id": "3053-38eb-3ae9-3441", "field": "selections", "includeChildSelections": true, "scope": "2963-ef8e-0f9e-5395", "shared": true, "type": "max", "value": 1}
                 ],
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
                 "modifiers": [
                   {
                     "field": "3053-38eb-3ae9-3441",
@@ -5785,6 +5780,18 @@
                     "value": 1
                   }
                 ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Combi-Weapons",
+                "id": "bb49-83ec-5247-dbef",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "costs": [{"name": "Pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
+                "entryLinks": [{"name": "Combi-Weapons", "id": "d4b0-d967-7a5f-5950", "hidden": false, "import": true, "targetId": "8c58-02a8-36e0-105a", "type": "selectionEntryGroup"}]
               }
             ]
           }
